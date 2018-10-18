@@ -6,6 +6,12 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Stream;
 
+/**
+ * https://leetcode.com/problems/keyboard-row/submissions/
+ * easy
+ * @author Acker
+ *
+ */
 public class Leetcode_500 {
 	String top = "qwertyuiop";
     String middle = "asdfghjkl";
