@@ -25,5 +25,4 @@ public class LC_011 {
 		int[] test = {1,8,6,2,5,4,8,3,7};
 		System.out.println(new LC_011().maxArea(test));
 	}
-
 }
