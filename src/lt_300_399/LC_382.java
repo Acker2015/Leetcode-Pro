@@ -1,4 +1,4 @@
-package lt_1_100;
+package lt_300_399;
 
 import java.util.Random;
 
