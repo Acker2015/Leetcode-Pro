@@ -41,3 +41,7 @@ done
 ```
 
 1. [382- Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/)
+2. [398- Random Pick Index](https://leetcode.com/problems/random-pick-index/)
+
+### 累计概率分布
+1. [528- Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)

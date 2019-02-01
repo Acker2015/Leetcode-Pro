@@ -28,7 +28,7 @@ public class Leetcode_528 {
 	        		preSum[i] = preSum[i-1] + w[i];
 	        }
 	    }
-		
+
 		public int pickIndex() {
 	        int rand = random.nextInt(preSum[len - 1]) + 1;
 	        int left = 0, right = len - 1;
