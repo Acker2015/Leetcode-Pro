@@ -21,6 +21,7 @@ go and record
 
 ### 积水系列
 1. [011-container-with-most-water](https://leetcode.com/problems/container-with-most-water/submissions/)
+2. [042-Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
 
 ### 蓄水池抽样算法(Reservoir Sampling Algorithm)
 定理：该算法保证每个元素以 k / n 的概率被选入蓄水池数组。
