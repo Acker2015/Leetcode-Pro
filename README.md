@@ -12,7 +12,11 @@ go and record
 
 
 ### Tree
-1. 
+1. [653-Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)
+```
+BST的two pointers，使用stack来辅助前后两个指针的移动
+```
+
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map

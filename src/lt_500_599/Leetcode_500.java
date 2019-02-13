@@ -1,4 +1,4 @@
-package lt500_600;
+package lt_500_599;
 
 import java.util.ArrayList;
 import java.util.HashSet;
