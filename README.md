@@ -21,7 +21,11 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
 2. [012-Integer to roman](https://leetcode.com/problems/integer-to-roman/) string map 技巧性解法
-3. [015-Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+3. [014-Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+
+### two pointers
+1. [015-3Sum](https://leetcode.com/problems/3sum/)
+2. 653 Two Sum IV - Input is a BST (Tree + two pointers)
 
 
 ## 特别专题
@@ -57,3 +61,7 @@ done
 
 ### 累计概率分布
 1. [528- Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)
+
+### two pointers系列
+1. 
+2. 653
