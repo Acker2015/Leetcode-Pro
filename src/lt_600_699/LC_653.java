@@ -1,13 +1,10 @@
 package lt_600_699;
 
-import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.Stack;
-
-import com.sun.org.apache.bcel.internal.generic.ReturnaddressType;
 
 import domain.TreeNode;
 /**
@@ -29,15 +26,16 @@ public class LC_653 {
 		public boolean hasNext() {
 			return node!=null || !stack.isEmpty();
 		}
-		
+		// 寻找正向或者反向下一个节点的核心代码
 		public int next() {
 			while (node!=null || !stack.isEmpty()) {
 				if (node!=null) {
 					stack.push(node);
 					node = forward ? node.left : node.right;
 				} else {
-					node = forward ? node.right : node.left;
-					return stack.pop().val;
+					TreeNode tmpNode =stack.pop();
+					node = forward ? tmpNode.right : tmpNode.left;
+					return tmpNode.val;
 				}
 			}
 			return -1; // impossible
