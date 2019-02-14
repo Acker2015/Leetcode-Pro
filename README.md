@@ -25,7 +25,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
-2. 653 Two Sum IV - Input is a BST (Tree + two pointers)
+2. [016-3Sum Closest](https://leetcode.com/problems/3sum-closest/)
+3. 653 Two Sum IV - Input is a BST (Tree + two pointers)
 	
 	(1) 结合BST正向遍历和反向遍历来实现two pointers, time O(n) space O(logn)
 	(2) 前序遍历+hashMap	time O(n) space O(n)

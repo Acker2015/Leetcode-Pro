@@ -41,6 +41,7 @@ public class LC_653 {
 			return -1; // impossible
 		}
 	}
+	// two pointers
 	public boolean findTarget(TreeNode root, int k) {
 		if (root == null) return false;
 		BSTIterator bl = new BSTIterator(root, true);
