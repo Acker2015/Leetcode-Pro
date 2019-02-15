@@ -35,6 +35,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 	(3) 前序遍历+BST的二分遍历搜索  time O(nlogn)
 	
 	(4) 中序遍历存储结果到有序数组，对有序数组进行two pointers处理 time O(n) space O(n)
+	
+### BackTracing
+1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
 
 
 ## 特别专题
