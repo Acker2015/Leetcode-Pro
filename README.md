@@ -42,8 +42,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 ### BackTracing
 1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
 
-### LinkedList
+### LinkedList&&分治&&recursion
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+2. [148-Sort List](https://leetcode.com/problems/sort-list/) - 归并排序的思路
 
 
 ## 特别专题
