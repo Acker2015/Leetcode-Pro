@@ -9,7 +9,7 @@ go and record
 
 
 ### Array
-1. 
+1. [088-Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 
 
 ### Tree
