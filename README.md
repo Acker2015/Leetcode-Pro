@@ -39,8 +39,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 	
 	(4) 中序遍历存储结果到有序数组，对有序数组进行two pointers处理 time O(n) space O(n)
 	
-### BackTracing
+### BackTracking
 1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
+2. [022-Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) 回溯或者DP
 
 ### LinkedList&&分治&&recursion
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
