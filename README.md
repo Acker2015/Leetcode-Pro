@@ -48,6 +48,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 
 ### LinkedList&&分治&&recursion
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+2. [023-Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) hard-分治
 2. [148-Sort List](https://leetcode.com/problems/sort-list/) - 归并排序的思路
 3. [24-Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) -medium(链表成对节点swap)
 
