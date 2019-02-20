@@ -11,6 +11,7 @@ go and record
 ### Array
 1. [088-Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 2. [026-Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) easy
+3. [027-Remove Element](https://leetcode.com/problems/remove-element/) easy
 
 
 ### Tree
