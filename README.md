@@ -49,9 +49,12 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 ### LinkedList&&分治&&recursion
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 2. [023-Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) hard-分治
-2. [148-Sort List](https://leetcode.com/problems/sort-list/) - 归并排序的思路
-3. [24-Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) -medium(链表成对节点swap)
+3. [148-Sort List](https://leetcode.com/problems/sort-list/) - 归并排序的思路
+4. [24-Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) -medium(链表成对节点swap)
 
+
+### binary search
+1. [029-Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) 二分查找(注意数据溢出情况)
 
 ## 特别专题
 
@@ -72,6 +75,14 @@ https://blog.csdn.net/u010150046/article/details/77017145#commentBox
 	replace elements with gradually decreasing probability
 	算法首先创建一个长度为K的数组（蓄水池）用来存放结果，初始化为S的前k个元素，然后从k+1个元素开始迭代直到数组结束
 	算法生成一个随机数j∈[1, i]，如果 j ≤ k，那么蓄水池的第 j 个元素被替换为S的第i个元素。
+	
+	定理：该算法保证每个元素以 k / n 的概率被选入蓄水池数组。
+
+	证明：首先，对于任意的 i，第 i 个元素进入蓄水池的概率为 k / i；而在蓄水池内每个元素被替换的概率为 1 / k; 因此在第 i 轮第j个元素被替换的概率为 (k / i ) * (1 / k) = 1 / i。 接下来用数学归纳法来证明，当循环结束时每个元素进入蓄水池的概率为 k / n.
+	
+	假设在 (i-1) 次迭代后，任意一个元素进入 蓄水池的概率为 k / (i-1)。有上面的结论，在第 i 次迭代时，该元素被替换的概率为 1 / i， 那么其不被替换的概率则为 1 - 1/i = (i-1)/i；在第i 此迭代后，该元素在蓄水池内的概率为 k / (i-1) * (i-1)/i = k / i. 归纳部分结束。
+	
+	因此当循环结束时，每个元素进入蓄水池的概率为 k / n. 命题得证。
 */
 for each i in k+1 to length(S) do
     j := random(1, i);   // important: inclusive range
