@@ -58,6 +58,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 
 ## 特别专题
 
+### 排列组合系列
+
+
 ### 积水系列
 1. [011-container-with-most-water](https://leetcode.com/problems/container-with-most-water/submissions/)
 2. [042-Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
@@ -65,6 +68,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 https://www.cnblogs.com/felixfang/p/3713197.html
 观察下就可以发现被水填满后的形状是先升后降的塔形，因此，先遍历一遍找到塔顶，然后分别从两边开始，往塔顶所在位置遍历，水位只会增高不会减小，且一直和最近遇到的最大高度持平，这样知道了实时水位，就可以边遍历边计算面积。
 ```
+
+
 
 ### 蓄水池抽样算法(Reservoir Sampling Algorithm)
 定理：该算法保证每个元素以 k / n 的概率被选入蓄水池数组。
