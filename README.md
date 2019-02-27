@@ -56,10 +56,13 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 ### binary search
 1. [029-Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) 二分查找(注意数据溢出情况)
 
+### DP
+1. [746-Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) easy
+
 ## 特别专题
 
 ### 排列组合系列
-077,031,
+077, 031, 040
 
 
 ### 积水系列
