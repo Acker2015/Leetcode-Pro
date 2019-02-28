@@ -1,4 +1,4 @@
-package lt_1_100;
+package lt_1_200;
 
 public class LC_028 {
 	public int strStr(String haystack, String needle) {

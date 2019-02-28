@@ -41,7 +41,7 @@ public class LC_746 {
 		int[] nums = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
 		LC_746 lc_746 = new LC_746();
 		System.out.println(lc_746.minCostClimbingStairs2(nums));
-
+		
 	}
 
 }

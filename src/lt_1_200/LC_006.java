@@ -1,4 +1,4 @@
-package lt_1_100;
+package lt_1_200;
 /**
  * https://leetcode.com/problems/zigzag-conversion/submissions/
  * find the regular pattern
