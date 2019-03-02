@@ -57,6 +57,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 1. [029-Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) 二分查找(注意数据溢出情况)
 2. [034-Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) 区间二分，查找区间 medium
 3. [035-Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) easy
+4. [033-Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) medium
 
 ### DP
 1. [746-Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) easy
