@@ -1,6 +1,8 @@
 # Leetcode-Pro
 go and record
 
+### 模拟
+1. [038-Count and Say](https://leetcode.com/problems/count-and-say/description/) easy
 
 ### Stack
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
