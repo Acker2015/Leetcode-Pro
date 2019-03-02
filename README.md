@@ -4,6 +4,7 @@ go and record
 ### 模拟
 1. [038-Count and Say](https://leetcode.com/problems/count-and-say/description/) easy
 
+
 ### Stack
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
 2. [503-next-greater-element-ii](https://leetcode.com/problems/next-greater-element-ii/)
@@ -14,6 +15,7 @@ go and record
 1. [088-Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 2. [026-Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) easy
 3. [027-Remove Element](https://leetcode.com/problems/remove-element/) easy
+4. [066-Plus One](https://leetcode.com/problems/plus-one/description/) easy
 
 
 ### Tree
