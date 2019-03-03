@@ -76,9 +76,14 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 3. [035-Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) easy
 4. [033-Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) medium
 
+### Greedy
+1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
+
+
 ### DP
 1. [746-Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) easy
 2. [053-Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) easy
+
 
 ## 特别专题
 
