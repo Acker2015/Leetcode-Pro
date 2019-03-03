@@ -30,7 +30,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 
 
 ### Tree
-1. [653-Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)
+1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
+2. [653-Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)
 ```
 BST的two pointers，使用stack来辅助前后两个指针的移动
 ```
