@@ -4,6 +4,17 @@ go and record
 ### 模拟
 1. [038-Count and Say](https://leetcode.com/problems/count-and-say/description/) easy
 
+### Math
+1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)
+    
+Start from right to left, perform multiplication on every pair of digits, and add them together. Let's draw the process! From the following draft, we can immediately conclude:
+```
+ `num1[i] * num2[j]` will be placed at indices `[i + j`, `i + j + 1]`
+```
+
+![竖式乘法计算](https://drscdn.500px.org/photo/130178585/m%3D2048/300d71f784f679d5e70fadda8ad7d68f)
+
+
 
 ### Stack
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
