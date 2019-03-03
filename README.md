@@ -47,6 +47,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 2. [016-3Sum Closest](https://leetcode.com/problems/3sum-closest/)
 3. [018-4Sum](https://leetcode.com/problems/4sum/)
 4. [019-Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+
+
 3. 653 Two Sum IV - Input is a BST (Tree + two pointers)
 	
 	(1) 结合BST正向遍历和反向遍历来实现two pointers, time O(n) space O(logn)
@@ -80,8 +82,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 
 ## 特别专题
 
-### 排列组合系列
-077, 031, 040
+### 排列组合系列 (组合的下一个组合或者上一个组合)
+077, 031, 040, 046
 
 
 ### 积水系列
