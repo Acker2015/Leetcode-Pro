@@ -78,7 +78,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
-
+1. [045-Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) 贪心 hard(045的升级版本)
 
 ### DP
 1. [746-Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) easy
