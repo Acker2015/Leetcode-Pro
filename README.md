@@ -3,6 +3,7 @@ go and record
 
 ### 模拟
 1. [038-Count and Say](https://leetcode.com/problems/count-and-say/description/) easy
+2. [048-Rotate Image](https://leetcode.com/problems/rotate-image/) medium
 
 ### Math
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)
