@@ -32,7 +32,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 ### Tree
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
 2. [101-Symmetric Tree](https://leetcode.com/problems/symmetric-tree/submissions/) easy
-2. [653-Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) medium 数的遍历-经典
+3. [104-Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) easy (BFS DFS)
+4. [653-Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) medium 数的遍历-经典
 ```
 BST的two pointers，使用stack来辅助前后两个指针的移动
 ```

@@ -1,5 +1,7 @@
 package lt_1_200;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 import domain.TreeNode;
@@ -10,14 +12,14 @@ public class LC_101 {
             return left==right;
         }
         return left.val==right.val 
-            && isSymmetricHelp(left.left, right.right) 
+        		&& isSymmetricHelp(left.left, right.right) 
             && isSymmetricHelp(left.right, right.left);
     }
     /**
      * 递归
      * 每次都比较节点的左子树和右子树是否各自为mirror tree
      */
-    public boolean isSymmetric(TreeNode root) {
+    public boolean isSymmetric(TreeNode root) {	
         return root == null || isSymmetricHelp(root.left, root.right);
     }
 
