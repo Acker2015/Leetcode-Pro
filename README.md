@@ -5,6 +5,9 @@ go and record
 1. [038-Count and Say](https://leetcode.com/problems/count-and-say/description/) easy
 2. [048-Rotate Image](https://leetcode.com/problems/rotate-image/) medium
 
+### Map
+1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) meduim
+
 ### Math
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)
     
