@@ -4,12 +4,14 @@ go and record
 ### 模拟
 1. [038-Count and Say](https://leetcode.com/problems/count-and-say/description/) easy
 2. [048-Rotate Image](https://leetcode.com/problems/rotate-image/) medium
+3. [054-Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 
 ### Map
 1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) meduim
 
 ### Math
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)
+2. [060-Permutation Sequence](https://leetcode.com/problems/permutation-sequence/description/) math+(Kth-permutation)
     
 Start from right to left, perform multiplication on every pair of digits, and add them together. Let's draw the process! From the following draft, we can immediately conclude:
 ```
@@ -85,7 +87,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
-1. [045-Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) 贪心 hard(045的升级版本)
+2. [045-Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) 贪心 hard(045的升级版本)
+3. [056-Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
 
 ### DP
 1. [746-Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) easy
