@@ -39,6 +39,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 3. [027-Remove Element](https://leetcode.com/problems/remove-element/) easy
 4. [066-Plus One](https://leetcode.com/problems/plus-one/description/) easy
 5. [041-First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) hard 技巧性-通过数组的索引处的值的正负来记录数字是否存在
+6. [073-Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/) medium matrix(in-place)
 
 ### List
 1. [061-Rotate List](https://leetcode.com/problems/rotate-list/description/) medium
