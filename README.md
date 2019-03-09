@@ -30,6 +30,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
 2. [503-next-greater-element-ii](https://leetcode.com/problems/next-greater-element-ii/)
 3. [020-Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+4. [071-Simplify Path](https://leetcode.com/problems/simplify-path/description/) medium
 
 
 ### Array
@@ -95,6 +96,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 ### DP
 1. [746-Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) easy
 2. [053-Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) easy
+3. [064-Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) medium
 
 
 ## 特别专题
