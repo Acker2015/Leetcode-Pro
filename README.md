@@ -33,6 +33,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 2. [026-Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) easy
 3. [027-Remove Element](https://leetcode.com/problems/remove-element/) easy
 4. [066-Plus One](https://leetcode.com/problems/plus-one/description/) easy
+5. [041-First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) hard 技巧性-通过数组的索引处的值的正负来记录数字是否存在
 
 
 ### Tree
