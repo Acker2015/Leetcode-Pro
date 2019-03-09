@@ -20,7 +20,11 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 
 ![竖式乘法计算](https://drscdn.500px.org/photo/130178585/m%3D2048/300d71f784f679d5e70fadda8ad7d68f)
 
-
+### String
+1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
+2. [012-Integer to roman](https://leetcode.com/problems/integer-to-roman/) string map 技巧性解法
+3. [014-Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+4. [028- Implement strStr()](https://leetcode.com/problems/implement-strstr/) easy
 
 ### Stack
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
@@ -35,6 +39,9 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 4. [066-Plus One](https://leetcode.com/problems/plus-one/description/) easy
 5. [041-First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) hard 技巧性-通过数组的索引处的值的正负来记录数字是否存在
 
+### List
+1. [061-Rotate List](https://leetcode.com/problems/rotate-list/description/) medium
+
 
 ### Tree
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
@@ -45,12 +52,6 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 BST的two pointers，使用stack来辅助前后两个指针的移动
 ```
 
-
-### String
-1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
-2. [012-Integer to roman](https://leetcode.com/problems/integer-to-roman/) string map 技巧性解法
-3. [014-Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
-4. [028- Implement strStr()](https://leetcode.com/problems/implement-strstr/) easy
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
