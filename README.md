@@ -88,6 +88,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 2. [034-Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) 区间二分，查找区间 medium
 3. [035-Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) easy
 4. [033-Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) medium
+5. [074-Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
