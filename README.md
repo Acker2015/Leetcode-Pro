@@ -60,6 +60,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 2. [016-3Sum Closest](https://leetcode.com/problems/3sum-closest/)
 3. [018-4Sum](https://leetcode.com/problems/4sum/)
 4. [019-Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+5. [075-Sort Colors](https://leetcode.com/problems/sort-colors/description/) medium
 
 
 3. 653 Two Sum IV - Input is a BST (Tree + two pointers)
@@ -88,7 +89,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 2. [034-Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) 区间二分，查找区间 medium
 3. [035-Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) easy
 4. [033-Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) medium
-5. [074-Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)
+5. [074-Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) medium
+6. [240-Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) medium
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
