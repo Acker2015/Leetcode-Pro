@@ -76,6 +76,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 ### BackTracking
 1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
 2. [022-Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) 回溯或者DP
+3. [078-Subsets](https://leetcode.com/problems/subsets/description/) medium
 
 ### LinkedList&&分治&&recursion
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
