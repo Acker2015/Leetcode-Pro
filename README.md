@@ -46,6 +46,9 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 
 ### List
 1. [061-Rotate List](https://leetcode.com/problems/rotate-list/description/) medium
+2. [141-Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) easy
+3. [142-Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) medium
+	存在环的链表系列链接(https://www.cnblogs.com/xudong-bupt/p/3667729.html)
 
 
 ### Tree
