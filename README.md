@@ -11,12 +11,15 @@ go and record
 
 ### Math
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)
-2. [060-Permutation Sequence](https://leetcode.com/problems/permutation-sequence/description/) math+(Kth-permutation)
     
 Start from right to left, perform multiplication on every pair of digits, and add them together. Let's draw the process! From the following draft, we can immediately conclude:
 ```
  `num1[i] * num2[j]` will be placed at indices `[i + j`, `i + j + 1]`
 ```
+
+2. [060-Permutation Sequence](https://leetcode.com/problems/permutation-sequence/description/) math+(Kth-permutation)
+3. [136-Single Number](https://leetcode.com/problems/single-number/description/) easy 
+
 
 ![竖式乘法计算](https://drscdn.500px.org/photo/130178585/m%3D2048/300d71f784f679d5e70fadda8ad7d68f)
 
@@ -77,6 +80,11 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
 2. [022-Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) 回溯或者DP
 3. [078-Subsets](https://leetcode.com/problems/subsets/description/) medium
+4. [079-Word Search](https://leetcode.com/problems/word-search/description/) medium
+
+### DFS && BFS
+1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
+
 
 ### LinkedList&&分治&&recursion
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
