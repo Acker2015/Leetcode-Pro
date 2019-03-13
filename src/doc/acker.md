@@ -8,5 +8,6 @@ go and record
 ---     |---                    |---           
 1       |[079-Word Search](https://leetcode.com/problems/word-search/description/) | medium                  | backtracking
 2    | [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) | hard | DFS+记忆搜索
-3    | [Pow(x, n)](https://leetcode.com/problems/powx-n/description/) | medium | Math 快速幂 
+3    | [Pow(x, n)](https://leetcode.com/problems/powx-n/description/) | medium | Math 快速幂
+4    | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | medium | Array(环形链表) 
 

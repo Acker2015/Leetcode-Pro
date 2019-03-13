@@ -50,6 +50,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 2. [141-Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) easy
 3. [142-Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) medium
 	存在环的链表系列链接(https://www.cnblogs.com/xudong-bupt/p/3667729.html)
+4. [287-Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) medium 虽然是数组，但是思想类似142唤醒链表
 
 
 ### Tree
