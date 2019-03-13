@@ -19,6 +19,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 
 2. [060-Permutation Sequence](https://leetcode.com/problems/permutation-sequence/description/) math+(Kth-permutation)
 3. [136-Single Number](https://leetcode.com/problems/single-number/description/) easy 
+4. [050-Pow(x, n)](https://leetcode.com/problems/powx-n/description/) medium 快速幂
 
 
 ![竖式乘法计算](https://drscdn.500px.org/photo/130178585/m%3D2048/300d71f784f679d5e70fadda8ad7d68f)
