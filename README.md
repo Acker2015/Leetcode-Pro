@@ -20,6 +20,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 2. [060-Permutation Sequence](https://leetcode.com/problems/permutation-sequence/description/) math+(Kth-permutation)
 3. [136-Single Number](https://leetcode.com/problems/single-number/description/) easy 
 4. [050-Pow(x, n)](https://leetcode.com/problems/powx-n/description/) medium 快速幂
+5. [089-Gray Code](https://leetcode.com/problems/gray-code/description/) medium 二进制 格雷码
 
 
 ![竖式乘法计算](https://drscdn.500px.org/photo/130178585/m%3D2048/300d71f784f679d5e70fadda8ad7d68f)
@@ -51,8 +52,9 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 2. [141-Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) easy
 3. [142-Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) medium
 	存在环的链表系列链接(https://www.cnblogs.com/xudong-bupt/p/3667729.html)
-4. [287-Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) medium 虽然是数组，但是思想类似142唤醒链表
+4. [287-Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) medium 虽然是数组，但是思想类似142环形链表
 5. [082-Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/) medium
+6. [086-Partition List](https://leetcode.com/problems/partition-list/description/) medium
 
 
 ### Tree
