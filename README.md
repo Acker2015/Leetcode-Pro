@@ -52,6 +52,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 3. [142-Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) medium
 	存在环的链表系列链接(https://www.cnblogs.com/xudong-bupt/p/3667729.html)
 4. [287-Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) medium 虽然是数组，但是思想类似142唤醒链表
+5. [082-Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/) medium
 
 
 ### Tree
@@ -106,6 +107,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 4. [033-Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) medium
 5. [074-Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) medium
 6. [240-Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) medium
+7. [081-Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) medium
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
