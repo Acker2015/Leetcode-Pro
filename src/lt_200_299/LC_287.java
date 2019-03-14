@@ -2,7 +2,6 @@ package lt_200_299;
 
 public class LC_287 {
 	public int findDuplicate(int[] nums) {
-        if (nums.length <= 1) return -1;
         int fast = 0, slow = 0;
         while(nums[fast] < nums.length) {
         		slow = nums[slow];
