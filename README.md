@@ -7,7 +7,7 @@ go and record
 3. [054-Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 
 ### Map
-1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) meduim
+1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) medium
 
 ### Math
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)
@@ -90,6 +90,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 2. [022-Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) 回溯或者DP
 3. [078-Subsets](https://leetcode.com/problems/subsets/description/) medium
 4. [079-Word Search](https://leetcode.com/problems/word-search/description/) medium
+5. [090-Subsets II](https://leetcode.com/problems/subsets-ii/description/)
 
 ### DFS && BFS
 1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
