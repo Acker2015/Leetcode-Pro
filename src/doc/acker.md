@@ -13,3 +13,4 @@ go and record
 5    | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | medium | binary search
 6    | [089-Gray Code](https://leetcode.com/problems/gray-code/description/) | medium | Math 二进制 格雷码
 7    | [092-Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) | medium | 链表区间翻转
+8    | [093-Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) | medium | 回溯or三级循环(注意剪枝条件)

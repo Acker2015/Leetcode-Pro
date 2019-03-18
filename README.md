@@ -91,7 +91,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 2. [022-Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) 回溯或者DP
 3. [078-Subsets](https://leetcode.com/problems/subsets/description/) medium
 4. [079-Word Search](https://leetcode.com/problems/word-search/description/) medium
-5. [090-Subsets II](https://leetcode.com/problems/subsets-ii/description/)
+5. [090-Subsets II](https://leetcode.com/problems/subsets-ii/description/) medium
+6. [093-Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) medium 回溯or三级循环(注意剪枝条件)
 
 ### DFS && BFS
 1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
