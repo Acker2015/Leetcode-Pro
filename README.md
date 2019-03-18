@@ -55,6 +55,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 4. [287-Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) medium 虽然是数组，但是思想类似142环形链表
 5. [082-Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/) medium
 6. [086-Partition List](https://leetcode.com/problems/partition-list/description/) medium
+7. [092-Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) medium 区间翻转
 
 
 ### Tree
@@ -121,6 +122,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 1. [746-Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) easy
 2. [053-Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) easy
 3. [064-Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) medium
+4. [091-Decode Ways](https://leetcode.com/problems/decode-ways/description/) medium dp
 
 
 ## 特别专题
