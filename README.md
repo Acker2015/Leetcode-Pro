@@ -10,21 +10,20 @@ go and record
 1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) medium
 
 ### Math
-1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)
-2. [898-Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) medium - 时间复杂度分析
-    
+1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)  
 Start from right to left, perform multiplication on every pair of digits, and add them together. Let's draw the process! From the following draft, we can immediately conclude:
 ```
  `num1[i] * num2[j]` will be placed at indices `[i + j`, `i + j + 1]`
 ```
+![竖式乘法计算](https://drscdn.500px.org/photo/130178585/m%3D2048/300d71f784f679d5e70fadda8ad7d68f)
 
 2. [060-Permutation Sequence](https://leetcode.com/problems/permutation-sequence/description/) math+(Kth-permutation)
 3. [136-Single Number](https://leetcode.com/problems/single-number/description/) easy 
 4. [050-Pow(x, n)](https://leetcode.com/problems/powx-n/description/) medium 快速幂
 5. [089-Gray Code](https://leetcode.com/problems/gray-code/description/) medium 二进制 格雷码
+6. [*** 898-Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) medium - 时间复杂度分析
+7. [067-Add Binary](https://leetcode.com/problems/add-binary/description/) easy 二进制加法 
 
-
-![竖式乘法计算](https://drscdn.500px.org/photo/130178585/m%3D2048/300d71f784f679d5e70fadda8ad7d68f)
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
