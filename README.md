@@ -36,6 +36,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 2. [503-next-greater-element-ii](https://leetcode.com/problems/next-greater-element-ii/)
 3. [020-Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 4. [071-Simplify Path](https://leetcode.com/problems/simplify-path/description/) medium
+5. [155-Min Stack](https://leetcode.com/problems/min-stack/description/) easy 模拟栈
 
 
 ### Array
