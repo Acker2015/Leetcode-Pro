@@ -57,6 +57,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 5. [082-Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/) medium
 6. [086-Partition List](https://leetcode.com/problems/partition-list/description/) medium
 7. [092-Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) medium 区间翻转
+8. [160-Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/) easy 两个链表相遇（两种解法，核心思想让两个链表的遍历指针同步）
 
 
 ### Tree
