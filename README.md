@@ -23,7 +23,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 5. [089-Gray Code](https://leetcode.com/problems/gray-code/description/) medium 二进制 格雷码
 6. [*** 898-Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) medium - 时间复杂度分析
 7. [067-Add Binary](https://leetcode.com/problems/add-binary/description/) easy 二进制加法 
-
+8. [168-Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) easy excel表格行位置计算
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
