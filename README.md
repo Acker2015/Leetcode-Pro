@@ -23,8 +23,10 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 5. [089-Gray Code](https://leetcode.com/problems/gray-code/description/) medium 二进制 格雷码
 6. [*** 898-Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) medium - 时间复杂度分析
 7. [067-Add Binary](https://leetcode.com/problems/add-binary/description/) easy 二进制加法 
-8. [168-Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) easy excel表格行位置计算
-9. [172-Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) math 阶乘的因子个数
+8. [168-Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) easy excel表格列位置计算
+9. [171-Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/) easy easy表格列位置计算
+10. [172-Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) easy math 阶乘的因子个数
+
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -72,6 +74,10 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 5. [095-Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/description/) medium 构建BST
 6. [096-Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/description/) medium 095的变体，卡特兰数
 7. [098-Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) medium 判断二叉树是否为BST
+8. [102-Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) medium level traversal
+9. [103-Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) medium zigzag level traversal
+
+
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
