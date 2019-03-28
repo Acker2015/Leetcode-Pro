@@ -76,8 +76,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 7. [098-Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) medium 判断二叉树是否为BST
 8. [102-Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) medium level traversal
 9. [103-Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) medium zigzag level traversal
-
-
+10.[105-Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) medium 中序前序构建二叉树
+11.[106-Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) medium 中序后序构建二叉树
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
