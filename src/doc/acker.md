@@ -16,5 +16,6 @@ go and record
 8    | [093-Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) | medium | 回溯or三级循环(注意剪枝条件)
 9    | [898-Bitwise ORs of Subarrays](https://leetcode.com/problems/bitwise-ors-of-subarrays/) | medium | 时间复杂度分析
 10   | [155-Min Stack](https://leetcode.com/problems/min-stack/description/) | easy | 栈模拟(min的保持)
+11   | [114-Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | medium | dfs(原地操作-链表平坦化)
 
 

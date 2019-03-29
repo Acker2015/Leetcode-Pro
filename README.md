@@ -78,6 +78,10 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 9. [103-Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) medium zigzag level traversal
 10.[105-Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) medium 中序前序构建二叉树
 11.[106-Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) medium 中序后序构建二叉树
+12.[109-Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/) medium
+13.[113-Path Sum II](https://leetcode.com/problems/path-sum-ii/description/) medium dfs
+14.[114-Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) medium in-place flatten tree
+
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
