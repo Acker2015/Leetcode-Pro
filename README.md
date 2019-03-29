@@ -81,7 +81,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 12.[109-Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/) medium
 13.[113-Path Sum II](https://leetcode.com/problems/path-sum-ii/description/) medium dfs
 14.[114-Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) medium in-place flatten tree
-
+15.[116-Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/) medium
+16.[117-Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/) medium
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
