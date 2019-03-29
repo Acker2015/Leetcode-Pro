@@ -31,7 +31,34 @@ public class LC_114 {
         TreeNode rightTailNode = tmp==null ? leftTailNode : flat(tmp);
         return rightTailNode;
     }
-    public void flatten(TreeNode root) {
+    public void flatten1(TreeNode root) {
         flat(root);
+    }
+
+
+
+    /**
+     * prev记录每次递归的头结点
+     */
+    TreeNode prev = null;
+    /**
+     *
+     * 解法一
+     *
+     * 右-左-中 遍历
+     * 之所以这样遍历是因为方便将右边子树平坦化之后，再平坦化左边子树，通过prev连接即可
+     *
+     * fattenen会将prev置为平坦化之后子树的头部节点
+     *
+     * 这样右序遍历之后，左子树的最后一个节点遇到的prev就是右子树平坦化之后的头部节点
+     *
+     */
+    public void flatten(TreeNode root) {
+        if (root==null) return;
+        flatten(root.right);    // 此轮过后，prev为root.right子树的头部节点
+        flatten(root.left);     // 利用prev来平坦化左子树
+        root.right = prev; // 此时的prev就是左右子树平坦化之后的头节点,平坦化根节点
+        root.left = null;
+        prev = root;            // prev置为root这棵树平坦化的头结点
     }
 }
