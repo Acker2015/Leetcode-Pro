@@ -2,11 +2,6 @@ package lt_1_200;
 
 import domain.Node;
 
-/**
- * Created by IntelliJ IDEA.
- * User: hzwanggaige
- * Date: 2019/3/29
- */
 public class LC_116 {
 
     /**
