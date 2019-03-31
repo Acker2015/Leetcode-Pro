@@ -85,6 +85,22 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 16.[117-Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/) medium
 17.[129-Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/) medium
 
+
+### DFS && BFS
+1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
+2. [127-Word Ladder](https://leetcode.com/problems/word-ladder/description/) medium bidirectional 双向BFS
+
+
+### BackTracking
+1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
+2. [022-Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) 回溯或者DP
+3. [078-Subsets](https://leetcode.com/problems/subsets/description/) medium
+4. [079-Word Search](https://leetcode.com/problems/word-search/description/) medium
+5. [090-Subsets II](https://leetcode.com/problems/subsets-ii/description/) medium
+6. [093-Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) medium 回溯or三级循环(注意剪枝条件)
+
+
+
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
 2. [016-3Sum Closest](https://leetcode.com/problems/3sum-closest/)
@@ -103,17 +119,6 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 	
 	(4) 中序遍历存储结果到有序数组，对有序数组进行two pointers处理 time O(n) space O(n)
 	
-### BackTracking
-1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
-2. [022-Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) 回溯或者DP
-3. [078-Subsets](https://leetcode.com/problems/subsets/description/) medium
-4. [079-Word Search](https://leetcode.com/problems/word-search/description/) medium
-5. [090-Subsets II](https://leetcode.com/problems/subsets-ii/description/) medium
-6. [093-Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) medium 回溯or三级循环(注意剪枝条件)
-
-### DFS && BFS
-1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
-
 
 ### LinkedList&&分治&&recursion
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)

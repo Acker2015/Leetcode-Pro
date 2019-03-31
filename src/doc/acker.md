@@ -18,6 +18,7 @@ go and record
 10   | [155-Min Stack](https://leetcode.com/problems/min-stack/description/) | easy | 栈模拟(min的保持)
 11   | [114-Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | medium | dfs(原地操作-链表平坦化)
 12   | [117-Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/) | medium | 增加虚拟节点层序遍历
+13   | [127-Word Ladder](https://leetcode.com/problems/word-ladder/description/) | medium | BFS bidirectional
 
 
 
