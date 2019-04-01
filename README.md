@@ -6,6 +6,7 @@ go and record
 2. [048-Rotate Image](https://leetcode.com/problems/rotate-image/) medium
 3. [054-Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 
+
 ### Map
 1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) medium
 
@@ -26,7 +27,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 8. [168-Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) easy excel表格列位置计算
 9. [171-Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/) easy easy表格列位置计算
 10. [172-Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) easy math 阶乘的因子个数
-
+11. [191- Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/) easy math n&(n-1) bit
+12. [190-Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) easy bit math
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -50,6 +52,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 5. [041-First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) hard 技巧性-通过数组的索引处的值的正负来记录数字是否存在
 6. [073-Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/) medium matrix(in-place)
 7. [080-Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) medium
+8. [189-Rotate Array](https://leetcode.com/problems/rotate-array/description/) easy 数组旋转
 
 ### List
 1. [061-Rotate List](https://leetcode.com/problems/rotate-list/description/) medium
