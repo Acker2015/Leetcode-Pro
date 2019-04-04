@@ -19,6 +19,7 @@ go and record
 11   | [114-Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | medium | dfs(原地操作-链表平坦化)
 12   | [117-Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/) | medium | 增加虚拟节点层序遍历
 13   | [127-Word Ladder](https://leetcode.com/problems/word-ladder/description/) | medium | BFS bidirectional
+14   | [213-House Robber II](https://leetcode.com/problems/house-robber-ii/description/) | medium | dp
 
 
 
