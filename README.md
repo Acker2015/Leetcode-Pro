@@ -31,6 +31,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 12. [190-Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) easy bit math
 13. [202-Happy Number](https://leetcode.com/problems/happy-number/description/) easy the Floyd Cycle detection algorithm
 14. [205-Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) easy 字符数据hash
+15. [204-Count Primes](https://leetcode.com/problems/count-primes/description/) easy 素数表
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
