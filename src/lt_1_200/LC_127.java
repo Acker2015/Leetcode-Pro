@@ -17,8 +17,7 @@ import java.util.*;
  *
  * Output: 5
  *
- * Explanation: As one shortest transformation is "hit" -> "hot" -> "dot" ->
- * "dog" -> "cog",
+ * Explanation: As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
  * return its length 5.
  */
 public class LC_127 {
@@ -41,50 +40,33 @@ public class LC_127 {
             }
         });
         Map<String, Boolean> visitedMap = new HashMap<>();
-        Queue<Pair<String, Integer>> queue = new LinkedList<>();
-        queue.offer(new Pair<>(beginWord, 1));
+        Queue<String> queue = new LinkedList<>();
+        queue.offer(beginWord);
         visitedMap.put(beginWord, true);
+        int len = 1;
         while (queue.size() > 0) {
-            Pair<String, Integer> pair = queue.poll();
-            String tmpWord = pair.getKey();
-            for (int i = 0; i < wordLen; ++i) {
-                String pattern = tmpWord.substring(0,i) + "_" + tmpWord.substring(i+1,wordLen);
-                List<String> patternList = wordPatternListMap.getOrDefault(pattern, new LinkedList<>());
-                for (String word: patternList) {
-                    if (word.equals(endWord)) {
-                        return pair.getValue()+1;
-                    }
-                    if (!visitedMap.containsKey(word)) {
-                        queue.offer(new Pair<>(word, pair.getValue()+1));
-                        visitedMap.put(word, true);
+            int size = queue.size();
+            for (int k = 0; k < size; ++k) {
+                String tmpWord = queue.poll();
+                for (int i = 0; i < wordLen; ++i) {
+                    String pattern = tmpWord.substring(0,i) + "_" + tmpWord.substring(i+1,wordLen);
+                    List<String> patternList = wordPatternListMap.getOrDefault(pattern, new LinkedList<>());
+                    for (String word: patternList) {
+                        if (word.equals(endWord)) {
+                            return len+1;
+                        }
+                        if (!visitedMap.containsKey(word)) {
+                            queue.offer(word);
+                            visitedMap.put(word, true);
+                        }
                     }
                 }
             }
+            len++;
         }
         return 0;
     }
 
-    private int helperBFS (Queue<String> queue,
-                            Map<String, Integer> aimVisitedMap,
-                            Map<String, Integer> otherVisitedMap,
-                            Map<String, List<String>> wordPatternListMap) {
-        String word = queue.poll();
-        int wordLen = word.length();
-        for (int i = 0; i < wordLen; ++i) {
-            String pattern = word.substring(0, i) + "_" + word.substring(i+1, wordLen);
-            List<String> childList = wordPatternListMap.getOrDefault(pattern, new ArrayList<>());
-            for (String w: childList) {
-                if (otherVisitedMap.containsKey(w)) {
-                    return aimVisitedMap.get(word) + otherVisitedMap.get(w);
-                }
-                if (!aimVisitedMap.containsKey(w)) {
-                    aimVisitedMap.put(w, aimVisitedMap.get(word)+1);
-                    queue.offer(w);
-                }
-            }
-        }
-        return -1;
-    }
 
     /**
      * 方法二:
@@ -98,43 +80,51 @@ public class LC_127 {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         if (wordList.size() <=0 || !wordList.contains(endWord)) return 0;
         int wordLen = beginWord.length();
-        Map<String, List<String>> wordPatternListMap = new HashMap<>();
-        wordList.forEach(word -> {
+        Map<String, List<String>> patternListMap = new HashMap<>();
+        for (String word: wordList) {
             for (int i = 0; i < wordLen; ++i) {
                 String pattern = word.substring(0, i) + "_" + word.substring(i+1, wordLen);
-                wordPatternListMap.computeIfAbsent(pattern, k->new ArrayList<>()).add(word);
+                patternListMap.computeIfAbsent(pattern, k->new LinkedList<>()).add(word);
             }
-        });
-        Queue<String> beginQueue = new LinkedList<>();
-        Queue<String> endQueue = new LinkedList<>();
-        Map<String, Integer> beginVisitedMap = new HashMap<>();
-        Map<String, Integer> endVisitedMap = new HashMap<>();
-        beginQueue.offer(beginWord);
-        beginVisitedMap.put(beginWord, 1);
-        endQueue.offer(endWord);
-        endVisitedMap.put(endWord, 1);
-        while (beginQueue.size() > 0 && endQueue.size() > 0) {
-            boolean useBegin = beginQueue.size() <= endQueue.size();
-            Queue<String> tmpQueue = useBegin ? beginQueue:endQueue;
-            Map<String, Integer> tmpMap = useBegin ? beginVisitedMap : endVisitedMap;
-            Map<String, Integer> otherMap = useBegin ? endVisitedMap : beginVisitedMap;
-            String tmpWord = tmpQueue.poll();
-            for (int i = 0; i < wordLen; ++i) {
-                String pattern = tmpWord.substring(0, i) + "_" + tmpWord.substring(i+1, wordLen);
-                List<String> tmpList = wordPatternListMap.getOrDefault(pattern, new ArrayList<>());
-                for (String word: tmpList) {
-                    if (otherMap.containsKey(word)) {
-                        return tmpMap.get(tmpWord) + otherMap.get(word);
+        }
+        // 记录已访问word，防止死循环
+        Map<String, Boolean> visitedMap = new HashMap<>();
+        Set<String> beginSet = new HashSet<>(), endSet = new HashSet<>();
+        beginSet.add(beginWord);
+        endSet.add(endWord);
+        visitedMap.put(beginWord, true);
+        visitedMap.put(endWord, true);
+        int len = 1;
+        while (beginSet.size() > 0 && endSet.size() > 0) {
+            if (endSet.size() < beginSet.size()) {
+                Set<String> swapSet = beginSet;
+                beginSet = endSet;
+                endSet = swapSet;
+            }
+            Set<String> tmp = new HashSet<>();
+            for (String word: beginSet) {
+                for (int i = 0; i < wordLen; ++i) {
+                    String pattern = word.substring(0, i) + "_" + word.substring(i + 1, wordLen);
+                    List<String> patternList = patternListMap.getOrDefault(pattern, new LinkedList<>());
+                    for (String w : patternList) {
+                        if (endSet.contains(w)) {
+                            return len + 1;
+                        }
+                        if (!visitedMap.containsKey(w)) {
+                            visitedMap.put(w, true);
+                            tmp.add(w);
+                        }
                     }
-                    if (!tmpMap.containsKey(word)) {
-                        tmpMap.put(word, tmpMap.get(tmpWord)+1);
-                        tmpQueue.offer(word);
-                    }
+
                 }
             }
+            beginSet = tmp;
+            len++;
         }
         return 0;
     }
+
+
     public static void main(String ...agrs) {
         LC_127 lc_127 = new LC_127();
         System.out.println(lc_127.ladderLength("hit", "cog", Arrays.asList("hot","dot","dog","lot","log","cog")));

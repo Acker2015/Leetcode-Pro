@@ -21,6 +21,5 @@ go and record
 13   | [127-Word Ladder](https://leetcode.com/problems/word-ladder/description/) | medium | BFS bidirectional
 14   | [213-House Robber II](https://leetcode.com/problems/house-robber-ii/description/) | medium | dp
 15   | [236-Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) | medium | 最近公共祖先 多解法
-
-
+16   | [202-Happy Number](https://leetcode.com/problems/happy-number/description/) | easy | the Floyd Cycle detection algorithm
 

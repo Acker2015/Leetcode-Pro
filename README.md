@@ -29,6 +29,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 10. [172-Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) easy math 阶乘的因子个数
 11. [191- Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/) easy math n&(n-1) bit
 12. [190-Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) easy bit math
+13. [202-Happy Number](https://leetcode.com/problems/happy-number/description/) easy the Floyd Cycle detection algorithm
+
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -64,7 +66,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 6. [086-Partition List](https://leetcode.com/problems/partition-list/description/) medium
 7. [092-Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) medium 区间翻转
 8. [160-Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/) easy 两个链表相遇（两种解法，核心思想让两个链表的遍历指针同步）
-
+9. [203-Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) easy 
 
 ### Tree
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
