@@ -30,7 +30,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 11. [191- Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/) easy math n&(n-1) bit
 12. [190-Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) easy bit math
 13. [202-Happy Number](https://leetcode.com/problems/happy-number/description/) easy the Floyd Cycle detection algorithm
-
+14. [205-Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) easy 字符数据hash
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
