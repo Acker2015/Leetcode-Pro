@@ -149,7 +149,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 2. [053-Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) easy
 3. [064-Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) medium
 4. [091-Decode Ways](https://leetcode.com/problems/decode-ways/description/) medium dp
-
+5. [198-House Robber](https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.) easy 递推 dp
 
 ## 特别专题
 
