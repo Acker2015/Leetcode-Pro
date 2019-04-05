@@ -24,5 +24,6 @@ go and record
 16   | [202-Happy Number](https://leetcode.com/problems/happy-number/description/) | easy |the Floyd Cycle detection algorithm
 17   | [205-Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) | easy | 字符数据hash
 18   | [204-Count Primes](https://leetcode.com/problems/count-primes/description/) | easy | 素数表
+19   | [206-Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | easy | 迭代和递归实现，recursive version is tricker
 
 

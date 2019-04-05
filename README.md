@@ -68,6 +68,10 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 7. [092-Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) medium 区间翻转
 8. [160-Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/) easy 两个链表相遇（两种解法，核心思想让两个链表的遍历指针同步）
 9. [203-Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) easy 
+10.[237-Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) easy
+11.[206-Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) easy 迭代和递归实现
+
+
 
 ### Tree
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
