@@ -110,7 +110,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 4. [079-Word Search](https://leetcode.com/problems/word-search/description/) medium
 5. [090-Subsets II](https://leetcode.com/problems/subsets-ii/description/) medium
 6. [093-Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) medium 回溯or三级循环(注意剪枝条件)
-
+7. [130-Surrounded Regions](https://leetcode.com/problems/palindrome-partitioning/description/) medium intuition backtracking
 
 
 ### two pointers
