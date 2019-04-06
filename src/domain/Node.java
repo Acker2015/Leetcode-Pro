@@ -1,5 +1,8 @@
 package domain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by IntelliJ IDEA.
  * User: hzwanggaige
@@ -10,6 +13,8 @@ public class Node {
     public Node left;
     public Node right;
     public Node next;
+    public List<Node> neighbors;
+
 
     public Node(int val) {
         this.val = val;
@@ -20,5 +25,9 @@ public class Node {
         left = _left;
         right = _right;
         next = _next;
+    }
+    public Node(int val, List<Node> list) {
+        this.val = val;
+        this.neighbors = list;
     }
 }

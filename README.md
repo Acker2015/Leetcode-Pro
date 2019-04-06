@@ -101,7 +101,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
 2. [127-Word Ladder](https://leetcode.com/problems/word-ladder/description/) medium bidirectional 双向BFS
 3. [130-Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) medium dfs先解决边缘
-
+5. [133-Clone Graph](https://leetcode.com/problems/clone-graph/description/) medium BFS/DFS
 
 ### BackTracking
 1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
@@ -111,7 +111,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 5. [090-Subsets II](https://leetcode.com/problems/subsets-ii/description/) medium
 6. [093-Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) medium 回溯or三级循环(注意剪枝条件)
 7. [130-Surrounded Regions](https://leetcode.com/problems/palindrome-partitioning/description/) medium intuition backtracking
-
+8. [131-Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) medium
+9. 
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -154,6 +155,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 3. [056-Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
 
 ### DP
+0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
 1. [746-Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) easy
 2. [053-Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) easy
 3. [064-Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) medium
