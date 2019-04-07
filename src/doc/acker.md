@@ -27,3 +27,5 @@ go and record
 19   | [206-Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | easy | 迭代和递归实现，recursive version is tricker
 20   | [130-Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | medium | dfs先解决边缘
 21   | [134-Gas Station](https://leetcode.com/problems/gas-station/description/) | medium | 贪心
+22   | [138-Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | medium | 链表拷贝，space O(1)
+23   | [137-Single Number II](https://leetcode.com/problems/single-number-ii/description/) | medium |  bit操作

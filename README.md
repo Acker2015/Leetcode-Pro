@@ -10,7 +10,7 @@ go and record
 ### Map
 1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) medium
 
-### Math
+### Math & bit operation
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)  
 Start from right to left, perform multiplication on every pair of digits, and add them together. Let's draw the process! From the following draft, we can immediately conclude:
 ```
@@ -32,6 +32,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 13. [202-Happy Number](https://leetcode.com/problems/happy-number/description/) easy the Floyd Cycle detection algorithm
 14. [205-Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) easy 字符数据hash
 15. [204-Count Primes](https://leetcode.com/problems/count-primes/description/) easy 素数表
+16. [137-Single Number II](https://leetcode.com/problems/single-number-ii/description/) medium bit
+17。[260-Single Number III](https://leetcode.com/problems/single-number-iii/description/) medium bit
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -70,7 +72,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 9. [203-Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) easy 
 10.[237-Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) easy
 11.[206-Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) easy 迭代和递归实现
-
+12.[138-Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) medium
 
 
 ### Tree
@@ -138,6 +140,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 2. [023-Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) hard-分治
 3. [148-Sort List](https://leetcode.com/problems/sort-list/) - 归并排序的思路
 4. [24-Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) -medium(链表成对节点swap)
+
 
 
 ### binary search
