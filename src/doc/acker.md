@@ -30,3 +30,4 @@ go and record
 22   | [138-Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | medium | 链表拷贝，space O(1)
 23   | [137-Single Number II](https://leetcode.com/problems/single-number-ii/description/) | medium |  bit操作
 24   | [264-Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/) | medium | DP,Math
+25   | [139-Word Break](https://leetcode.com/problems/word-break/description/)| medium | dp (backtracking会超时)

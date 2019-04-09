@@ -9,6 +9,7 @@ go and record
 
 ### Map
 1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) medium
+2. [217-Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) easy
 
 ### Math & bit operation
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)  
@@ -36,6 +37,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 17. [260-Single Number III](https://leetcode.com/problems/single-number-iii/description/) medium bit
 18. [263-Ugly Number](https://leetcode.com/problems/ugly-number/description/) easy
 19. [258-Add Digits](https://leetcode.com/problems/add-digits/description/) easy formula
+20. [231-Power of Two](https://leetcode.com/problems/power-of-two/submissions/) easy bit-manipulation or binary search
 
 
 ### String
@@ -78,6 +80,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 10.[237-Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) easy
 11.[206-Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) easy 迭代和递归实现
 12.[138-Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) medium
+13.[143-Reorder List](https://leetcode.com/problems/reorder-list/description/) medium
 
 
 ### Tree
@@ -104,6 +107,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 18.[235-Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) Easy
 19.[236-Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) medium 最近公共祖先
 20.[257-Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) easy
+21.[226-Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) easy
 
 ### DFS && BFS
 1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
@@ -174,7 +178,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 5. [198-House Robber](https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.) easy 递推 dp
 6. [213-House Robber II](https://leetcode.com/problems/house-robber-ii/description/) medium 同198
 7. [264-Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/) medium DP,Math
-8. [139-Word Break](https://leetcode.com/problems/word-break/description/) dp (backtracking会超时)
+8. [139-Word Break](https://leetcode.com/problems/word-break/description/) medium dp (backtracking会超时)
 
 
 ## 特别专题
