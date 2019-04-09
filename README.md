@@ -174,6 +174,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 5. [198-House Robber](https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.) easy 递推 dp
 6. [213-House Robber II](https://leetcode.com/problems/house-robber-ii/description/) medium 同198
 7. [264-Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/) medium DP,Math
+8. [139-Word Break](https://leetcode.com/problems/word-break/description/) dp (backtracking会超时)
+
+
 ## 特别专题
 
 ### 排列组合系列 (组合的下一个组合或者上一个组合)
