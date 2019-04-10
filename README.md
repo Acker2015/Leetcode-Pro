@@ -38,7 +38,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 18. [263-Ugly Number](https://leetcode.com/problems/ugly-number/description/) easy
 19. [258-Add Digits](https://leetcode.com/problems/add-digits/description/) easy formula
 20. [231-Power of Two](https://leetcode.com/problems/power-of-two/submissions/) easy bit-manipulation or binary search
-
+21. [268-Missing Number](https://leetcode.com/problems/missing-number/description/) easy big manipulation
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -46,7 +46,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 3. [014-Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
 4. [028-Implement strStr()](https://leetcode.com/problems/implement-strstr/) easy
 5. [242-Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) easy math&string&ascii
-6.
+6. [151-Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/) medium 字符串单词位置翻转
 
 ### Stack
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
@@ -54,6 +54,9 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 3. [020-Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 4. [071-Simplify Path](https://leetcode.com/problems/simplify-path/description/) medium
 5. [155-Min Stack](https://leetcode.com/problems/min-stack/description/) easy 模拟栈
+6. [150-Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) 后缀表达式rpn计算
+7. [224-Basic Calculator](https://leetcode.com/problems/basic-calculator/description/) hard 带括号的加减运算
+8. [227-Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/description/) medium 无括号的加减乘除操作
 
 
 ### Array
