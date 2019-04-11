@@ -57,7 +57,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 6. [150-Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) 后缀表达式rpn计算
 7. [224-Basic Calculator](https://leetcode.com/problems/basic-calculator/description/) hard 带括号的加减运算
 8. [227-Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/description/) medium 无括号的加减乘除操作
-
+9. [232-Implement Queue using Stacks](https://leetcode.com/articles/implement-queue-using-stacks/) medium 使用栈模拟队列
+10.[225-Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) easy 使用队列模拟栈
 
 ### Array
 1. [088-Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
