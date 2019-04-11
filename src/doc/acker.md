@@ -32,7 +32,7 @@ go and record
 24   | [264-Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/) | medium | DP,Math
 25   | [139-Word Break](https://leetcode.com/problems/word-break/description/)| medium | dp (backtracking会超时)
 26   | [224-Basic Calculator](https://leetcode.com/problems/basic-calculator/description/) | hard | 带括号的加减运算
-
+27   | [397-Integer Replacement](https://leetcode.com/problems/integer-replacement/description/) | medium | bit-manipulation/greedy
 
 
 
