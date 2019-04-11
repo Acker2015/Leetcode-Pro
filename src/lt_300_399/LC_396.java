@@ -33,24 +33,17 @@ import javafx.util.Pair;
  *  https://leetcode.com/problems/rotate-function/discuss/87853/Java-O(n)-solution-with-explanation
  */
 public class LC_396 {
-    private Pair<Integer, Integer> calSum(int[] A) {
-        int s = 0, f0 = 0;
-        for (int i=0; i < A.length; ++i) {
-            s+=A[i];
-            f0+=i*A[i];
-        }
-        return new Pair<>(s, f0);
-    }
-
     public int maxRotateFunction(int[] A) {
-        Pair<Integer, Integer> pair = calSum(A);
-        int sum = pair.getKey();
-        int fPre = pair.getValue();
+        int sum = 0, fPre = 0;
         int len = A.length;
-        int maxF = sum;
+        for (int i = 0; i < len; ++i) {
+            sum += A[i];
+            fPre += A[i]*i;
+        }
+        int maxF = fPre;
         for (int i = 1; i < A.length; ++i) {
             int x = A[len-i];
-            int fNext = fPre - (len-1)*x + (sum-x);
+            int fNext = fPre + sum - len*x;
             maxF = Math.max(fNext, maxF);
             fPre = fNext;
         }
