@@ -40,7 +40,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 20. [231-Power of Two](https://leetcode.com/problems/power-of-two/submissions/) easy bit-manipulation or binary search
 21. [268-Missing Number](https://leetcode.com/problems/missing-number/description/) easy big manipulation
 22. [397-Integer Replacement](https://leetcode.com/problems/integer-replacement/description/) medium bit-manipulation/greedy
-
+23. [396-Rotate Function](https://leetcode.com/problems/rotate-function/description/) medium 公式递推
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
