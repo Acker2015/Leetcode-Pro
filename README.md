@@ -119,7 +119,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
 2. [127-Word Ladder](https://leetcode.com/problems/word-ladder/description/) medium bidirectional 双向BFS
 3. [130-Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) medium dfs先解决边缘
-5. [133-Clone Graph](https://leetcode.com/problems/clone-graph/description/) medium BFS/DFS
+4. [133-Clone Graph](https://leetcode.com/problems/clone-graph/description/) medium BFS/DFS
+5. [394-Decode String](https://leetcode.com/problems/decode-string/description/) medium DFS+stack+map
 
 ### BackTracking
 1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
@@ -138,9 +139,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 3. [018-4Sum](https://leetcode.com/problems/4sum/)
 4. [019-Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 5. [075-Sort Colors](https://leetcode.com/problems/sort-colors/description/) medium
-
-
-3. 653 Two Sum IV - Input is a BST (Tree + two pointers)
+6. 653 Two Sum IV - Input is a BST (Tree + two pointers)
 	
 	(1) 结合BST正向遍历和反向遍历来实现two pointers, time O(n) space O(logn)
 	
@@ -149,14 +148,15 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 	(3) 前序遍历+BST的二分遍历搜索  time O(nlogn)
 	
 	(4) 中序遍历存储结果到有序数组，对有序数组进行two pointers处理 time O(n) space O(n)
+7. [395-Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) medium 好题应该多体会，重点看
 	
 
-### LinkedList&&分治&&recursion
+### LinkedList&&分治&&recursion&&Divide-Conquer
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 2. [023-Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) hard-分治
 3. [148-Sort List](https://leetcode.com/problems/sort-list/) - 归并排序的思路
 4. [24-Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) -medium(链表成对节点swap)
-
+5. [395-Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) medium 分支可解 好题应该多体会，重点看
 
 
 ### binary search

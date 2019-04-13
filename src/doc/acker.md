@@ -33,6 +33,7 @@ go and record
 25   | [139-Word Break](https://leetcode.com/problems/word-break/description/)| medium | dp (backtracking会超时)
 26   | [224-Basic Calculator](https://leetcode.com/problems/basic-calculator/description/) | hard | 带括号的加减运算
 27   | [397-Integer Replacement](https://leetcode.com/problems/integer-replacement/description/) | medium | bit-manipulation/greedy
-
-
+28   | [396-Rotate Function](https://leetcode.com/problems/rotate-function/description/) | medium | 公式递推
+29   | [395-Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) medium 多解法 好题应该多体会，重点看
+30   | [394-Decode String](https://leetcode.com/problems/decode-string/description/) | medium | DFS+stack+map 做这种好题有收获
 
