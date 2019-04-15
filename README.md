@@ -113,7 +113,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 18.[235-Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) Easy
 19.[236-Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) medium 最近公共祖先
 20.[257-Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) easy
-21.[226-Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) easy
+21.[226-InverFt Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) easy
 
 ### DFS && BFS
 1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
@@ -149,7 +149,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 	
 	(4) 中序遍历存储结果到有序数组，对有序数组进行two pointers处理 time O(n) space O(n)
 7. [395-Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) medium 好题应该多体会，重点看
-	
+8. [392-Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) medium O(m+n)
 
 ### LinkedList&&分治&&recursion&&Divide-Conquer
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)

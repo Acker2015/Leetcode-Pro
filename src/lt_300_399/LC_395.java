@@ -116,9 +116,6 @@ public class LC_395 {
     public int longestSubstring3(String s, int k) {
         int maxLen = 0;
         for (int h = 1; h <= 26; ++h) {
-            /**
-
-             */
             int i = 0, j = 0, unique = 0, numMoreThanK=0;
             int[] temp = new int[26];
             while (j < s.length()) {
