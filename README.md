@@ -167,6 +167,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 5. [074-Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) medium
 6. [240-Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) medium
 7. [081-Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) medium
+8. [004-Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) hard 二分-需要思考如果找到中心点
+
+
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium

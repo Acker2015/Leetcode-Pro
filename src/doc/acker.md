@@ -36,4 +36,4 @@ go and record
 28   | [396-Rotate Function](https://leetcode.com/problems/rotate-function/description/) | medium | 公式递推
 29   | [395-Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) medium 多解法 好题应该多体会，重点看
 30   | [394-Decode String](https://leetcode.com/problems/decode-string/description/) | medium | DFS+stack+map 做这种好题有收获
-
+31   | [004-Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | hard | 二分-需要思考如果找到中心点
