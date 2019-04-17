@@ -132,7 +132,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 6. [093-Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) medium 回溯or三级循环(注意剪枝条件)
 7. [130-Surrounded Regions](https://leetcode.com/problems/palindrome-partitioning/description/) medium intuition backtracking
 8. [131-Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) medium
-9. 
+9. [124-Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) hard dfs
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -177,6 +177,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 2. [045-Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) 贪心 hard(045的升级版本)
 3. [056-Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
 4. [134-Gas Station](https://leetcode.com/problems/gas-station/description/) medium **
+5. [121-Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) easy 买卖股票
 
 
 ### DP
