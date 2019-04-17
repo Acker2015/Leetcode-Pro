@@ -87,6 +87,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 11.[206-Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) easy 迭代和递归实现
 12.[138-Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) medium
 13.[143-Reorder List](https://leetcode.com/problems/reorder-list/description/) medium
+14.[146-LRU Cache](https://leetcode.com/problems/lru-cache/description/) hard 双向链表+hash LRU
 
 
 ### Tree
