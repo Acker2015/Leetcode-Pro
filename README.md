@@ -49,6 +49,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 4. [028-Implement strStr()](https://leetcode.com/problems/implement-strstr/) easy
 5. [242-Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) easy math&string&ascii
 6. [151-Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/) medium 字符串单词位置翻转
+7. [165-Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/description/) medium deserve-review
 
 ### Stack
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
@@ -169,8 +170,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 6. [240-Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) medium
 7. [081-Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) medium
 8. [004-Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) hard 二分-需要思考如果找到中心点
-
-
+9. [153-Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) medium 二分
+10.[162-Find Peak Element](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) medium 二分
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium

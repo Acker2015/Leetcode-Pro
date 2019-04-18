@@ -39,3 +39,12 @@ go and record
 31   | [004-Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | hard | 二分-需要思考如果找到中心点
 32   | [146-LRU Cache](https://leetcode.com/problems/lru-cache/description/) | hard | 双向链表+hash LRU
 33   | [124-Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) | hard | dfs
+34   | [162-Find Peak Element](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | medium | 二分
+
+
+
+
+
+
+
+
