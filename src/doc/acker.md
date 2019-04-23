@@ -43,6 +43,7 @@ go and record
 35   | [212-Word Search II](https://leetcode.com/problems/word-search-ii/description/) | hard | 字典树+回溯
 36   | [673-Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) | medium | DP
 37   | [215-Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | medium | 堆 or selection algorithm
+38   | [300-Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | medium | LIS - DP+binarySearch
 
 
 

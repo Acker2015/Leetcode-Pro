@@ -37,7 +37,7 @@ public class LC_395 {
     /**
      * 解法一
      * divide and conquer(recursion) solution
-     * 如果在[left, right]中存在字符的个数不足k个，那么最大长度只会出现以该字符作为中间节点分割的两个子串
+     * 如果在[left, right]中存在某个字符的个数不足k个，那么最大长度只会出现以该字符作为中间节点分割的两个子串
      * solution to find longest:
      *      IF { num of s[i] < k in [left, right] }
      *          find longest in [left, i-1] and [i+1, right]

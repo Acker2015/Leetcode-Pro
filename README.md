@@ -198,7 +198,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 8. [139-Word Break](https://leetcode.com/problems/word-break/description/) medium dp (backtracking会超时)
 9. [673-Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) medium DP
 10.[674-Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/) easy DP
-
+11.[300-Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) medium DP+binarySearch
 
 ## 特别专题
 
