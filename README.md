@@ -164,7 +164,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 3. [148-Sort List](https://leetcode.com/problems/sort-list/) - 归并排序的思路
 4. [24-Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) -medium(链表成对节点swap)
 5. [395-Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) medium 分支可解 好题应该多体会，重点看
-
+6. [215-Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) medium 堆 or Conquer
 
 ### binary search
 1. [029-Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) 二分查找(注意数据溢出情况)
@@ -196,6 +196,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 6. [213-House Robber II](https://leetcode.com/problems/house-robber-ii/description/) medium 同198
 7. [264-Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/) medium DP,Math
 8. [139-Word Break](https://leetcode.com/problems/word-break/description/) medium dp (backtracking会超时)
+9. [673-Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) medium DP
 
 
 ## 特别专题
