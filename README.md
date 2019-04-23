@@ -117,6 +117,11 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 20.[257-Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) easy
 21.[226-InverFt Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) easy
 
+### Trie
+1. [208-Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) medium Trie 字典树
+2. [212-Word Search II](https://leetcode.com/problems/word-search-ii/description/) hard 字典树+回溯
+
+
 ### DFS && BFS
 1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
 2. [127-Word Ladder](https://leetcode.com/problems/word-ladder/description/) medium bidirectional 双向BFS

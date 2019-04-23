@@ -40,7 +40,7 @@ go and record
 32   | [146-LRU Cache](https://leetcode.com/problems/lru-cache/description/) | hard | 双向链表+hash LRU
 33   | [124-Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) | hard | dfs
 34   | [162-Find Peak Element](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | medium | 二分
-
+35   | [212-Word Search II](https://leetcode.com/problems/word-search-ii/description/) | hard | 字典树+回溯
 
 
 
