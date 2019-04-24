@@ -42,6 +42,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 21. [268-Missing Number](https://leetcode.com/problems/missing-number/description/) easy big manipulation
 22. [397-Integer Replacement](https://leetcode.com/problems/integer-replacement/description/) medium bit-manipulation/greedy
 23. [396-Rotate Function](https://leetcode.com/problems/rotate-function/description/) medium 公式递推
+24. [273-Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/) hard 数字转英文表示
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
