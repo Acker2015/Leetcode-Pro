@@ -10,6 +10,7 @@ go and record
 ### Map
 1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) medium
 2. [217-Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) easy
+3. [036-Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) medium
 
 ### Math & bit operation
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)  
