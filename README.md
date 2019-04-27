@@ -184,6 +184,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 8. [004-Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) hard 二分-需要思考如果找到中心点
 9. [153-Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) medium 二分
 10.[162-Find Peak Element](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) medium 二分
+11.[278-First Bad Version](https://leetcode.com/problems/first-bad-version/description/) easy binary-search
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
