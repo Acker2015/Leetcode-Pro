@@ -43,6 +43,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 22. [397-Integer Replacement](https://leetcode.com/problems/integer-replacement/description/) medium bit-manipulation/greedy
 23. [396-Rotate Function](https://leetcode.com/problems/rotate-function/description/) medium 公式递推
 24. [273-Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/) hard 数字转英文表示
+25. [365-Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/description/) medium GCD
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -64,6 +65,10 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 8. [227-Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/description/) medium 无括号的加减乘除操作
 9. [232-Implement Queue using Stacks](https://leetcode.com/articles/implement-queue-using-stacks/) medium 使用栈模拟队列
 10.[225-Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) easy 使用队列模拟栈
+
+### Queue
+1. [281-Zigzag Iterator](https://blog.csdn.net/magicbean2/article/details/74926011) medium 加锁题
+
 
 ### Array
 1. [088-Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)

@@ -45,6 +45,7 @@ go and record
 37   | [215-Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | medium | 堆 or selection algorithm
 38   | [300-Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | medium | LIS - DP+binarySearch
 39   | [273-Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/) | hard | 数字转英文表示（考虑情况较多，trim）
+40   | [365-Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/description/) | medium | GCD， BFS会超时
 
 
 
