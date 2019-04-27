@@ -47,6 +47,8 @@ go and record
 38   | [300-Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | medium | LIS - DP+binarySearch
 39   | [273-Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/) | hard | 数字转英文表示（考虑情况较多，trim）
 40   | [365-Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/description/) | medium | GCD， BFS会超时
+41   | [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) | medium | 竖式乘法-新思路(Medium)
+42   | [419-Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/description/) | medium | 模拟 constant space
 
 
 

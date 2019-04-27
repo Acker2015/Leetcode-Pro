@@ -5,12 +5,14 @@ go and record
 1. [038-Count and Say](https://leetcode.com/problems/count-and-say/description/) easy
 2. [048-Rotate Image](https://leetcode.com/problems/rotate-image/) medium
 3. [054-Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
+4. [419-Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/description/) 模拟
 
 
 ### Map
 1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) medium
 2. [217-Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) easy
 3. [036-Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) medium
+4. [387-First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) medium
 
 ### Math & bit operation
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)  
@@ -53,6 +55,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 5. [242-Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) easy math&string&ascii
 6. [151-Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/) medium 字符串单词位置翻转
 7. [165-Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/description/) medium deserve-review
+8. [443-String Compression](https://leetcode.com/problems/string-compression/description/) easy 字符压缩
 
 ### Stack
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
