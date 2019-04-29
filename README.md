@@ -138,6 +138,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 3. [130-Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) medium dfs先解决边缘
 4. [133-Clone Graph](https://leetcode.com/problems/clone-graph/description/) medium BFS/DFS
 5. [394-Decode String](https://leetcode.com/problems/decode-string/description/) medium DFS+stack+map
+6. [513-Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/description/) Medium DFS
+
 
 ### BackTracking
 1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
@@ -167,6 +169,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 	(4) 中序遍历存储结果到有序数组，对有序数组进行two pointers处理 time O(n) space O(n)
 7. [395-Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) medium 好题应该多体会，重点看
 8. [392-Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) medium O(m+n)
+9. [567-Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) 滑动窗口
 
 ### LinkedList&&分治&&recursion&&Divide-Conquer
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)

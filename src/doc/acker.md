@@ -50,6 +50,7 @@ go and record
 41   | [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) | medium | 竖式乘法-新思路(Medium)
 42   | [419-Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/description/) | medium | 模拟 constant space
 43   | [445-Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/) | medium | 链表表示整数相加(Stack or 用常数空间)
+44   | [567-Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) | medium | 滑动窗口
 
 
 
