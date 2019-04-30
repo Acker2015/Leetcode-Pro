@@ -46,6 +46,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 23. [396-Rotate Function](https://leetcode.com/problems/rotate-function/description/) medium 公式递推
 24. [273-Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/) hard 数字转英文表示
 25. [365-Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/description/) medium GCD
+26. [650-2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) medium DP+Math
+
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -69,6 +71,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 9. [232-Implement Queue using Stacks](https://leetcode.com/articles/implement-queue-using-stacks/) medium 使用栈模拟队列
 10.[225-Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) easy 使用队列模拟栈
 11.[445-Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/) medium
+12. [591-Tag Validator](https://leetcode.com/problems/tag-validator/description/) hard stack+string（判断标签代码段是否合法）
+
 ### Queue
 1. [281-Zigzag Iterator](https://blog.csdn.net/magicbean2/article/details/74926011) medium 加锁题
 
@@ -118,6 +122,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 11.[106-Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) medium 中序后序构建二叉树
 12.[109-Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/) medium
 13.[113-Path Sum II](https://leetcode.com/problems/path-sum-ii/description/) medium dfs
+
 14.[114-Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) medium in-place flatten tree
 15.[116-Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/) medium
 16.[117-Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/) medium
@@ -213,6 +218,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 9. [673-Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) medium DP
 10.[674-Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/) easy DP
 11.[300-Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) medium DP+binarySearch
+12.[650-2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) medium DP+Math
+
 
 ## 特别专题
 

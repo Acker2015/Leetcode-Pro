@@ -51,6 +51,9 @@ go and record
 42   | [419-Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/description/) | medium | 模拟 constant space
 43   | [445-Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/) | medium | 链表表示整数相加(Stack or 用常数空间)
 44   | [567-Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) | medium | 滑动窗口
+45   | [591-Tag Validator](https://leetcode.com/problems/tag-validator/description/) | hard | stack+string（判断标签代码段是否合法）
+46   | [650-2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | medium | DP+Math
+
 
 
 
