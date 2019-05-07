@@ -53,8 +53,10 @@ go and record
 44   | [567-Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) | medium | 滑动窗口
 45   | [591-Tag Validator](https://leetcode.com/problems/tag-validator/description/) | hard | stack+string（判断标签代码段是否合法）
 46   | [650-2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) | medium | DP+Math
-
-
+47   | [652-Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/) | medium | 如何唯一表达子树
+48   | [331-Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/description/) | medium | 出度入度
+49   | [290-Word Pattern](https://leetcode.com/problems/word-pattern/submissions/) | easy | map-模式匹配要注意两个方向
+50   | [166-Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) | medium | math+hashtable(测试用例设计)
 
 
 

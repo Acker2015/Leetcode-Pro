@@ -13,6 +13,7 @@ go and record
 2. [217-Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) easy
 3. [036-Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) medium
 4. [387-First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) medium
+5. [290-Word Pattern](https://leetcode.com/problems/word-pattern/submissions/) easy map
 
 ### Math & bit operation
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)  
@@ -47,7 +48,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 24. [273-Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/) hard 数字转英文表示
 25. [365-Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/description/) medium GCD
 26. [650-2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) medium DP+Math
-
+27. [166-Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) math+hashtable
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -131,6 +132,11 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 19.[236-Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) medium 最近公共祖先
 20.[257-Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/description/) easy
 21.[226-InverFt Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) easy
+22.[652-Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/) medium 如何唯一表达子树
+23.[331-Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/description/) medium 出度入度
+24.[654-Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/) medium 重新构建树divide
+
+
 
 ### Trie
 1. [208-Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) medium Trie 字典树
@@ -219,7 +225,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 10.[674-Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/) easy DP
 11.[300-Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) medium DP+binarySearch
 12.[650-2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) medium DP+Math
-
+13.[303-Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/description/) easy
+14.[152-Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) DP medium
+15.[292-Nim Game](https://leetcode.com/problems/nim-game/discuss/73760/One-line-O(1)-solution-and-explanation) medium Math,DP 
 
 ## 特别专题
 
