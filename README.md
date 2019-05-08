@@ -49,6 +49,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 25. [365-Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/description/) medium GCD
 26. [650-2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/description/) medium DP+Math
 27. [166-Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) math+hashtable
+28. [187-Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/description/) medium+DNA Sequence+(hashMap, bit) 
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
