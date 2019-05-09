@@ -59,6 +59,7 @@ go and record
 50   | [166-Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) | medium | math+hashtable(测试用例设计)
 51   | [201-Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | medium | bit-manipulation
 52   | [207-Course Schedule](https://leetcode.com/problems/course-schedule/description/) | medium | DFS&BFS&拓扑排序
+53   | [210-Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/) | medium | DFS&BFS&拓扑排序
 
 
 
