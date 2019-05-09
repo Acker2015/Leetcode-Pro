@@ -152,6 +152,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 4. [133-Clone Graph](https://leetcode.com/problems/clone-graph/description/) medium BFS/DFS
 5. [394-Decode String](https://leetcode.com/problems/decode-string/description/) medium DFS+stack+map
 6. [513-Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/description/) Medium DFS
+7. [207-Course Schedule](https://leetcode.com/problems/course-schedule/description/) DFS&BFS&拓扑排序
 
 
 ### BackTracking
