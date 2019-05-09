@@ -184,6 +184,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 7. [395-Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) medium 好题应该多体会，重点看
 8. [392-Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) medium O(m+n)
 9. [567-Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) 滑动窗口
+10.[209-Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/description/) medium two-pointers||binary-search
+
 
 ### LinkedList&&分治&&recursion&&Divide-Conquer
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
