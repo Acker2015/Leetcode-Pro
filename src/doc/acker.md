@@ -60,7 +60,7 @@ go and record
 51   | [201-Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | medium | bit-manipulation
 52   | [207-Course Schedule](https://leetcode.com/problems/course-schedule/description/) | medium | DFS&BFS&拓扑排序
 53   | [210-Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/) | medium | DFS&BFS&拓扑排序
-
+54   | [220-Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/) | medium 19.6% | treeset/bucket桶(window)
 
 
 

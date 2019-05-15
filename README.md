@@ -208,6 +208,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 9. [153-Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) medium 二分
 10.[162-Find Peak Element](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) medium 二分
 11.[278-First Bad Version](https://leetcode.com/problems/first-bad-version/description/) easy binary-search
+12.[220-Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/) medium 19.6% treeset/bucket桶(window)
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
@@ -234,6 +235,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 13.[303-Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/description/) easy
 14.[152-Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) DP medium
 15.[292-Nim Game](https://leetcode.com/problems/nim-game/discuss/73760/One-line-O(1)-solution-and-explanation) medium Math,DP 
+16.[221-Maximal Square](https://leetcode.com/problems/maximal-square/description/) DP
 
 ## 特别专题
 
