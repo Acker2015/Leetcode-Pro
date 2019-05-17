@@ -139,6 +139,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 22.[652-Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/description/) medium 如何唯一表达子树
 23.[331-Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/description/) medium 出度入度
 24.[654-Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/) medium 重新构建树divide
+25.[222-Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/description/) medium 完全二叉树节点数量
 
 
 
