@@ -211,6 +211,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 10.[162-Find Peak Element](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) medium 二分
 11.[278-First Bad Version](https://leetcode.com/problems/first-bad-version/description/) easy binary-search
 12.[220-Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/) medium 19.6% treeset/bucket桶(window)
+13.[230-Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) BST-binarySearch medium
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
