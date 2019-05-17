@@ -195,6 +195,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 4. [24-Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) -medium(链表成对节点swap)
 5. [395-Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) medium 分支可解 好题应该多体会，重点看
 6. [215-Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) medium 堆 or Conquer
+7. [241-Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/) 分治 medium
+
 
 ### binary search
 1. [029-Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) 二分查找(注意数据溢出情况)
