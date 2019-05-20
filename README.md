@@ -54,7 +54,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 30. [223-Rectangle Area](https://leetcode.com/problems/rectangle-area/description/) math medium
 31. [326-Power of Three](https://leetcode.com/problems/power-of-three/description/) easy pow-of-three
 32. [342-Power of Four](https://leetcode.com/problems/power-of-four/description/) easy pow-of-four
-
+33. [371-Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/) easy-二进制实现加法运算
 
 
 ### String
@@ -193,7 +193,10 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 8. [392-Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) medium O(m+n)
 9. [567-Permutation in String](https://leetcode.com/problems/permutation-in-string/description/) 滑动窗口
 10.[209-Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/description/) medium two-pointers||binary-search
-
+11.[344-Reverse String](https://leetcode.com/problems/reverse-string/description/) easy easy
+12.[345-Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) easy-easy
+13.[349-Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/solution/) easy
+14.[350-Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-II)
 
 ### LinkedList&&分治&&recursion&&Divide-Conquer
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
@@ -219,6 +222,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 11.[278-First Bad Version](https://leetcode.com/problems/first-bad-version/description/) easy binary-search
 12.[220-Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/) medium 19.6% treeset/bucket桶(window)
 13.[230-Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) BST-binarySearch medium
+14.[367-Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/) binary-search
+
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
