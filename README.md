@@ -52,6 +52,10 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 28. [187-Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/description/) medium+DNA Sequence+(hashMap, bit) 
 29. [201-Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) bit-manipulation
 30. [223-Rectangle Area](https://leetcode.com/problems/rectangle-area/description/) math medium
+31. [326-Power of Three](https://leetcode.com/problems/power-of-three/description/) easy pow-of-three
+32. [342-Power of Four](https://leetcode.com/problems/power-of-four/description/) easy pow-of-four
+
+
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
