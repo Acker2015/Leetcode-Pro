@@ -63,7 +63,9 @@ go and record
 54   | [220-Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/) | medium 19.6% | treeset/bucket桶(window)
 55   | [241-Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/) | 分治 | medium
 56   | [223-Rectangle Area](https://leetcode.com/problems/rectangle-area/description/) | math | medium
-57   | 33. [371-Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/) | easy | 二进制实现加法运算
+57   | [371-Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/) | easy | 二进制实现加法运算
+58   | [299-Bulls and Cows]() | medium | hashMap
+59   | [306-Additive Number](https://leetcode.com/problems/additive-number/description/) | medium | hashMap
 
 
 

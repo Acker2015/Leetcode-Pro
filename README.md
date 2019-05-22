@@ -6,6 +6,8 @@ go and record
 2. [048-Rotate Image](https://leetcode.com/problems/rotate-image/) medium
 3. [054-Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 4. [419-Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/description/) 模拟
+5. [284-Peeking Iterator]()
+6.
 
 
 ### Map
@@ -14,6 +16,7 @@ go and record
 3. [036-Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) medium
 4. [387-First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) medium
 5. [290-Word Pattern](https://leetcode.com/problems/word-pattern/submissions/) easy map
+6. [299-Bulls and Cows]() medium hashMap
 
 ### Math & bit operation
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)  
@@ -66,6 +69,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 6. [151-Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/) medium 字符串单词位置翻转
 7. [165-Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/description/) medium deserve-review
 8. [443-String Compression](https://leetcode.com/problems/string-compression/description/) easy 字符压缩
+9. [306-Additive Number](https://leetcode.com/problems/additive-number/description/) medium
 
 ### Stack
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
@@ -95,6 +99,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 7. [080-Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) medium
 8. [189-Rotate Array](https://leetcode.com/problems/rotate-array/description/) easy 数组旋转
 9. [228-Summary Ranges](https://leetcode.com/problems/summary-ranges/description/) medium 
+10.[289-Game of Life]() medium
+11.[304-Range Sum Query 2D-Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/description/) medium 
 
 ### List
 1. [061-Rotate List](https://leetcode.com/problems/rotate-list/description/) medium
