@@ -17,6 +17,7 @@ go and record
 4. [387-First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) medium
 5. [290-Word Pattern](https://leetcode.com/problems/word-pattern/submissions/) easy map
 6. [299-Bulls and Cows]() medium hashMap
+7. [383-Ransom Note]() hashmap
 
 ### Math & bit operation
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)  
@@ -58,7 +59,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 31. [326-Power of Three](https://leetcode.com/problems/power-of-three/description/) easy pow-of-three
 32. [342-Power of Four](https://leetcode.com/problems/power-of-four/description/) easy pow-of-four
 33. [371-Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/) easy-二进制实现加法运算
-
+34. [389-Find the Difference]() easy bit-manipulation or hashmap
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
