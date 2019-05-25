@@ -2,14 +2,18 @@ package lt_300_399;
 import java.util.*;
 
 /**
+ *
+ * [310-Minimum Height Trees] (https://leetcode.com/problems/minimum-height-trees/description/)
+ *
  * MHTS出现在graph的最长路径上，并且最大有两个节点
  * 1. 最长路径长度为偶数的时候，会有两个MTH，中间两个节点
  * 2. 最长路径长度为奇数的时候，只有一个MTH，中间节点
  *
  * 方法一：找到最长路径，利用前驱路径来获取MTH
- *        注意这里如何找最长路径，首先随便找一个节点，寻找其出发的最长路径叶子节点root1, 然后以root1为起点找到的最长路径就是graph的最长路径
+ *        注意这里如何找最长路径，首先随便找一个节点，寻找其出发的最长路径叶子节点root1, 然后以root1为起点找到的最长路径就是graph的最长路径root1->root2
+ *        通过记录路径前缀数组来获取MTH
  *
- * 方法二：通过不断将度为0的节点砍掉，最后一个被砍掉的节点就是MTH
+ * 方法二：通过不断将度为1的节点砍掉，最后一个被砍掉的节点就是MTH
  */
 public class LC_310 {
     private int[] pre;

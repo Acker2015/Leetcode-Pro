@@ -120,7 +120,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 14.[146-LRU Cache](https://leetcode.com/problems/lru-cache/description/) hard 双向链表+hash LRU
 
 
-### Tree
+### Tree & Graph
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
 2. [101-Symmetric Tree](https://leetcode.com/problems/symmetric-tree/submissions/) easy
 3. [104-Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) easy (BFS DFS)
@@ -150,7 +150,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 23.[331-Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/description/) medium 出度入度
 24.[654-Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/) medium 重新构建树divide
 25.[222-Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/description/) medium 完全二叉树节点数量
-
+26.[310-Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) medium 不断切掉叶子节点
 
 
 ### Trie Tree

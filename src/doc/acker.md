@@ -66,6 +66,7 @@ go and record
 57   | [371-Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/) | easy | 二进制实现加法运算
 58   | [299-Bulls and Cows]() | medium | hashMap
 59   | [306-Additive Number](https://leetcode.com/problems/additive-number/description/) | medium | hashMap
+60   | [310-Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) | medium | 不断切掉叶子节点
 
 
 
