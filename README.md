@@ -234,7 +234,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 12.[220-Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/description/) medium 19.6% treeset/bucket桶(window)
 13.[230-Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) BST-binarySearch medium
 14.[367-Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/) binary-search
-
+15.[374-Guess Number Higher or Lower]() easy binary-search
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
