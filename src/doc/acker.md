@@ -67,6 +67,7 @@ go and record
 58   | [299-Bulls and Cows]() | medium | hashMap
 59   | [306-Additive Number](https://leetcode.com/problems/additive-number/description/) | medium | hashMap
 60   | [310-Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) | medium | 不断切掉叶子节点
+61   | [354-Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/description/) | hard | DP(同最大上升子序列)
 
 
 

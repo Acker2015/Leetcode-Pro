@@ -262,6 +262,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 14.[152-Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) DP medium
 15.[292-Nim Game](https://leetcode.com/problems/nim-game/discuss/73760/One-line-O(1)-solution-and-explanation) medium Math,DP 
 16.[221-Maximal Square](https://leetcode.com/problems/maximal-square/description/) DP
+17.[354-Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/description/) hard DP(同最大上升子序列)
 
 ## 特别专题
 
