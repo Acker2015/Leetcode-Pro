@@ -68,7 +68,8 @@ go and record
 59   | [306-Additive Number](https://leetcode.com/problems/additive-number/description/) | medium | hashMap
 60   | [310-Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) | medium | 不断切掉叶子节点
 61   | [354-Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/description/) | hard | DP(同最大上升子序列)
-
+62   | [315-Count of Smaller Numbers After Self]() | hard | BST or merge_sort
+63   | [406-Queue Reconstruction by Height]() | medium | 贪心 怎么根据一个人的身高和位置来将他插入正确的位置
 
 
 

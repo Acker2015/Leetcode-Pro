@@ -103,6 +103,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 10.[289-Game of Life]() medium
 11.[304-Range Sum Query 2D-Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/description/) medium 
 
+
 ### List
 1. [061-Rotate List](https://leetcode.com/problems/rotate-list/description/) medium
 2. [141-Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) easy
@@ -152,7 +153,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 24.[654-Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/description/) medium 重新构建树divide
 25.[222-Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/description/) medium 完全二叉树节点数量
 26.[310-Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) medium 不断切掉叶子节点
-
+27.[315-Count of Smaller Numbers After Self]() hard BST or merge_sort
 
 ### Trie Tree
 1. [208-Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) medium Trie 字典树
@@ -243,7 +244,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 3. [056-Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
 4. [134-Gas Station](https://leetcode.com/problems/gas-station/description/) medium **
 5. [121-Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) easy 买卖股票
-
+6. [406-Queue Reconstruction by Height]() medium 贪心
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
