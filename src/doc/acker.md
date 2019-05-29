@@ -70,6 +70,10 @@ go and record
 61   | [354-Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/description/) | hard | DP(同最大上升子序列)
 62   | [315-Count of Smaller Numbers After Self]() | hard | BST or merge_sort
 63   | [406-Queue Reconstruction by Height]() | medium | 贪心 怎么根据一个人的身高和位置来将他插入正确的位置
+64   | [239-Sliding Window Maximum]() | hard | 双端队列/链表模拟队列
+65   | [480-Sliding Window Median]()  | hard | 两个优先队列各存一半
+66   | [327-Count of Range Sum]() | hard | BST
+67   | [843-Guess the Word]() | hard | 有点概率的意思，最小化思想
 
 
 

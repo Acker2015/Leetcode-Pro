@@ -120,6 +120,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 12.[138-Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) medium
 13.[143-Reorder List](https://leetcode.com/problems/reorder-list/description/) medium
 14.[146-LRU Cache](https://leetcode.com/problems/lru-cache/description/) hard 双向链表+hash LRU
+15.[239-Sliding Window Maximum]() hard 双端队列/链表模拟队列
+16.[480-Sliding Window Median]() hard 两个优先队列各存一半
 
 
 ### Tree & Graph
@@ -154,6 +156,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 25.[222-Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/description/) medium 完全二叉树节点数量
 26.[310-Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) medium 不断切掉叶子节点
 27.[315-Count of Smaller Numbers After Self]() hard BST or merge_sort
+28.[327-Count of Range Sum]() hard BST
+
 
 ### Trie Tree
 1. [208-Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) medium Trie 字典树
@@ -315,6 +319,9 @@ done
 
 ### 累计概率分布
 1. [528- Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)
+
+### interactive problem [minimize]
+1. [843-Guess the Word]() hard 有点概率的意思，最小化思想
 
 ### two pointers系列
 1. 
