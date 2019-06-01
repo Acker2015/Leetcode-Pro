@@ -60,6 +60,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 32. [342-Power of Four](https://leetcode.com/problems/power-of-four/description/) easy pow-of-four
 33. [371-Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/) easy-二进制实现加法运算
 34. [389-Find the Difference]() easy bit-manipulation or hashmap
+35. [400-Nth Digit]() easy 
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -178,6 +179,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 6. [513-Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/description/) Medium DFS
 7. [207-Course Schedule](https://leetcode.com/problems/course-schedule/description/) DFS&BFS&拓扑排序
 8. [210-Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/) medium DFS&BFS&拓扑排序
+9. [404-Sum of Left Leaves]() DFS
 
 
 ### BackTracking
@@ -190,6 +192,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 7. [130-Surrounded Regions](https://leetcode.com/problems/palindrome-partitioning/description/) medium intuition backtracking
 8. [131-Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) medium
 9. [124-Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) hard dfs
+10.[401-Binary Watch]() easy backtracking
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
