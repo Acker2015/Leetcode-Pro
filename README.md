@@ -18,6 +18,7 @@ go and record
 5. [290-Word Pattern](https://leetcode.com/problems/word-pattern/submissions/) easy map
 6. [299-Bulls and Cows]() medium hashMap
 7. [383-Ransom Note]() hashmap
+8. [409-Longest Palindrome]() hashmap
 
 ### Math & bit operation
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)  
