@@ -62,6 +62,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 33. [371-Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/) easy-二进制实现加法运算
 34. [389-Find the Difference]() easy bit-manipulation or hashmap
 35. [400-Nth Digit]() easy 
+36. [318-Maximum Product of Word Lengths]() medium bit+hash
+37. [319-Bulb Switcher]() medium math
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -275,6 +277,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 16.[221-Maximal Square](https://leetcode.com/problems/maximal-square/description/) DP
 17.[354-Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/description/) hard DP(同最大上升子序列)
 18.[877-Stone Game]() medium DP
+19.[322-Coin Change]() medium DP
 
 
 ## 特别专题
