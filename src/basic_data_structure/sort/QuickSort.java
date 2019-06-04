@@ -37,8 +37,9 @@ public class QuickSort {
     }
 
     public static void main(String ...args) {
-        int[] A = {66, 12, 33, 57, 64, 27, 18};
         QuickSort quickSort = new QuickSort();
+        int[] A = {66, 12, 33, 57, 64, 27, 18};
+
         quickSort.partition(A, 0, A.length-1);
         for (int i = 0; i < A.length; ++i) {
             System.out.print(A[i] + " ");

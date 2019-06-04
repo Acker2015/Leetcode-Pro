@@ -221,6 +221,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 13.[349-Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/solution/) easy
 14.[350-Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-II)
 
+
 ### LinkedList&&分治&&recursion&&Divide-Conquer
 1. [021-Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 2. [023-Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) hard-分治
@@ -229,7 +230,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 5. [395-Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/description/) medium 分支可解 好题应该多体会，重点看
 6. [215-Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) medium 堆 or Conquer
 7. [241-Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/) 分治 medium
-
+8. [324-Wiggle Sort II]() medium 摇摆排序 partition
 
 ### binary search
 1. [029-Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) 二分查找(注意数据溢出情况)
