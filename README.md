@@ -76,6 +76,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 7. [165-Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/description/) medium deserve-review
 8. [443-String Compression](https://leetcode.com/problems/string-compression/description/) easy 字符压缩
 9. [306-Additive Number](https://leetcode.com/problems/additive-number/description/) medium
+10.[434-Number of Segments in a String]() easy
 
 ### Stack
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
@@ -163,6 +164,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 27.[315-Count of Smaller Numbers After Self]() hard BST or merge_sort
 28.[327-Count of Range Sum]() hard BST
 29.[332-Reconstruct Itinerary]() medium 欧拉路径
+30.[437-Path Sum III]() easy-medium tree+dfs+map
 
 
 ### Trie Tree
