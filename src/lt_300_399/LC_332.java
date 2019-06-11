@@ -3,6 +3,7 @@ package lt_300_399;
 import java.util.*;
 
 /**
+ * [332] Reconstruct Itinerary
  * 欧拉路径，具体看印象笔记关于欧拉回路的介绍
  *
  * solution1 - 递归

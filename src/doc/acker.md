@@ -75,6 +75,8 @@ go and record
 66   | [327-Count of Range Sum]() | hard | BST
 67   | [843-Guess the Word]() | hard | 有点概率的意思，最小化思想
 68   | [324-Wiggle Sort II]() | medium | 摇摆排序 partition
+69   | [332-Reconstruct Itinerary]() | medium | 欧拉路径
+70   | [334-Increasing Triplet Subsequence]() | medium | 不是严格意义的two-pointers,这里只是使用两个指针遍历记录
 
 
 

@@ -7,7 +7,7 @@ go and record
 3. [054-Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
 4. [419-Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/description/) 模拟
 5. [284-Peeking Iterator]()
-6.
+6. [412-Fizz Buzz]() 简单模拟
 
 
 ### Map
@@ -64,6 +64,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 35. [400-Nth Digit]() easy 
 36. [318-Maximum Product of Word Lengths]() medium bit+hash
 37. [319-Bulb Switcher]() medium math
+38. [405-Convert a Number to Hexadecimal]() easy Hexadecimal转换
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -161,6 +162,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 26.[310-Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/) medium 不断切掉叶子节点
 27.[315-Count of Smaller Numbers After Self]() hard BST or merge_sort
 28.[327-Count of Range Sum]() hard BST
+29.[332-Reconstruct Itinerary]() medium 欧拉路径
 
 
 ### Trie Tree
@@ -183,6 +185,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 7. [207-Course Schedule](https://leetcode.com/problems/course-schedule/description/) DFS&BFS&拓扑排序
 8. [210-Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/) medium DFS&BFS&拓扑排序
 9. [404-Sum of Left Leaves]() DFS
+10.[429-N-ary Tree Level Order Traversal]() easy BFS
 
 
 ### BackTracking
@@ -220,6 +223,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 12.[345-Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) easy-easy
 13.[349-Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/solution/) easy
 14.[350-Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-II)
+15.[334-Increasing Triplet Subsequence]() medium 不是严格意义的two-pointers,这里只是使用两个指针遍历记录
 
 
 ### LinkedList&&分治&&recursion&&Divide-Conquer
@@ -279,6 +283,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 17.[354-Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/description/) hard DP(同最大上升子序列)
 18.[877-Stone Game]() medium DP
 19.[322-Coin Change]() medium DP
+20.[338-Counting Bits]() medium DP bit-dp
 
 
 ## 特别专题
@@ -333,6 +338,9 @@ done
 
 ### interactive problem [minimize]
 1. [843-Guess the Word]() hard 有点概率的意思，最小化思想
+
+### design
+2. [341-Flatten Nested List Iterator]() 
 
 ### two pointers系列
 1. 

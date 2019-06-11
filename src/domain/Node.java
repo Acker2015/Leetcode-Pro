@@ -15,6 +15,7 @@ public class Node {
     public Node next;
     public Node random;
     public List<Node> neighbors;
+    public List<Node> children;
 
 
     public Node(int val) {
