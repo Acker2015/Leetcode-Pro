@@ -65,6 +65,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 36. [318-Maximum Product of Word Lengths]() medium bit+hash
 37. [319-Bulb Switcher]() medium math
 38. [405-Convert a Number to Hexadecimal]() easy Hexadecimal转换
+39. [343-Integer Break]() medium dp or math
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
