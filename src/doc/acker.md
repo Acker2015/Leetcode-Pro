@@ -79,6 +79,7 @@ go and record
 70   | [334-Increasing Triplet Subsequence]() | medium | 不是严格意义的two-pointers,这里只是使用两个指针遍历记录
 71   | [437-Path Sum III]() | easy-medium | tree+dfs+map
 72   | [343-Integer Break]() | medium | dp or math
+73   | [347-Top K Frequent Elements]()| medium | hashmap+桶排序
 
 
 
