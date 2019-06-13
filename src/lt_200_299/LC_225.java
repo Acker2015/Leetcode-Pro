@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * [225] Implement Stack using Queues
+ * [225] Implement stack using Queues
  *
  */
 public class LC_225 {

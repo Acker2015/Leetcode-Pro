@@ -344,7 +344,10 @@ done
 1. [843-Guess the Word]() hard 有点概率的意思，最小化思想
 
 ### design
-2. [341-Flatten Nested List Iterator]() 
+1. [341-Flatten Nested List Iterator]() 
+2. [705-Design HashSet]() 
+3. [706-Design HashMap]()
+4. [707-Design Linked List]()
 
 ### two pointers系列
 1. 
