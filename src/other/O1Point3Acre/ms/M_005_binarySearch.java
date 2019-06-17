@@ -10,7 +10,7 @@ package other.O1Point3Acre.ms;
  *
  * 此题意在一个数组中用二分法找找不到的数，了解此题，可以拓宽对二分的了解
  */
-public class M_M005_binarySearch {
+public class M_005_binarySearch {
     private int num_missing(int[] nums, int left, int right) {
         return nums[right] - nums[left] - (right-left);
     }
@@ -35,7 +35,7 @@ public class M_M005_binarySearch {
     }
 
     public static void main(String ...args) {
-        M_M005_binarySearch solution = new M_M005_binarySearch();
+        M_005_binarySearch solution = new M_005_binarySearch();
         int[] nums = {2,4,7,8,9,15};
         int[] missings = {3,5,6,10,11,12,13,14};
         for (int i = 0; i < missings.length; ++i) {

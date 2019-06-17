@@ -80,7 +80,8 @@ go and record
 71   | [437-Path Sum III]() | easy-medium | tree+dfs+map
 72   | [343-Integer Break]() | medium | dp or math
 73   | [347-Top K Frequent Elements]()| medium | hashmap+桶排序
-
+74   | [357-Count Numbers with Unique Digits]() | medium | DP+math(感觉这题不难，不知道为啥想不出来)
+75   | [368-Largest Divisible Subset]() | medium+DP | (类似LIS的DP思路，需要做路径优化)
 
 
 

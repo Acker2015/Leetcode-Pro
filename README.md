@@ -288,7 +288,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 18.[877-Stone Game]() medium DP
 19.[322-Coin Change]() medium DP
 20.[338-Counting Bits]() medium DP bit-dp
-
+21.[357-Count Numbers with Unique Digits]() medium+DP+math 感觉这题不难，不知道为啥想不出来
+22.[368-Largest Divisible Subset]() medium+DP (类似LIS的DP思路，需要做路径优化)
 
 ## 特别专题
 
@@ -348,6 +349,7 @@ done
 2. [705-Design HashSet]() 
 3. [706-Design HashMap]()
 4. [707-Design Linked List]()
+5. [355-Design Twitter]() OOP design
 
 ### two pointers系列
 1. 
