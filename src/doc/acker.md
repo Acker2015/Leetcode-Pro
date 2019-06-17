@@ -82,6 +82,9 @@ go and record
 73   | [347-Top K Frequent Elements]()| medium | hashmap+桶排序
 74   | [357-Count Numbers with Unique Digits]() | medium | DP+math(感觉这题不难，不知道为啥想不出来)
 75   | [368-Largest Divisible Subset]() | medium+DP | (类似LIS的DP思路，需要做路径优化)
+76   | [373-Find K Pairs with Smallest Sums]() | medium | set&priorityQueue
+77   | [372-Super Pow]() | medium | math-pow
+78   | [375-Guess Number Higher or Lower II]() | medium+DP | DP-理解题意
 
 
 

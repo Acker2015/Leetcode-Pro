@@ -67,6 +67,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 37. [319-Bulb Switcher]() medium math
 38. [405-Convert a Number to Hexadecimal]() easy Hexadecimal转换
 39. [343-Integer Break]() medium dp or math
+40. [372-Super Pow]() medium math
+
 
 ### String
 1. [013-Roman to Integer](https://leetcode.com/problems/roman-to-integer/) string+map
@@ -94,9 +96,9 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 11.[445-Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/) medium
 12. [591-Tag Validator](https://leetcode.com/problems/tag-validator/description/) hard stack+string（判断标签代码段是否合法）
 
-### Queue
+### Queue & priorityQueue
 1. [281-Zigzag Iterator](https://blog.csdn.net/magicbean2/article/details/74926011) medium 加锁题
-
+2. [373-Find K Pairs with Smallest Sums]() medium set&priorityQueue
 
 ### Array
 1. [088-Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
@@ -290,6 +292,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 20.[338-Counting Bits]() medium DP bit-dp
 21.[357-Count Numbers with Unique Digits]() medium+DP+math 感觉这题不难，不知道为啥想不出来
 22.[368-Largest Divisible Subset]() medium+DP (类似LIS的DP思路，需要做路径优化)
+23.[375-Guess Number Higher or Lower II]() medium+DP 理解题意
 
 ## 特别专题
 
