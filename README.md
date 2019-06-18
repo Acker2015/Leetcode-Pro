@@ -9,18 +9,6 @@ go and record
 5. [284-Peeking Iterator]()
 6. [412-Fizz Buzz]() 简单模拟
 
-
-### Map
-1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) medium
-2. [217-Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) easy
-3. [036-Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) medium
-4. [387-First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) medium
-5. [290-Word Pattern](https://leetcode.com/problems/word-pattern/submissions/) easy map
-6. [299-Bulls and Cows]() medium hashMap
-7. [383-Ransom Note]() hashmap
-8. [409-Longest Palindrome]() hashmap
-9. [347-Top K Frequent Elements]() hashmap+桶排序
-
 ### Math & bit operation
 1. [043-Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) 竖式乘法-新思路(Medium)  
 Start from right to left, perform multiplication on every pair of digits, and add them together. Let's draw the process! From the following draft, we can immediately conclude:
@@ -82,6 +70,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 9. [306-Additive Number](https://leetcode.com/problems/additive-number/description/) medium
 10.[434-Number of Segments in a String]() easy
 
+
 ### Stack
 1. [496-next-greater-element-i](https://leetcode.com/problems/next-greater-element-i/)
 2. [503-next-greater-element-ii](https://leetcode.com/problems/next-greater-element-ii/)
@@ -133,6 +122,18 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 15.[239-Sliding Window Maximum]() hard 双端队列/链表模拟队列
 16.[480-Sliding Window Median]() hard 两个优先队列各存一半
 
+### Map
+1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) medium
+2. [217-Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) easy
+3. [036-Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) medium
+4. [387-First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) medium
+5. [290-Word Pattern](https://leetcode.com/problems/word-pattern/submissions/) easy map
+6. [299-Bulls and Cows]() medium hashMap
+7. [383-Ransom Note]() hashmap
+8. [409-Longest Palindrome]() hashmap
+9. [347-Top K Frequent Elements]() hashmap+桶排序
+10.[438-Find All Anagrams in a String]() easy slide-window&hashMap
+11.[447-Number of Boomerangs]() easy hashMap
 
 ### Tree & Graph
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
@@ -258,6 +259,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 13.[230-Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) BST-binarySearch medium
 14.[367-Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/) binary-search
 15.[374-Guess Number Higher or Lower]() easy binary-search
+16.[441-Arranging Coins]() easy binary-search
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
