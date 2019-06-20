@@ -85,6 +85,7 @@ go and record
 76   | [373-Find K Pairs with Smallest Sums]() | medium | set&priorityQueue
 77   | [372-Super Pow]() | medium | math-pow
 78   | [375-Guess Number Higher or Lower II]() | medium+DP | DP-理解题意
+79   | [376-Wiggle Subsequence]() | medium | 贪心
 
 
 

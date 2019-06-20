@@ -268,6 +268,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 4. [134-Gas Station](https://leetcode.com/problems/gas-station/description/) medium **
 5. [121-Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) easy 买卖股票
 6. [406-Queue Reconstruction by Height]() medium 贪心
+7. [376-Wiggle Subsequence]() medium 贪心
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
@@ -355,7 +356,20 @@ done
 3. [706-Design HashMap]()
 4. [707-Design Linked List]()
 5. [355-Design Twitter]() OOP design
+6. [380-Insert Delete GetRandom O(1)]() design data structure
 
 ### two pointers系列
 1. 
 2. 653
+
+### slide window
+[通用模板](https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem.)
+1. [76-Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) hard slide window
+2. https://leetcode.com/problems/longest-substring-without-repeating-characters/
+3. https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+4. https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+5. https://leetcode.com/problems/find-all-anagrams-in-a-string/
+
+
+### random
+1. [384-Shuffle an Array]() medium shuffle
