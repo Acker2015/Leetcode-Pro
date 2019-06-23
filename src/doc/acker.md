@@ -86,6 +86,8 @@ go and record
 77   | [372-Super Pow]() | medium | math-pow
 78   | [375-Guess Number Higher or Lower II]() | medium+DP | DP-理解题意
 79   | [376-Wiggle Subsequence]() | medium | 贪心
+80   | [10-Regular Expression Matching]() | hard | (DP、backtracking)
+81   | [44-Wildcard Matching]()  | hard | pattern匹配， greedy or DP
 
 
 

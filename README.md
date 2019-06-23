@@ -269,6 +269,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 5. [121-Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) easy 买卖股票
 6. [406-Queue Reconstruction by Height]() medium 贪心
 7. [376-Wiggle Subsequence]() medium 贪心
+8. [57-Insert Interval]() hard interval-贪心
+9. [44-Wildcard Matching]() hard pattern匹配， greedy or DP
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
@@ -296,6 +298,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 21.[357-Count Numbers with Unique Digits]() medium+DP+math 感觉这题不难，不知道为啥想不出来
 22.[368-Largest Divisible Subset]() medium+DP (类似LIS的DP思路，需要做路径优化)
 23.[375-Guess Number Higher or Lower II]() medium+DP 理解题意
+24.[10-Regular Expression Matching]() hard+(DP、backtracking) 
+
 
 ## 特别专题
 
