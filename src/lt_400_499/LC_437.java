@@ -36,4 +36,52 @@ public class LC_437 {
         map.put(0, 1);
         return DFS(root, 0, sum, map);
     }
+
+
+    /**
+     * follow-up
+     * 如果修改题目要求为找打印出这些path，how to solve this
+     *
+     * 解法就是记录遍历到此节点的path，所以只需关注，这个几点是否为总和为sum的某条路径的末端。
+     *
+     * @param node
+     * @param sum
+     */
+    public void findSum(TreeNode node, int sum) {
+        int depth = depth(node);
+        int[] path = new int[depth];
+        findSum(node, sum, path, 0);
+
+    }
+    private void findSum(TreeNode node, int sum, int[] path, int level) {
+        if (node == null)return;
+        // 插入路径
+        path[level] = node.val;
+        int t = 0;
+        // 查找以此节点为终点并且总和为sum的路径
+        for (int i = level; i >= 0; --i) {
+            t += path[i];
+            if (t == sum) {
+                print(path, i, level);
+            }
+        }
+        // 查找此节点下的节点
+        findSum(node.left, sum, path, level+1);
+        findSum(node.right, sum, path, level+1);
+        // 此路径中移除当前节点
+        path[level] = Integer.MIN_VALUE;
+    }
+
+    private int depth(TreeNode node ) {
+        if (node == null) {
+            return 0;
+        }
+        return 1 + Math.max(depth(node.left), depth(node.right));
+    }
+    private static void print(int[] path, int start, int end) {
+        for (int i = start; i <= end; ++i) {
+            System.out.print(path[i]+" ");
+        }
+        System.out.println();
+    }
 }
