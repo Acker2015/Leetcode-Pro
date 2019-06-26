@@ -134,6 +134,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 9. [347-Top K Frequent Elements]() hashmap+桶排序
 10.[438-Find All Anagrams in a String]() easy slide-window&hashMap
 11.[447-Number of Boomerangs]() easy hashMap
+12.[128-Longest Consecutive Sequence]() hard hashmap
 
 ### Tree & Graph
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
