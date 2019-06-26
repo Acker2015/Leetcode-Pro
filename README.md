@@ -261,6 +261,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 15.[374-Guess Number Higher or Lower]() easy binary-search
 16.[441-Arranging Coins]() easy binary-search
 17.[875-Koko Eating Bananas]() medium binary-search
+18.[410-Split Array Largest Sum]() hard binary-search (二分类似koko-875)
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
