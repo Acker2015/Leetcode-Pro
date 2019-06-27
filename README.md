@@ -194,6 +194,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 8. [210-Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/) medium DFS&BFS&拓扑排序
 9. [404-Sum of Left Leaves]() DFS
 10.[429-N-ary Tree Level Order Traversal]() easy BFS
+11.[282-Expression Add Operators]() hard DFS (处理后续运算符的优先级)
 
 
 ### BackTracking

@@ -90,6 +90,7 @@ go and record
 81   | [44-Wildcard Matching]()  | hard | pattern匹配， greedy or DP
 82   | [p:list-判断链表是否回文]() | medium | 递归方法判断
 83   | [410-Split Array Largest Sum]() | hard | binary-search (二分类似koko-875)
+84   | [282-Expression Add Operators]() | hard | DFS (处理后续运算符的优先级)
 
 
 
