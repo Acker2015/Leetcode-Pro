@@ -304,6 +304,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 22.[368-Largest Divisible Subset]() medium+DP (类似LIS的DP思路，需要做路径优化)
 23.[375-Guess Number Higher or Lower II]() medium+DP 理解题意
 24.[10-Regular Expression Matching]() hard+(DP、backtracking) 
+25.[377-Combination Sum IV]() medium DFS or DP
 
 
 ## 特别专题
