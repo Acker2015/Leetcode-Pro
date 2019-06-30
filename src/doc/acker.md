@@ -93,7 +93,7 @@ go and record
 84   | [282-Expression Add Operators]() | hard | DFS (处理后续运算符的优先级)
 85   | [218-The Skyline Problem]() | hard | priority-queue(如果维持开始结束之间的高度)
 86   | [377-Combination Sum IV]() | medium | DFS or DP
-
+87   | [494-Target Sum]() | medium | DP/BFS/DFS
 
 
 

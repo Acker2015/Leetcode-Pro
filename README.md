@@ -305,6 +305,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 23.[375-Guess Number Higher or Lower II]() medium+DP 理解题意
 24.[10-Regular Expression Matching]() hard+(DP、backtracking) 
 25.[377-Combination Sum IV]() medium DFS or DP
+26.[416-Partition Equal Subset Sum]() medium DP 类似0-1背包
+27.[494-Target Sum]() medium DP
 
 
 ## 特别专题
