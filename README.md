@@ -277,6 +277,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 7. [376-Wiggle Subsequence]() medium 贪心
 8. [57-Insert Interval]() hard interval-贪心
 9. [44-Wildcard Matching]() hard pattern匹配， greedy or DP
+10.[670-Maximum Swap]() medium Greedy
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
