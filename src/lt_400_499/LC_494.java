@@ -112,6 +112,7 @@ public class LC_494 {
     }
     // DP 0-1背包
     // dp[i][j] = dp[i-1][j] + dp[i-1][j-nums[i]]
+    // 如果nums[0]=0的话，那么这里涉及到选与不选两种,所以dp[0]会等于2
     private int findWays(int[] nums, int target) {
         int len = nums.length;
         if (len <= 0) return 0;
@@ -120,7 +121,7 @@ public class LC_494 {
             dp[i][0] = 1;
         }
         if (nums[0] <= target) {
-            dp[0][nums[0]] = 1;
+            dp[0][nums[0]] = 1; // 如果nums[0]=0的话，那么这里涉及到选与不选两种,所以dp[0]会等于2
         }
         for (int i = 1; i < len; ++i) {
             for (int j = 1; j <= target; ++j) {
@@ -141,7 +142,7 @@ public class LC_494 {
         int[] dp = new int[target+1];
         dp[0] = 1;
         if (nums[0] <= target) {
-            dp[nums[0]] = 1;
+            dp[nums[0]] += 1; // 如果nums[0]=0的话，那么这里涉及到选与不选两种,所以dp[0]会等于2
         }
         for (int i = 1; i < len; ++i) {
             for (int j = target; j >= nums[i]; --j) {

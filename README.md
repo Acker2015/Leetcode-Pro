@@ -209,6 +209,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 8. [131-Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) medium
 9. [124-Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) hard dfs
 10.[401-Binary Watch]() easy backtracking
+11.[51-N-Queens] () hard 回溯
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -286,7 +287,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 5. [198-House Robber](https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.) easy 递推 dp
 6. [213-House Robber II](https://leetcode.com/problems/house-robber-ii/description/) medium 同198
 7. [264-Ugly Number II](https://leetcode.com/problems/ugly-number-ii/description/) medium DP,Math
-7.1 [313-Super Ugly Number]() medium DP math
+7-1. [313-Super Ugly Number]() medium DP math
 8. [139-Word Break](https://leetcode.com/problems/word-break/description/) medium dp (backtracking会超时)
 9. [673-Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) medium DP
 10.[674-Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/) easy DP
