@@ -196,6 +196,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 9. [404-Sum of Left Leaves]() DFS
 10.[429-N-ary Tree Level Order Traversal]() easy BFS
 11.[282-Expression Add Operators]() hard DFS (处理后续运算符的优先级)
+12.[637-Average of Levels in Binary Tree]() easy BFS
 
 
 ### BackTracking
@@ -384,6 +385,8 @@ done
 4. https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
 5. https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
+### 回文-Palindromic
+1. [647-Palindromic Substrings]() medium  DP or expand from center
 
 ### random
 1. [384-Shuffle an Array]() medium shuffle

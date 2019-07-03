@@ -36,6 +36,22 @@ public class QuickSort {
         partition(A, i+1, right);
     }
 
+    public void partition1(int[] A, int left, int right) {
+        int pivot = left + (right-left)/2;
+        int i = left, j = right;
+        while (i <= j) {
+            while (A[i] < pivot) i++;
+            while (A[j] > pivot) j--;
+            if (i <= j) {
+                swap(A, i, j);
+                i++;
+                j--;
+            }
+        }
+        partition1(A, left, i-1);
+        partition1(A, i+1, right);
+    }
+
     public static void main(String ...args) {
         QuickSort quickSort = new QuickSort();
         int[] A = {66, 12, 33, 57, 64, 27, 18};
