@@ -56,6 +56,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 38. [405-Convert a Number to Hexadecimal]() easy Hexadecimal转换
 39. [343-Integer Break]() medium dp or math
 40. [372-Super Pow]() medium math
+41. [453-Minimum Moves to Equal Array Elements]() easy math
+42. [461-Hamming Distance]() easy bit
 
 
 ### String
@@ -69,6 +71,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 8. [443-String Compression](https://leetcode.com/problems/string-compression/description/) easy 字符压缩
 9. [306-Additive Number](https://leetcode.com/problems/additive-number/description/) medium
 10.[434-Number of Segments in a String]() easy
+11.[459-Repeated Substring Pattern]() easy String
 
 
 ### Stack
@@ -279,6 +282,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 8. [57-Insert Interval]() hard interval-贪心
 9. [44-Wildcard Matching]() hard pattern匹配， greedy or DP
 10.[670-Maximum Swap]() medium Greedy
+11.[455-Assign Cookies]() easy 贪心
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)

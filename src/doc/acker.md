@@ -95,6 +95,7 @@ go and record
 86   | [377-Combination Sum IV]() | medium | DFS or DP
 87   | [494-Target Sum]() | medium | DP/BFS/DFS
 88   | [670-Maximum Swap]() | medium | Greedy
+89   | [453-Minimum Moves to Equal Array Elements]() | easy | math
 
 
 
