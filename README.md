@@ -213,7 +213,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 8. [131-Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) medium
 9. [124-Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) hard dfs
 10.[401-Binary Watch]() easy backtracking
-11.[51-N-Queens] () hard 回溯
+11.[51-N-Queens]() hard 回溯
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -270,6 +270,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 16.[441-Arranging Coins]() easy binary-search
 17.[875-Koko Eating Bananas]() medium binary-search
 18.[410-Split Array Largest Sum]() hard binary-search (二分类似koko-875)
+19.[475-Heaters]() easy binary-search or two pointers
 
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium

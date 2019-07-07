@@ -1,11 +1,63 @@
 package lt_1_200;
 
 
-import lt_300_399.LC_392;
-
 public class LC_004 {
+    private int findKth(int[] A, int i, int[] B, int j, int k) {
+        if (i >= A.length) {
+            return B[j+k-1];
+        }
+        if (j >= B.length) {
+            return A[i+k-1];
+        }
+        if (k == 1) {
+            return Math.min(A[i], B[j]);
+        }
+        // 如果A中元素个数不足K/2个，那么即使都算上的话，在B中也会选择超过k/2个元素。反之同理。所以初始化为最大值
+        int A_mid = Integer.MAX_VALUE, B_mid = Integer.MAX_VALUE;
+        if (i + k/2 - 1 < A.length) {
+            A_mid = A[i+k/2-1];
+        }
+        if (j + k/2 - 1 < B.length) {
+            B_mid = B[j+k/2-1];
+        }
+        // 如果A_mid < B_mid, 说明A数组中前K/2个数肯定都在 {两个有序数组中寻找第K个数} 之内
+        if (A_mid < B_mid) {
+            return findKth(A, i+k/2, B, j, k - k/2);
+        } else {
+            return findKth(A, i, B, j + k/2, k - k/2);
+        }
+    }
+
     /**
+     * solution1
      *
+     * 问题转化为在两个有序数组中找第K个数
+     * 那么如何实现在两个有序数组中寻找第K个数呢？假设两个数组分别是A，B
+     * 从最简单的第一层算起，两个数组的起始索引都是0。在A中找K/2个数A_mid=A[k/2-1], 在B中寻找第K/2个数B_mid=B[k/2-1]. 通过比较这两个数的大小来进行问题分治
+     * 如果A_mid < B_mid, 说明A数组中前K/2个数肯定都在 {两个有序数组中寻找第K个数} 之内
+     * A: 0, 1, ..., K/2-1(A_mid)
+     * B: 0, 1, ..., K/2-1(B_mid)
+     *
+     * 假设A中存在一个索引x(x <= k/2-1), 不在{两个有序数组中寻找第K个数} 之内，由于数组有序， 那么A中索引大于x的都不在{两个有序数组中寻找第K个数} 之内
+     * 也就相当于{两个有序数组中寻找第K个数}会在在B中会选出多于K/2的元素，那么由于B_mid>A_mid>A[x], 所以假设失败
+     * 得证：如果A_mid < B_mid, 说明A数组中前K/2个数肯定都在 {两个有序数组中寻找第K个数} 之内
+     * @param nums1
+     * @param nums2
+     * @return
+     */
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int m = nums1.length, n = nums2.length;
+        int l = (m+n+1)/2;
+        int r = (m+n+2)/2;
+        // 如果m+n是奇数，那么l==r, 如果m+n是偶数，那么l和r代表中间的两个位置
+        return (findKth(nums1,0,nums2,0,l)+findKth(nums1,0,nums2,0, r)) / 2.0;
+    }
+
+
+
+
+    /**
+     * solution2
      * [4] Median of Two Sorted Arrays
      *
      * time O(log(min(m,n)))
@@ -26,7 +78,7 @@ public class LC_004 {
      * @param nums2
      * @return
      */
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public double findMedianSortedArrays2(int[] nums1, int[] nums2) {
         // make sure length of nums1 is greater than the length of nums2
         if (nums1.length > nums2.length) return findMedianSortedArrays(nums2, nums1);
         int m = nums1.length, n = nums2.length;

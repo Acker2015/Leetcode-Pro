@@ -1,4 +1,4 @@
-package java;
+package javapg;
 
 /**
  * 单例模式 懒加载

@@ -1,4 +1,4 @@
-package java;
+package javapg;
 
 /**
  * 基于静态内部类来实现单例模式
