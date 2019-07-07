@@ -95,6 +95,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 1. [281-Zigzag Iterator](https://blog.csdn.net/magicbean2/article/details/74926011) medium 加锁题
 2. [373-Find K Pairs with Smallest Sums]() medium set&priorityQueue
 3. [218-The Skyline Problem]() hard priority-queue(如果维持开始结束之间的高度)
+4. [378-Kth Smallest Element in a Sorted Matrix]() medium priorityQueue or binarySearch
 
 ### Array
 1. [088-Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
