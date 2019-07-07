@@ -59,6 +59,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 41. [453-Minimum Moves to Equal Array Elements]() easy math
 42. [461-Hamming Distance]() easy bit
 43. [463-Island Perimeter]() easy math
+44. [476-Number Complement]() easy bit
 
 
 ### String
@@ -73,6 +74,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 9. [306-Additive Number](https://leetcode.com/problems/additive-number/description/) medium
 10.[434-Number of Segments in a String]() easy
 11.[459-Repeated Substring Pattern]() easy String
+12.[482-License Key Formatting]() easy String
 
 
 ### Stack
@@ -106,6 +108,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 9. [228-Summary Ranges](https://leetcode.com/problems/summary-ranges/description/) medium 
 10.[289-Game of Life]() medium
 11.[304-Range Sum Query 2D-Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/description/) medium 
+12.[485-Max Consecutive Ones]() array easy
 
 
 ### List
