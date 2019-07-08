@@ -218,6 +218,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 9. [124-Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/) hard dfs
 10.[401-Binary Watch]() easy backtracking
 11.[51-N-Queens]() hard 回溯
+12.[301-Remove Invalid Parentheses]() hard backtracking
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
