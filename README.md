@@ -144,6 +144,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 10.[438-Find All Anagrams in a String]() easy slide-window&hashMap
 11.[447-Number of Boomerangs]() easy hashMap
 12.[128-Longest Consecutive Sequence]() hard hashmap
+13.[525-Contiguous Array]() medium hashMap
+14.[523-Continuous Subarray Sum]() medium hashMap
 
 ### Tree & Graph
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy

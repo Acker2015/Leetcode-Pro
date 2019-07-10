@@ -97,7 +97,8 @@ go and record
 88   | [670-Maximum Swap]() | medium | Greedy
 89   | [453-Minimum Moves to Equal Array Elements]() | easy | math
 90   | [463-Island Perimeter]() | easy | math
-
+91   | [525-Contiguous Array]() | medium | hashMap
+92   | [523-Continuous Subarray Sum]() | medium | hashMap
 
 
 
