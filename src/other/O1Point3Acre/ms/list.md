@@ -10,3 +10,4 @@
    问给定的数组是否能够变成有序？ （https://www.hackerrank.com/challenges/almost-sorted/problem）
 7. 给定一个int型数组array和一个int型数 target，从数组中删除最少个数的元素，使得数组中剩下的数字无法通过位或得到target。
 8. 在一个数组里找任意两个数之和的绝对值最小值(https://www.techiedelight.com/find-pair-array-minimum-absolute-sum/)
+9. 给两个正int数，a和b，然后求a%b,不能用乘法和除法。

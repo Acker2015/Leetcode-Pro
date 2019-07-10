@@ -146,6 +146,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 12.[128-Longest Consecutive Sequence]() hard hashmap
 13.[525-Contiguous Array]() medium hashMap
 14.[523-Continuous Subarray Sum]() medium hashMap
+15.[554-Brick Wall]() medium hashMap
 
 ### Tree & Graph
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
@@ -206,6 +207,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 10.[429-N-ary Tree Level Order Traversal]() easy BFS
 11.[282-Expression Add Operators]() hard DFS (处理后续运算符的优先级)
 12.[637-Average of Levels in Binary Tree]() easy BFS
+13.[543-Diameter of Binary Tree]() DFS intuition
 
 
 ### BackTracking
@@ -384,6 +386,7 @@ done
 4. [707-Design Linked List]()
 5. [355-Design Twitter]() OOP design
 6. [380-Insert Delete GetRandom O(1)]() design data structure
+7. [535-Encode and Decode TinyURL]() 系统设计
 
 ### two pointers系列
 1. 
