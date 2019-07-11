@@ -100,6 +100,7 @@ go and record
 91   | [525-Contiguous Array]() | medium | hashMap
 92   | [523-Continuous Subarray Sum]() | medium | hashMap
 93   | [621-Task Scheduler]() | medium  | 任务调度 math+greedy
+94   | [639-Decode Ways II]()  | hard | dp 有意思的DP
 
 
 
