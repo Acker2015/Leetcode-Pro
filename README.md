@@ -208,6 +208,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 11.[282-Expression Add Operators]() hard DFS (处理后续运算符的优先级)
 12.[637-Average of Levels in Binary Tree]() easy BFS
 13.[543-Diameter of Binary Tree]() DFS intuition
+14.[572-Subtree of Another Tree]() DFS easy
 
 
 ### BackTracking
@@ -293,6 +294,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 9. [44-Wildcard Matching]() hard pattern匹配， greedy or DP
 10.[670-Maximum Swap]() medium Greedy
 11.[455-Assign Cookies]() easy 贪心
+12.[621-Task Scheduler]() medium 任务调度 math+greedy
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
