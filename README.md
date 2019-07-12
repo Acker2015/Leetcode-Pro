@@ -282,6 +282,10 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 18.[410-Split Array Largest Sum]() hard binary-search (二分类似koko-875)
 19.[475-Heaters]() easy binary-search or two pointers
 
+### union-find
+1. [721-Accounts Merge]() medium 并查集
+
+
 ### Greedy
 1. [055-Jump Game](https://leetcode.com/problems/jump-game/description/) 贪心 medium
 2. [045-Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) 贪心 hard(045的升级版本)

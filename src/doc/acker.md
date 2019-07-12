@@ -101,6 +101,7 @@ go and record
 92   | [523-Continuous Subarray Sum]() | medium | hashMap
 93   | [621-Task Scheduler]() | medium  | 任务调度 math+greedy
 94   | [639-Decode Ways II]()  | hard | dp 有意思的DP
+95   | [721-Accounts Merge]() | medium | 并查集
 
 
 
