@@ -2,10 +2,16 @@ package lt_1_200;
 
 /**
  *
+ * [123] Best Time to Buy and Sell Stock III
+ *
  * dp[k][j] means the max profit up until prices[j] with at most k transaction.
  * dp[k][j] 表示在j个交易日进行至多k次交易能够获得的最大收益
  *
- * dp[k][j] = Math.max{ dp[k][j-1], Math.max{dp[k-1][i] + prices[j]-prices[i]} }  with i in [0, j]
+ * 1. jump out the days j, no transaction at days j, dp[k][j] = dp[k][j-1]
+ * 2. carry on transaction at days j, so just find last transaction day jj,
+ *      make (dp[k-1][jj]+prices[j]-prices[jj]) maximum.
+ *
+ * dp[k][j] = Math.max{ dp[k][j-1], Math.max{dp[k-1][i] + prices[j]-prices[i]} }  with i in [0, j-1]
  *          = Math.max{ dp[k][j-1], prices[j] + Math.max{dp[k-1][i]-prices[i]} }
  *
  *          这里(dp[k-1][i]-prices[i])的最大值可以再第二轮循环中顺便求出直接使用

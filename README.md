@@ -331,6 +331,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 25.[377-Combination Sum IV]() medium DFS or DP
 26.[416-Partition Equal Subset Sum]() medium DP 类似0-1背包
 27.[494-Target Sum]() medium DP
+28.[689-Maximum Sum of 3 Non-Overlapping Subarrays]() medium DP 题目很好
 
 
 ## 特别专题
@@ -349,6 +350,12 @@ https://www.cnblogs.com/felixfang/p/3713197.html
 
 ### best time to buy and sell stock
 
+1. [121-Best Time to Buy and Sell Stock]() Greedy 只能进行一次交易（贪心降低成本或者提高利润）
+2. [122-Best Time to Buy and Sell Stock II]() Greedy 不限次数的交易，只有有盈利就交易
+3. [123-Best Time to Buy and Sell Stock III]() DP 最多进行K次交易
+4. [188-Best Time to Buy and Sell Stock IV]() DP 极端情况会转化为问题122，常规情况使用123解法
+5. [309-Best Time to Buy and Sell Stock with Cooldown]() DP 状态转移
+6. [714-Best Time to Buy and Sell Stock with Transaction Fee]() DP or greedy (这个比较好)
 
 
 ### 蓄水池抽样算法(Reservoir Sampling Algorithm)

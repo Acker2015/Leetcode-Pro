@@ -102,6 +102,7 @@ go and record
 93   | [621-Task Scheduler]() | medium  | 任务调度 math+greedy
 94   | [639-Decode Ways II]()  | hard | dp 有意思的DP
 95   | [721-Accounts Merge]() | medium | 并查集
+96   | [689-Maximum Sum of 3 Non-Overlapping Subarrays]() | medium | DP 题目很好
 
 
 
