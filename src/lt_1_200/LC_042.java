@@ -37,7 +37,53 @@ public class LC_042 {
 		}
 		return trapWater;
 	}
+
+	/**
+	 * Here is my idea: instead of calculating area by height*width, we can think it in a cumulative way. In other words, sum water amount of each bin(width=1).
+	 Search from left to right and maintain a max height of left and right separately, which is like a one-side wall of partial container.
+	 Fix the higher one and flow water from the lower part.
+
+	 For example, if current height of left is lower, we fill water in the left bin. Until left meets right, we filled the whole container.
+
+     two pointers， left - right
+     两个变量分别表示左边的最大值和右边的最大值，每次都先处理left和right中坐标比较小的。
+
+     可以得到 如果height[left] <= height[right], 此时如果leftMax比height[height]大，则leftMax肯定小于Math.max(rightMax, height[right])
+     如果leftMax一直是最大的，那么在height[left]=leftMax的时候，一直在处理right指针
+     所以
+        1. 处理左指针的时候， 右边肯定有值比leftMax大
+        2. 处理右指针的时候，左边肯定有值比rightMax大
+     因为每次都优先处理 height[left]和height[right]中的更小的值
+	 * @param height
+	 * @return
+	 */
 	public int trap1(int[] height) {
+	    int left = 0, right = height.length-1, area = 0;
+	    int leftMax = 0, rightMax = 0;
+	    while (left <= right) {
+	        if (height[left] <= height[right]) {
+	            if (height[left] >= leftMax) {
+	                leftMax = height[left];
+                } else {
+	                area += (leftMax - height[left]);   // 此时可以确定rightMax >= leftMax
+                }
+                left++;
+            } else {
+                if (height[right] >= rightMax) {
+                    rightMax = height[right];
+                } else {
+                    area += (rightMax - height[right]);
+                }
+                right--;
+            }
+        }
+        return area;
+    }
+
+
+
+
+	public int trap2(int[] height) {
 		int area = 0, l = 0, r = height.length - 1;
 		while(l < r) {
 			int mh = Math.min(height[l], height[r]);
