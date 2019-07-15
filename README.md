@@ -408,11 +408,11 @@ done
 
 ### slide window
 [通用模板](https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem.)
-1. [76-Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) hard slide window
-2. https://leetcode.com/problems/longest-substring-without-repeating-characters/
-3. https://leetcode.com/problems/substring-with-concatenation-of-all-words/
-4. https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
-5. https://leetcode.com/problems/find-all-anagrams-in-a-string/
+1. [076-Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) hard slide window
+2. [003-longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  
+3. [030-Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
+4. [159-Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
+5. [438Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 
 ### 回文-Palindromic
 1. [647-Palindromic Substrings]() medium  DP or expand from center

@@ -30,11 +30,15 @@ Explanation: The answer is "wke", with the length of 3.
 
 two pointers
 
- * @author Acker
  *
  */
 public class LC_003 {
-	public int lengthOfLongestSubstring(String s) {
+	/**
+	 * 解法一：使用map记录每一个字符上一次出现的位置
+	 * @param s
+	 * @return
+	 */
+	public int lengthOfLongestSubstring1(String s) {
 		if (s == null || s.length() <= 0) {
 			return 0;
 		}
@@ -50,14 +54,42 @@ public class LC_003 {
 		}
 		return Math.max(maxLen, s.length() - start);
     }
+
+
+	/**
+	 * 解法二： 滑动窗口
+	 * slide window
+	 */
+	public int lengthOfLongestSubstring2(String s) {
+		int end = 0, start = 0, count = 0, maxLen = 0;
+		Map<Character, Integer> map = new HashMap<>();
+		while (end < s.length()) {
+			char cur = s.charAt(end);
+			map.put(cur, map.getOrDefault(cur, 0) + 1);
+			if (map.get(cur) > 1) {
+				count++;
+			}
+			while (count > 0) {
+				char prev = s.charAt(start);
+				if (map.get(prev) > 1) {
+					count--;
+				}
+				map.put(prev, map.get(prev)-1);
+				start++;
+			}
+			end++;
+			maxLen = Math.max(maxLen, end-start);
+		}
+		return maxLen;
+	}
 	
 	public static void main(String[] args) {
 		LC_003 lc_003 = new LC_003();
-		System.out.println(lc_003.lengthOfLongestSubstring("abcabcbb"));
-		System.out.println(lc_003.lengthOfLongestSubstring("aab"));
-		System.out.println(lc_003.lengthOfLongestSubstring("abba"));
-		System.out.println(lc_003.lengthOfLongestSubstring("cdd"));
-		System.out.println(lc_003.lengthOfLongestSubstring("abcb"));
+		System.out.println(lc_003.lengthOfLongestSubstring1("abcabcbb"));
+		System.out.println(lc_003.lengthOfLongestSubstring1("aab"));
+		System.out.println(lc_003.lengthOfLongestSubstring1("abba"));
+		System.out.println(lc_003.lengthOfLongestSubstring1("cdd"));
+		System.out.println(lc_003.lengthOfLongestSubstring1("abcb"));
 	}
 
 }
