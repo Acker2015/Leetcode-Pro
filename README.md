@@ -75,6 +75,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 10.[434-Number of Segments in a String]() easy
 11.[459-Repeated Substring Pattern]() easy String
 12.[482-License Key Formatting]() easy String
+13.[008-String to Integer - atoi]() hard 边界情况
 
 
 ### Stack
@@ -110,6 +111,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 10.[289-Game of Life]() medium
 11.[304-Range Sum Query 2D-Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/description/) medium 
 12.[485-Max Consecutive Ones]() array easy
+13.[1122-Relative Sort Array]() easy array+sort(桶排序) 或者 arrays.sort
 
 
 ### List
@@ -147,6 +149,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 13.[525-Contiguous Array]() medium hashMap
 14.[523-Continuous Subarray Sum]() medium hashMap
 15.[554-Brick Wall]() medium hashMap
+16.[1124-Longest Well-Performing Interval]() medium hashMap(有点贪心的意思)
 
 ### Tree & Graph
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
@@ -182,6 +185,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 28.[327-Count of Range Sum]() hard BST
 29.[332-Reconstruct Itinerary]() medium 欧拉路径
 30.[437-Path Sum III]() easy-medium tree+dfs+map
+31.[1123-Lowest Common Ancestor of Deepest Leaves]() medium DFS 树
 
 
 ### Trie Tree
@@ -211,6 +215,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 14.[572-Subtree of Another Tree]() DFS easy
 
 
+
 ### BackTracking
 1. [017-Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 暴力回溯
 2. [022-Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) 回溯或者DP
@@ -224,6 +229,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 10.[401-Binary Watch]() easy backtracking
 11.[51-N-Queens]() hard 回溯
 12.[301-Remove Invalid Parentheses]() hard backtracking
+13.[1125. Smallest Sufficient Team]() 迭代-选与不选
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -299,6 +305,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 10.[670-Maximum Swap]() medium Greedy
 11.[455-Assign Cookies]() easy 贪心
 12.[621-Task Scheduler]() medium 任务调度 math+greedy
+13.[68-Text Justification]() hard 常规贪心
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)

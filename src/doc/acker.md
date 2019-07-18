@@ -103,6 +103,8 @@ go and record
 94   | [639-Decode Ways II]()  | hard | dp 有意思的DP
 95   | [721-Accounts Merge]() | medium | 并查集
 96   | [689-Maximum Sum of 3 Non-Overlapping Subarrays]() | medium | DP 题目很好
+97   | [1124-Longest Well-Performing Interval]() | medium | hashMap(有点贪心的意思)
+98   | [1125. Smallest Sufficient Team]() | hard | 迭代-选与不选
 
 
 
