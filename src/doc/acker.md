@@ -105,6 +105,7 @@ go and record
 96   | [689-Maximum Sum of 3 Non-Overlapping Subarrays]() | medium | DP 题目很好
 97   | [1124-Longest Well-Performing Interval]() | medium | hashMap(有点贪心的意思)
 98   | [1125. Smallest Sufficient Team]() | hard | 迭代-选与不选
+99   | [887-Super Egg Drop]() | hard | DP  扔鸡蛋问题
 
 
 

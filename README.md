@@ -339,6 +339,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 26.[416-Partition Equal Subset Sum]() medium DP 类似0-1背包
 27.[494-Target Sum]() medium DP
 28.[689-Maximum Sum of 3 Non-Overlapping Subarrays]() medium DP 题目很好
+29.[887-Super Egg Drop]() hard DP  扔鸡蛋问题
 
 
 ## 特别专题
