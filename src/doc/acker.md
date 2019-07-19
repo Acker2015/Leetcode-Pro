@@ -106,6 +106,7 @@ go and record
 97   | [1124-Longest Well-Performing Interval]() | medium | hashMap(有点贪心的意思)
 98   | [1125. Smallest Sufficient Team]() | hard | 迭代-选与不选
 99   | [887-Super Egg Drop]() | hard | DP  扔鸡蛋问题
+100  | [386-Lexicographical Numbers]() | medium | DFS+Math
 
 
 

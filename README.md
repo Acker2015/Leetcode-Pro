@@ -213,6 +213,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 12.[637-Average of Levels in Binary Tree]() easy BFS
 13.[543-Diameter of Binary Tree]() DFS intuition
 14.[572-Subtree of Another Tree]() DFS easy
+15.[386-Lexicographical Numbers]() medium DFS+Math
+16.[385-Mini Parser]()
 
 
 
