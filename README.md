@@ -60,6 +60,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 42. [461-Hamming Distance]() easy bit
 43. [463-Island Perimeter]() easy math
 44. [476-Number Complement]() easy bit
+45. [390-Elimination Game]() medium 数学思想
 
 
 ### String
@@ -308,6 +309,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 11.[455-Assign Cookies]() easy 贪心
 12.[621-Task Scheduler]() medium 任务调度 math+greedy
 13.[68-Text Justification]() hard 常规贪心
+14.[402-Remove K Digits]() medium greedy+stack
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
