@@ -218,6 +218,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 16.[385-Mini Parser]()
 17.[417-Pacific Atlantic Water Flow]() medium DFS or BFS
 18.[515-Find Largest Value in Each Tree Row]() medium BFS
+19.[529-Minesweeper]() medium DFS/BFS 扫雷游戏
+20.[675-Cut Off Trees for Golf Event]() hard BFS golf Event
 
 
 

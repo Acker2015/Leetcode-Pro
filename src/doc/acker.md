@@ -109,6 +109,7 @@ go and record
 100  | [386-Lexicographical Numbers]() | medium | DFS+Math
 101  | [402-Remove K Digits]() | medium | greedy+stack
 102  | [417-Pacific Atlantic Water Flow]() | medium | DFS or BFS
+103  | [675-Cut Off Trees for Golf Event]() | hard | BFS golf Event
 
 
 
