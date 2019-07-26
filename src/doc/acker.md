@@ -110,6 +110,7 @@ go and record
 101  | [402-Remove K Digits]() | medium | greedy+stack
 102  | [417-Pacific Atlantic Water Flow]() | medium | DFS or BFS
 103  | [675-Cut Off Trees for Golf Event]() | hard | BFS golf Event
+104  | [753-Cracking the Safe]() | hard | 欧拉路经&DFS
 
 
 

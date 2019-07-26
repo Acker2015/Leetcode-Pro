@@ -10,8 +10,8 @@ import java.util.*;
  * solution2 - 迭代
  */
 public class LC_332 {
-    Map<String, PriorityQueue<String>> targets = new HashMap<>();
-    List<String> route = new LinkedList();
+    private Map<String, PriorityQueue<String>> targets = new HashMap<>();
+    private List<String> route = new LinkedList();
 
     private void visit(String airport) {
         while(targets.containsKey(airport) && !targets.get(airport).isEmpty())
@@ -20,7 +20,7 @@ public class LC_332 {
     }
     /**
      * solution1 - 递归
-     * 欧拉回路
+     * 欧拉回路 - 后序遍历
      *
      * Hierholzer 算法
      */

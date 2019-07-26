@@ -185,8 +185,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 27.[315-Count of Smaller Numbers After Self]() hard BST or merge_sort
 28.[327-Count of Range Sum]() hard BST
 29.[332-Reconstruct Itinerary]() medium 欧拉路径
-30.[437-Path Sum III]() easy-medium tree+dfs+map
-31.[1123-Lowest Common Ancestor of Deepest Leaves]() medium DFS 树
+30.[753-Cracking the Safe]() hard 欧拉路经&DFS
+31.[437-Path Sum III]() easy-medium tree+dfs+map
+32.[1123-Lowest Common Ancestor of Deepest Leaves]() medium DFS 树
 
 
 ### Trie Tree
