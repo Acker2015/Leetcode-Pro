@@ -221,6 +221,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 18.[515-Find Largest Value in Each Tree Row]() medium BFS
 19.[529-Minesweeper]() medium DFS/BFS 扫雷游戏
 20.[675-Cut Off Trees for Golf Event]() hard BFS golf Event
+21.[690-Employee Importance]() easy BFS
 
 
 
@@ -295,6 +296,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 17.[875-Koko Eating Bananas]() medium binary-search
 18.[410-Split Array Largest Sum]() hard binary-search (二分类似koko-875)
 19.[475-Heaters]() easy binary-search or two pointers
+20.[744-Find Smallest Letter Greater Than Target]() easy binary_search
 
 ### union-find
 1. [721-Accounts Merge]() medium 并查集
@@ -349,6 +351,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 27.[494-Target Sum]() medium DP
 28.[689-Maximum Sum of 3 Non-Overlapping Subarrays]() medium DP 题目很好
 29.[887-Super Egg Drop]() hard DP  扔鸡蛋问题
+30.[764-Largest Plus Sign]() medium DP 
 
 
 ## 特别专题
