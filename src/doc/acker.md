@@ -111,6 +111,9 @@ go and record
 102  | [417-Pacific Atlantic Water Flow]() | medium | DFS or BFS
 103  | [675-Cut Off Trees for Golf Event]() | hard | BFS golf Event
 104  | [753-Cracking the Safe]() | hard | 欧拉路经&DFS
+105  | [787-Cheapest Flights Within K Stops]() | medium | BFS+Dijkstra Algorithm
+106  | [801-Minimum Swaps To Make Sequences Increasing]() | medium | DP 两个数组同事保持升序的最小交换次数
+107  | [803-Bricks Falling When Hit]() | hard | DFS+有点union-find的意思 非常好
 
 
 
