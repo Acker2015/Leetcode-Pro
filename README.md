@@ -193,6 +193,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 ### Trie Tree
 1. [208-Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) medium Trie 字典树
 2. [212-Word Search II](https://leetcode.com/problems/word-search-ii/description/) hard 字典树+回溯
+3. [421-Maximum XOR of Two Numbers in an Array]() medium bit+Trie
 
 ### Segment tree
 1. 307-Range Sum Query - Mutable medium 线段树
@@ -266,6 +267,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 13.[349-Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/solution/) easy
 14.[350-Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-II)
 15.[334-Increasing Triplet Subsequence]() medium 不是严格意义的two-pointers,这里只是使用两个指针遍历记录
+16.[413-Arithmetic Slices]() easy two-pointers
 
 
 ### LinkedList&&分治&&recursion&&Divide-Conquer
