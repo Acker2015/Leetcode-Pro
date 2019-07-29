@@ -77,6 +77,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 11.[459-Repeated Substring Pattern]() easy String
 12.[482-License Key Formatting]() easy String
 13.[008-String to Integer - atoi]() hard 边界情况
+14.[423-Reconstruct Original Digits from English]() medium 从唯一性数字对应的字符串开始
 
 
 ### Stack
