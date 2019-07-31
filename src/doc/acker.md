@@ -115,6 +115,7 @@ go and record
 106  | [801-Minimum Swaps To Make Sequences Increasing]() | medium | DP 两个数组同事保持升序的最小交换次数
 107  | [803-Bricks Falling When Hit]() | hard | DFS+有点union-find的意思 非常好
 108  | [421-Maximum XOR of Two Numbers in an Array]() | medium | bit+Trie
+109  | [1140-Stone Game II]() | medium | dp+memorization
 
 
 

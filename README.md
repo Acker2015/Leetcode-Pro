@@ -358,6 +358,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 29.[887-Super Egg Drop]() hard DP  扔鸡蛋问题
 30.[764-Largest Plus Sign]() medium DP 
 31.[801-Minimum Swaps To Make Sequences Increasing]() medium DP 两个数组同事保持升序的最小交换次数
+32.[1140-Stone Game II]() medium dp+memorization
 
 
 ## 特别专题
