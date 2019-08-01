@@ -302,6 +302,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 18.[410-Split Array Largest Sum]() hard binary-search (二分类似koko-875)
 19.[475-Heaters]() easy binary-search or two pointers
 20.[744-Find Smallest Letter Greater Than Target]() easy binary_search
+21.[719-Find K-th Smallest Pair Distance]() hard binary-search(枚举距离)
+22.[658-Find K Closest Elements]() medium 二分/双指针/堆
 
 ### union-find
 1. [721-Accounts Merge]() medium 并查集

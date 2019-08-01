@@ -116,6 +116,8 @@ go and record
 107  | [803-Bricks Falling When Hit]() | hard | DFS+有点union-find的意思 非常好
 108  | [421-Maximum XOR of Two Numbers in an Array]() | medium | bit+Trie
 109  | [1140-Stone Game II]() | medium | dp+memorization
+110  |[719-Find K-th Smallest Pair Distance]() | hard | binary-search(枚举距离)
+111  | [658-Find K Closest Elements]() | medium | 二分/双指针/堆
 
 
 
