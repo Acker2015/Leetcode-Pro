@@ -280,6 +280,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 6. [215-Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) medium 堆 or Conquer
 7. [241-Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/description/) 分治 medium
 8. [324-Wiggle Sort II]() medium 摇摆排序 partition
+9. [427-Construct Quad Tree]() medium 递归
 
 ### binary search
 1. [029-Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) 二分查找(注意数据溢出情况)
@@ -441,7 +442,8 @@ done
 2. [003-longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  
 3. [030-Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 4. [159-Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
-5. [438Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+5. [438-Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+6. [424-Longest Repeating Character Replacement]() medium slide-window
 
 ### 回文-Palindromic
 1. [647-Palindromic Substrings]() medium  DP or expand from center

@@ -14,6 +14,7 @@ public class Node {
     public Node right;
     public Node next;
     public Node random;
+    public Node parent;
     public List<Node> neighbors;
     public List<Node> children;
 

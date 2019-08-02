@@ -90,6 +90,7 @@ public class LC_127 {
         // 记录已访问word，防止死循环
         Map<String, Boolean> visitedMap = new HashMap<>();
         Set<String> beginSet = new HashSet<>(), endSet = new HashSet<>();
+        // two queue
         beginSet.add(beginWord);
         endSet.add(endWord);
         visitedMap.put(beginWord, true);
