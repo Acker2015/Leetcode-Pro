@@ -13,11 +13,16 @@ public class Node {
     public Node left;
     public Node right;
     public Node next;
+    public Node prev;
+
     public Node random;
     public Node parent;
+    public Node child;
     public List<Node> neighbors;
     public List<Node> children;
+    public Node () {
 
+    }
 
     public Node(int val) {
         this.val = val;

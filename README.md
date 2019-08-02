@@ -134,6 +134,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 14.[146-LRU Cache](https://leetcode.com/problems/lru-cache/description/) hard 双向链表+hash LRU
 15.[239-Sliding Window Maximum]() hard 双端队列/链表模拟队列
 16.[480-Sliding Window Median]() hard 两个优先队列各存一半
+17.[430-Flatten a Multilevel Doubly Linked List]() medium 递归与迭代解法 ***
 
 ### Map
 1. [049-Group Anagrams](https://leetcode.com/problems/group-anagrams/) medium
@@ -226,6 +227,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 21.[690-Employee Importance]() easy BFS
 22.[787-Cheapest Flights Within K Stops]() medium BFS+Dijkstra Algorithm
 23.[803-Bricks Falling When Hit]() hard DFS+有点union-find的意思 非常好
+24.[433-Minimum Genetic Mutation]() medium BFS, 双向BFS
 
 
 
