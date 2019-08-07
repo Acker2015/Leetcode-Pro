@@ -114,6 +114,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 11.[304-Range Sum Query 2D-Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/description/) medium 
 12.[485-Max Consecutive Ones]() array easy
 13.[1122-Relative Sort Array]() easy array+sort(桶排序) 或者 arrays.sort
+14.[442-Find All Duplicates in an Array]() 值映射索引解法
 
 
 ### List
@@ -228,6 +229,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 22.[787-Cheapest Flights Within K Stops]() medium BFS+Dijkstra Algorithm
 23.[803-Bricks Falling When Hit]() hard DFS+有点union-find的意思 非常好
 24.[433-Minimum Genetic Mutation]() medium BFS, 双向BFS
+25.[450-Delete Node in a BST]() medium DFS 
 
 
 
@@ -307,6 +309,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 20.[744-Find Smallest Letter Greater Than Target]() easy binary_search
 21.[719-Find K-th Smallest Pair Distance]() hard binary-search(枚举距离)
 22.[658-Find K Closest Elements]() medium 二分/双指针/堆
+23.[436-Find Right Interval]() medium 二分，treeMap
 
 ### union-find
 1. [721-Accounts Merge]() medium 并查集
@@ -327,6 +330,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 12.[621-Task Scheduler]() medium 任务调度 math+greedy
 13.[68-Text Justification]() hard 常规贪心
 14.[402-Remove K Digits]() medium greedy+stack
+15.[435-Non-overlapping Intervals]() medium 排序+贪心
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
@@ -452,3 +456,8 @@ done
 
 ### random
 1. [384-Shuffle an Array]() medium shuffle
+
+### 词频统计 (计数排序 桶排序)
+1. [692-Top K Frequent Words]() medium HashMap+BucketSort+TreeSet or HashMap+PriorityQueue
+2. [451-Sort Characters By Frequency]() medium HashMap+BucketSort
+3. [347-Top K Frequent Elements]() medium PriorityQueue or TreeMap or BucketSort

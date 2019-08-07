@@ -118,6 +118,7 @@ go and record
 109  | [1140-Stone Game II]() | medium | dp+memorization
 110  |[719-Find K-th Smallest Pair Distance]() | hard | binary-search(枚举距离)
 111  | [658-Find K Closest Elements]() | medium | 二分/双指针/堆
+112  | [450-Delete Node in a BST]() | medium | DFS 
 
 
 
