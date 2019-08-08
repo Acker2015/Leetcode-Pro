@@ -12,7 +12,7 @@ import java.util.stream.Stream;
  * @author Acker
  *
  */
-public class Leetcode_500 {
+public class LC_500 {
 	String top = "qwertyuiop";
     String middle = "asdfghjkl";
     String bottom = "zxcvbnm";
@@ -48,7 +48,7 @@ public class Leetcode_500 {
     }
 	public static void main(String[] args) {
 		String[] testCases = new String[] {"Hello", "Alaska", "Dad", "Peace"};
-		String[] ret = new Leetcode_500().findWords(testCases);
+		String[] ret = new LC_500().findWords(testCases);
 		Stream.of(ret).forEach(System.out::println);
 	}
 

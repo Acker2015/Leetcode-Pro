@@ -61,6 +61,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 43. [463-Island Perimeter]() easy math
 44. [476-Number Complement]() easy bit
 45. [390-Elimination Game]() medium 数学思想
+46. [504-Base 7]() easy math
+47. [507-Perfect Number]() easy math
 
 
 ### String
@@ -78,6 +80,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 12.[482-License Key Formatting]() easy String
 13.[008-String to Integer - atoi]() hard 边界情况
 14.[423-Reconstruct Original Digits from English]() medium 从唯一性数字对应的字符串开始
+15.[520-Detect Capital]() easy 
 
 
 ### Stack
@@ -92,7 +95,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 9. [232-Implement Queue using Stacks](https://leetcode.com/articles/implement-queue-using-stacks/) medium 使用栈模拟队列
 10.[225-Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) easy 使用队列模拟栈
 11.[445-Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/description/) medium
-12. [591-Tag Validator](https://leetcode.com/problems/tag-validator/description/) hard stack+string（判断标签代码段是否合法）
+12.[591-Tag Validator](https://leetcode.com/problems/tag-validator/description/) hard stack+string（判断标签代码段是否合法）
+13.[456-132 Pattern]() medium Stack(29%)
 
 ### Queue & priorityQueue
 1. [281-Zigzag Iterator](https://blog.csdn.net/magicbean2/article/details/74926011) medium 加锁题
@@ -114,7 +118,8 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 11.[304-Range Sum Query 2D-Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/description/) medium 
 12.[485-Max Consecutive Ones]() array easy
 13.[1122-Relative Sort Array]() easy array+sort(桶排序) 或者 arrays.sort
-14.[442-Find All Duplicates in an Array]() 值映射索引解法
+14.[442-Find All Duplicates in an Array]() medium 值映射索引解法
+15.[454-4Sum II]() medium 
 
 
 ### List
@@ -368,6 +373,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 30.[764-Largest Plus Sign]() medium DP 
 31.[801-Minimum Swaps To Make Sequences Increasing]() medium DP 两个数组同事保持升序的最小交换次数
 32.[1140-Stone Game II]() medium dp+memorization
+33.[509-Fibonacci Number]() easy DP 斐波那契数列
 
 
 ## 特别专题
@@ -437,6 +443,7 @@ done
 5. [355-Design Twitter]() OOP design
 6. [380-Insert Delete GetRandom O(1)]() design data structure
 7. [535-Encode and Decode TinyURL]() 系统设计
+8. [460-LFU Cache]() desing LFU structure
 
 ### two pointers系列
 1. 

@@ -15,7 +15,7 @@ import java.util.Stack;
  * @author Acker
  *
  */
-public class Leetcode_503 {
+public class LC_503 {
 	public int[] nextGreaterElements(int[] nums) {
 		if (nums == null) return null;
 		if (nums.length <= 0) return new int[0];

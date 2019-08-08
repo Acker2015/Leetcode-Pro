@@ -14,7 +14,7 @@ import java.util.Random;
  * @author Acker
  *
  */
-public class Leetcode_528 {
+public class LC_528 {
 	public static class Solution {
 		int len;
 		int[] preSum;

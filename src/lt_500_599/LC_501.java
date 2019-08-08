@@ -10,7 +10,7 @@ import domain.TreeNode;
  * @author Acker
  *
  */
-public class Leetcode_501 {
+public class LC_501 {
 	private Integer prev = null;		// 中序遍历的前置节点值
 	private int count = 1;			// 记录节点的出现次数(BST，所以中序遍历为升序遍历，遍历过程中数值与之前不同就可以似的count置为1)
 	private int max = 0;				// 记录重复的最大次数
