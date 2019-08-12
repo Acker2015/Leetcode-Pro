@@ -278,6 +278,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 14.[350-Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-II)
 15.[334-Increasing Triplet Subsequence]() medium 不是严格意义的two-pointers,这里只是使用两个指针遍历记录
 16.[413-Arithmetic Slices]() easy two-pointers
+17.[457-Circular Array Loop]() medium two-pointers 快慢指针 题目不咋地
 
 
 ### LinkedList&&分治&&recursion&&Divide-Conquer
@@ -374,6 +375,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 31.[801-Minimum Swaps To Make Sequences Increasing]() medium DP 两个数组同事保持升序的最小交换次数
 32.[1140-Stone Game II]() medium dp+memorization
 33.[509-Fibonacci Number]() easy DP 斐波那契数列
+34.[467-Unique Substrings in Wraparound String]() medium DP
+35.[464-Can I Win]() medium top-down DP, memorization
+
 
 
 ## 特别专题
@@ -468,3 +472,7 @@ done
 1. [692-Top K Frequent Words]() medium HashMap+BucketSort+TreeSet or HashMap+PriorityQueue
 2. [451-Sort Characters By Frequency]() medium HashMap+BucketSort
 3. [347-Top K Frequent Elements]() medium PriorityQueue or TreeMap or BucketSort
+
+### 游戏环节-偶吼吼
+1. [464-Can I Win]() Top-Down DP（记忆化搜索） 
+2. [1140-Stone Game II]() 
