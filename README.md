@@ -120,6 +120,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 13.[1122-Relative Sort Array]() easy array+sort(桶排序) 或者 arrays.sort
 14.[442-Find All Duplicates in an Array]() medium 值映射索引解法
 15.[454-4Sum II]() medium 
+16.[1144-Decrease Elements To Make Array Zigzag]() medium array
 
 
 ### List
@@ -235,6 +236,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 23.[803-Bricks Falling When Hit]() hard DFS+有点union-find的意思 非常好
 24.[433-Minimum Genetic Mutation]() medium BFS, 双向BFS
 25.[450-Delete Node in a BST]() medium DFS 
+26.[1145-Binary Tree Coloring Game]() medium DFS+简单推导
 
 
 
@@ -337,6 +339,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 13.[68-Text Justification]() hard 常规贪心
 14.[402-Remove K Digits]() medium greedy+stack
 15.[435-Non-overlapping Intervals]() medium 排序+贪心
+16.[1147-Longest Chunked Palindrome Decomposition]() hard DP-贪心
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
@@ -377,6 +380,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 33.[509-Fibonacci Number]() easy DP 斐波那契数列
 34.[467-Unique Substrings in Wraparound String]() medium DP
 35.[464-Can I Win]() medium top-down DP, memorization
+36.[1147-Longest Chunked Palindrome Decomposition]() hard DP-贪心
 
 
 
@@ -447,7 +451,8 @@ done
 5. [355-Design Twitter]() OOP design
 6. [380-Insert Delete GetRandom O(1)]() design data structure
 7. [535-Encode and Decode TinyURL]() 系统设计
-8. [460-LFU Cache]() desing LFU structure
+8. [460-LFU Cache]() design LFU structure
+9. [1146-Snapshot Array]() design  how to reduce using space
 
 ### two pointers系列
 1. 
