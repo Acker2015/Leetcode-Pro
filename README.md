@@ -81,6 +81,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 13.[008-String to Integer - atoi]() hard 边界情况
 14.[423-Reconstruct Original Digits from English]() medium 从唯一性数字对应的字符串开始
 15.[520-Detect Capital]() easy 
+16.[468-Validate IP Address]() medium String 
 
 
 ### Stack
@@ -472,6 +473,7 @@ done
 
 ### random
 1. [384-Shuffle an Array]() medium shuffle
+2. [470-Implement Rand10() Using Rand7()]() medium random
 
 ### 词频统计 (计数排序 桶排序)
 1. [692-Top K Frequent Words]() medium HashMap+BucketSort+TreeSet or HashMap+PriorityQueue
