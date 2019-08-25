@@ -238,6 +238,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 24.[433-Minimum Genetic Mutation]() medium BFS, 双向BFS
 25.[450-Delete Node in a BST]() medium DFS 
 26.[1145-Binary Tree Coloring Game]() medium DFS+简单推导
+27.[473-Matchsticks to Square]() medium DFS 
+28.[698-Partition to K Equal Sum Subsets]() medium DFS
+29.[530-Minimum Absolute Difference in BST]() easy DFS
 
 
 
@@ -255,6 +258,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 11.[51-N-Queens]() hard 回溯
 12.[301-Remove Invalid Parentheses]() hard backtracking
 13.[1125. Smallest Sufficient Team]() 迭代-选与不选
+14.[37-Sudoku Solver]() hard backtracking
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -282,6 +286,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 15.[334-Increasing Triplet Subsequence]() medium 不是严格意义的two-pointers,这里只是使用两个指针遍历记录
 16.[413-Arithmetic Slices]() easy two-pointers
 17.[457-Circular Array Loop]() medium two-pointers 快慢指针 题目不咋地
+18.[532-K-diff Pairs in an Array]() easy two-pointers
 
 
 ### LinkedList&&分治&&recursion&&Divide-Conquer
@@ -382,6 +387,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 34.[467-Unique Substrings in Wraparound String]() medium DP
 35.[464-Can I Win]() medium top-down DP, memorization
 36.[1147-Longest Chunked Palindrome Decomposition]() hard DP-贪心
+37.[474-Ones and Zeroes]() medium DP 类似0-1背包
+38.[32-Longest Valid Parentheses]() hard DP 
 
 
 

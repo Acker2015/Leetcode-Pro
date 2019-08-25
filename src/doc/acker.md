@@ -123,6 +123,7 @@ go and record
 114  | [457-Circular Array Loop]() | medium | two-pointers 快慢指针 题目不咋地
 115  | [1147-Longest Chunked Palindrome Decomposition]() | hard | DP-贪心
 116  | [468-Validate IP Address]() | medium | String 
+117  | [32-Longest Valid Parentheses]() | hard | DP 
 
 
 
