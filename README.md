@@ -82,6 +82,10 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 14.[423-Reconstruct Original Digits from English]() medium 从唯一性数字对应的字符串开始
 15.[520-Detect Capital]() easy 
 16.[468-Validate IP Address]() medium String 
+17.[65-Valid Number]() hard String 
+18.[541-Reverse String II]() easy String
+19.[551-Student Attendance Record I]() easy string
+20.[557-Reverse Words in a String III]() easy string
 
 
 ### Stack
@@ -198,6 +202,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 30.[753-Cracking the Safe]() hard 欧拉路经&DFS
 31.[437-Path Sum III]() easy-medium tree+dfs+map
 32.[1123-Lowest Common Ancestor of Deepest Leaves]() medium DFS 树
+33.[538-Convert BST to Greater Tree]() easy DFS树
 
 
 ### Trie Tree
@@ -259,6 +264,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 12.[301-Remove Invalid Parentheses]() hard backtracking
 13.[1125. Smallest Sufficient Team]() 迭代-选与不选
 14.[37-Sudoku Solver]() hard backtracking
+15.[52-N-Queens II]() hard N皇后 backtracking经典问题
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -266,7 +272,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 3. [018-4Sum](https://leetcode.com/problems/4sum/)
 4. [019-Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 5. [075-Sort Colors](https://leetcode.com/problems/sort-colors/description/) medium
-6. 653 Two Sum IV - Input is a BST (Tree + two pointers)
+6. [653 Two Sum IV - Input is a BST]() (Tree + two pointers)
 	
 	(1) 结合BST正向遍历和反向遍历来实现two pointers, time O(n) space O(logn)
 	
@@ -346,6 +352,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 14.[402-Remove K Digits]() medium greedy+stack
 15.[435-Non-overlapping Intervals]() medium 排序+贪心
 16.[1147-Longest Chunked Palindrome Decomposition]() hard DP-贪心
+17.[561-Array Partition I]() greedy 贪心
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
