@@ -86,6 +86,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 18.[541-Reverse String II]() easy String
 19.[551-Student Attendance Record I]() easy string
 20.[557-Reverse Words in a String III]() easy string
+21.[537-Complex Number Multiplication]() medium String
 
 
 ### Stack
@@ -265,6 +266,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 13.[1125. Smallest Sufficient Team]() 迭代-选与不选
 14.[37-Sudoku Solver]() hard backtracking
 15.[52-N-Queens II]() hard N皇后 backtracking经典问题
+16.[526-Beautiful Arrangement]() medium backtracking
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
