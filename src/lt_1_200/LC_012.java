@@ -51,7 +51,7 @@ import java.util.stream.Stream;
  *
  */
 public class LC_012 {
-	public String intToRoman(int num) {
+	public String intToRoman0(int num) {
 		String[] m = {"", "M", "MM", "MMM"};
 		String[] c = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
 		String[] x = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
@@ -70,62 +70,49 @@ public class LC_012 {
 		IntStream.range(0,  n).forEach(t -> stringBuilder.append(str));
 		return stringBuilder.toString();
 	}
+
 	/**
-	 * 获取除数的级别，百位 十位 个位
-	 * @param divide
-	 * @return
-	 */
-	public int level(int divide) {
-		return divide>=100 ? 100 : (divide>=10 ? 10 : 1);
-	}
-	/**
-	 * 从千位到百位再到十位个位依次获取roman子串
-	 * 对于每个余数
-	 * 1.除以相对应的级别, 如果结果为4或者9，那么可以直接从map获取特殊处理结果
-	 * 2.除以对应的symbols，重复symbol对应的结果
-	 * 拼接为结果roman串
+	 * 从低位到高位不断取余remain，根据位置层级level(1,10,100,1000)
+	 * remain=4 or remain=9, 直接map取数
+	 * remain<4, 那么取对应的单元数据，连续remain次
+	 * remain>=5, 那么取5*level对应的数以及(remain-5)次对应的单元数
+	 *
+	 * 其中单元数为map.get(level)
 	 * @param num
 	 * @return
 	 */
-	public String intToRoman1(int num) {
-		StringBuilder stringBuilder = new StringBuilder();
-        Map<Integer, String> map = new HashMap<>();
-        map.put(1, "I");
-        map.put(5, "V");
-        map.put(10, "X");
-        map.put(50, "L");
-        map.put(100, "C");
-        map.put(500, "D");
-        map.put(1000, "M");
-        map.put(4, "IV");
-        map.put(9, "IX");
-        map.put(40, "XL");
-        map.put(90, "XC");
-        map.put(400, "CD");
-        map.put(900, "CM");
-        int divide = 1000;
-        int r = num / divide;
-        stringBuilder.append(repeat(map.get(divide), r));
-        int start = 0;
-        int remain = num % divide;
-        while (remain > 0) {
-        		divide = divide / (start++ % 2 == 0 ? 2 : 5);
-        		int levelDivide = level(divide); // 除数的级别 1、10、100 用于判断4,9
-        		r = remain / levelDivide;
-        		if (r == 4 || r == 9) {
-        			stringBuilder.append(map.get(r * level(divide)));
-        			remain = remain % levelDivide;
-        			divide = levelDivide;
-        			start = 0;
-        		} else {
-        			r = remain / divide;
-        			stringBuilder.append(repeat(map.get(divide), r));
-        			remain = remain % divide;
-        		}
-        }
-        return stringBuilder.toString();
-    }
-	
+    public String intToRoman(int num) {
+		StringBuilder builder = new StringBuilder();
+		Map<Integer, String> map = new HashMap<>();
+		map.put(1, "I");
+		map.put(5, "V");
+		map.put(10, "X");
+		map.put(50, "L");
+		map.put(100, "C");
+		map.put(500, "D");
+		map.put(1000, "M");
+		map.put(4, "IV");
+		map.put(9, "IX");
+		map.put(40, "XL");
+		map.put(90, "XC");
+		map.put(400, "CD");
+		map.put(900, "CM");
+		int level = 1;
+		while (num > 0) {
+			int remain = num % 10;
+			if (remain == 4 || remain == 9) {
+				builder.insert(0, map.get(level*remain));
+			} else if (remain < 5) {
+				builder.insert(0, repeat(map.get(level), remain));
+			} else {
+				String tmp = map.get(5*level) + repeat(map.get(level), remain-5);
+				builder.insert(0, tmp);
+			}
+			num /= 10;
+			level *= 10;
+		}
+		return builder.toString();
+	}
 	
 	public static void main(String[] args) {
 		LC_012 lc_012 = new LC_012();

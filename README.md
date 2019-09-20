@@ -247,6 +247,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 27.[473-Matchsticks to Square]() medium DFS 
 28.[698-Partition to K Equal Sum Subsets]() medium DFS
 29.[530-Minimum Absolute Difference in BST]() easy DFS
+30.[623-Add One Row to Tree]() medium BFS
 
 
 
@@ -332,9 +333,11 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 21.[719-Find K-th Smallest Pair Distance]() hard binary-search(枚举距离)
 22.[658-Find K Closest Elements]() medium 二分/双指针/堆
 23.[436-Find Right Interval]() medium 二分，treeMap
+24.[540-Single Element in a Sorted Array]() medium 二分 
 
 ### union-find
 1. [721-Accounts Merge]() medium 并查集
+2. [547-Friend Circles]() medium 并查集-找朋友
 
 
 ### Greedy
@@ -398,6 +401,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 36.[1147-Longest Chunked Palindrome Decomposition]() hard DP-贪心
 37.[474-Ones and Zeroes]() medium DP 类似0-1背包
 38.[32-Longest Valid Parentheses]() hard DP 
+39.[516-Longest Palindromic Subsequence]() medium DP
 
 
 

@@ -31,6 +31,7 @@ public class M_005_binarySearch {
                 k = k-missed;
             }
         }
+        // 注意这里返回值
         return nums[left] + k;
     }
 

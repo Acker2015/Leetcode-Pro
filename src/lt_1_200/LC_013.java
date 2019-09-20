@@ -51,27 +51,28 @@ public class LC_013 {
 	 */
 	public int romanToInt(String s) {
 		int sum = 0;
-		if (s.indexOf("IV") > -1) sum -= 2;
-		if (s.indexOf("IX") > -1) sum -= 2;
-		if (s.indexOf("XL") > -1) sum -= 20;
-		if (s.indexOf("XC") > -1) sum -= 20;
-		if (s.indexOf("CD") > -1) sum -= 200;
-		if (s.indexOf("CM") > -1) sum -= 200;
+		if (s.contains("IV")) sum -= 2;
+		if (s.contains("IX")) sum -= 2;
+		if (s.contains("XL")) sum -= 20;
+		if (s.contains("XC")) sum -= 20;
+		if (s.contains("CD")) sum -= 200;
+		if (s.contains("CM")) sum -= 200;
 		char[] chs = s.toCharArray();
-		for (int i = 0; i < s.length(); ++i) {
-			if (s.charAt(i) == 'I') {
+		for (int i = 0; i < chs.length; ++i) {
+			char c = chs[i];
+			if (c == 'I') {
 				sum += 1;
-			} else if (s.charAt(i) == 'V') {
+			} else if (c == 'V') {
 				sum += 5;
-			} else if (s.charAt(i) == 'X') {
+			} else if (c == 'X') {
 				sum += 10;
-			} else if (s.charAt(i) == 'L') {
+			} else if (c == 'L') {
 				sum += 50;
-			} else if (s.charAt(i) == 'C') {
+			} else if (c == 'C') {
 				sum += 100;
-			} else if (s.charAt(i) == 'D') {
+			} else if (c == 'D') {
 				sum += 500;
-			} else if (s.charAt(i) == 'M') {
+			} else if (c == 'M') {
 				sum += 1000;
 			}
 		}

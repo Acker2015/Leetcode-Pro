@@ -98,7 +98,7 @@ public class Dijkstra {
         pathNum[s] = 1;
         // loop n times
         for (int i = 0; i < n; ++i) {
-            // u使得d[u]在未访问节点中保持最小，即为下个月选取的节点
+            // u使得d[u]在未访问节点中保持最小，即为下个要选择的节点
             int u = -1;
             int min_d = INF;
             for (int k = 0; k < n; ++k) {
@@ -122,12 +122,12 @@ public class Dijkstra {
                     pathNum[vNode.v]+=pathNum[u];
                 }
 
-                if (!vis[vNode.v] && d[u] + vNode.dis < d[vNode.v]) {
-                    // 如果v未访问 && 以u为中介点可以使得d[v]最优
-                    d[vNode.v] = d[u] + vNode.dis;
-                    // 更新前驱
-                    pre[vNode.v] = u;
-                }
+//                if (!vis[vNode.v] && d[u] + vNode.dis < d[vNode.v]) {
+//                    // 如果v未访问 && 以u为中介点可以使得d[v]最优
+//                    d[vNode.v] = d[u] + vNode.dis;
+//                    // 更新前驱
+//                    pre[vNode.v] = u;
+//                }
             }
         }
     }

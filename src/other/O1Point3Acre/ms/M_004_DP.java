@@ -1,6 +1,8 @@
 package other.O1Point3Acre.ms;
 
 /**
+ * 类似leetcode-516
+ *
  * 给定一个字符串s，你可以从中删除一些字符，使得剩下的串是一个回文串。如何删除才能使得回文串最长呢？
  *
  * solution1
@@ -47,6 +49,7 @@ public class M_004_DP {
         }
         return dp[len-1][len-1];
     }
+
 
     /**
      * solution2

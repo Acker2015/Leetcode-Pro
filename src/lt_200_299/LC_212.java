@@ -92,7 +92,7 @@ public class LC_212 {
         }
         return retList;
     }
-
+    // 构建字典树
     private TrieNode buildTrie(String[] words) {
         TrieNode node = new TrieNode();
         for (String word: words) {

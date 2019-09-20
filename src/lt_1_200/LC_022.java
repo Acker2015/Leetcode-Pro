@@ -18,7 +18,9 @@ public class LC_022 {
 	 * 	solution1
 		My method is DP. First consider how to get the result f(n) from previous result f(0)...f(n-1).
 		Actually, the result f(n) will be put an extra () pair to f(n-1). 
-		Let the "(" always at the first position, to produce a valid result, we can only put ")" in a way that there will be i pairs () inside the extra () and n - 1 - i pairs () outside the extra pair.
+		Let the "(" always at the first position, to produce a valid result, we can only put ")" in a way
+	 	that there will be i pairs () inside the extra () and n - 1 - i pairs () outside the extra pair.
+
 		Let us consider an example to get clear view:
 		f(0): ""
 		f(1): "("f(0)")"
@@ -76,7 +78,7 @@ public class LC_022 {
 	        generate(left, right-1, prefix+')', retList);
 	    }
 	    if (left > 0) {
-	    		generate(left-1, right+1, prefix+'(', retList);
+			generate(left-1, right+1, prefix+'(', retList);
 	    }
 	}
 	public static void main(String[] args) {

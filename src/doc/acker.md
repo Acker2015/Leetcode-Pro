@@ -9,7 +9,7 @@ go and record
 0      | 罗马数字系列 | --- | ---          
 1       |[079-Word Search](https://leetcode.com/problems/word-search/description/) | medium                  | backtracking
 2    | [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) | hard | DFS+记忆搜索
-3    | [Pow(x, n)](https://leetcode.com/problems/powx-n/description/) | medium | Math 快速幂
+3    | [050-Pow(x, n)](https://leetcode.com/problems/powx-n/description/) | medium | Math 快速幂
 4    | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | medium | Array(环形链表) 
 5    | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | medium | binary search
 6    | [089-Gray Code](https://leetcode.com/problems/gray-code/description/) | medium | Math 二进制 格雷码
@@ -125,6 +125,8 @@ go and record
 116  | [468-Validate IP Address]() | medium | String 
 117  | [32-Longest Valid Parentheses]() | hard | DP 
 118  | [538-Convert BST to Greater Tree]() | easy | DFS树
+119  | [42-Trapping Rain Water]() | hard | two-pointers
+120  | [11-Container With Most Water]() | medium | two-pointers
 
 
 

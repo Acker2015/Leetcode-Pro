@@ -64,10 +64,35 @@ public class M_002_MoveLetters {
         return String.valueOf(chs);
     }
 
+
+    public static String moveLetters3(String s) {
+        if (s.length() <= 1) return s;
+        char[] chs = s.toCharArray();
+        int i = -1, j = 0;
+        while (j < s.length()) {
+            if (chs[j] >= 'A' && chs[j] <= 'Z') {
+                j++;
+            } else {
+                int k = j;
+                char ans = chs[j];
+                while (k-1 > i) {
+                    chs[k] = chs[k-1];
+                    k--;
+                }
+                chs[k] = ans;
+                i++;
+                j++;
+            }
+        }
+        return String.valueOf(chs);
+
+    }
+
     public static void main(String... args) {
         String s = "AbCDEFghIJkopqXYZ";
         System.out.println(moveLetters1(s));
         System.out.println(moveLetters2(s));
+        System.out.println(moveLetters3(s));
     }
 
 }

@@ -5,7 +5,7 @@ import javafx.util.Pair;
 /**
  * https://www.techiedelight.com/find-pair-array-minimum-absolute-sum/
  *
- * Find pair in an array hiving minimum absolute sum
+ * Find pair in an array having minimum absolute sum
  *
  * Given a sorted array of integers, find a pair in it having minimum absolute sum
  *

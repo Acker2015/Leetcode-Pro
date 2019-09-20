@@ -27,12 +27,15 @@ public class LC_010 {
         if (sIndex >= sLen || pIndex >= pLen) return false;
         char sc = s.charAt(sIndex), pc = p.charAt(pIndex);
         if (pc == '.') {
+            // ".*" or "."
             if (pIndex + 1 < pLen && p.charAt(pIndex+1) == '*') {
+                // 匹配掉s中的一个字符或者不匹配，match 1 char in s or don't match
                 return match(sIndex+1, pIndex) || match(sIndex, pIndex+2);
             } else {
                 return match(sIndex+1, pIndex+1);
             }
         } else {
+            // "lowerLetter" or "lowerLetter+*"
             if (pIndex+1 < pLen && p.charAt(pIndex+1) == '*') {
                 if (sc != pc) {
                     return match(sIndex, pIndex+2);
