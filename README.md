@@ -63,6 +63,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 45. [390-Elimination Game]() medium 数学思想
 46. [504-Base 7]() easy math
 47. [507-Perfect Number]() easy math
+48. [478-Generate Random Point in a Circle]() math, circle, random
 
 
 ### String
