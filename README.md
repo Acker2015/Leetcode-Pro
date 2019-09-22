@@ -403,6 +403,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 37.[474-Ones and Zeroes]() medium DP 类似0-1背包
 38.[32-Longest Valid Parentheses]() hard DP 
 39.[516-Longest Palindromic Subsequence]() medium DP
+40.[72-Edit Distance]() hard DP
+41.[115-Distinct Subsequences]() hard DP
+42.
 
 
 

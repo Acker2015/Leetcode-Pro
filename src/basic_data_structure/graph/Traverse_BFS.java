@@ -3,6 +3,7 @@ package basic_data_structure.graph;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Traverse_BFS {

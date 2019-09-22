@@ -7,3 +7,6 @@
 7. 117-Populating Next Right Pointers in Each Node II (经典)
 8. 331-Verify Preorder Serialization of a Binary Tree （经典）
 9. 124-Binary Tree Maximum Path Sum
+10. 240-Search a 2D Matrix II (如何二分?)
+11. word search 系列
+12. word break 系列

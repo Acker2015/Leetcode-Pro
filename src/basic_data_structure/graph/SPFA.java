@@ -30,7 +30,7 @@ public class SPFA {
      * @param s
      * @return
      */
-    private boolean spfa(int s) {
+    private boolean SPFA_implement(int s) {
         for (int i = 0; i < n; ++i) {
             d[i] = INF;
         }
