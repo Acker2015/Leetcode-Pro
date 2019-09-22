@@ -1,1 +1,9 @@
-4,11,罗马数字,23,
+1. 4
+2. 11
+3. 罗马数字
+4. 23
+5. 42(trap water)
+6. 114-Flatten Binary Tree to Linked List
+7. 117-Populating Next Right Pointers in Each Node II (经典)
+8. 331-Verify Preorder Serialization of a Binary Tree （经典）
+9. 124-Binary Tree Maximum Path Sum

@@ -13,23 +13,25 @@ public class LC_117 {
      * @return
      */
     public Node connect(Node root) {
-        // tmpNode作为每一层的虚拟歧视节点
-        Node virtualHead = new Node(0), ansRoot = root, pre = virtualHead;
-        while(ansRoot!=null) {
-            if (ansRoot.left!=null) {
-                pre.next = ansRoot.left;
+        if (root == null) return null;
+        Node lastLevelNode = root;
+        Node virtualHead = new Node(0), pre = virtualHead;
+        while (lastLevelNode != null) {
+            if (lastLevelNode.left != null) {
+                pre.next = lastLevelNode.left;
                 pre = pre.next;
             }
-            if (ansRoot.right!=null) {
-                pre.next = ansRoot.right;
+            if (lastLevelNode.right != null) {
+                pre.next = lastLevelNode.right;
                 pre = pre.next;
             }
-            ansRoot = ansRoot.next;
-            if (ansRoot == null) {
-                // 进入下一层，并且这层的初始虚拟头结点初始化
-                ansRoot = virtualHead.next;
+            lastLevelNode = lastLevelNode.next;
+            // 如果本层结束，那么就切换到下一层
+            if (lastLevelNode == null) {
+                // go down to next level
+                lastLevelNode = virtualHead.next;
+                virtualHead.next = null;
                 pre = virtualHead;
-                pre.next = null;
             }
         }
         return root;

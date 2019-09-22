@@ -6,8 +6,8 @@ public class LC_331 {
      * solution1
      * 使用树的入度等于出度的性质
      *  Here I use a different perspective. In a binary tree, if we consider null as leaves, then
-     *  1. all non-null node provides 2 outdegree and 1 indegree (2 children and 1 parent), except root
-     *  2. all null node provides 0 outdegree and 1 indegree (0 child and 1 parent).
+     *  1. all non-null node provides 2 out-degree and 1 in-degree (2 children and 1 parent), except root
+     *  2. all null node provides 0 out-degree and 1 in-degree (0 child and 1 parent).
      *
      *  Suppose we try to build this tree. During building, we record the difference between out degree and in degree diff = outdegree - indegree.
      *  When the next node comes, we then decrease diff by 1, because the node provides an in degree.
@@ -38,7 +38,7 @@ public class LC_331 {
      * @param preorder
      * @return
      */
-    public boolean isValidSerialization(String preorder) {
+    public boolean isValidSerialization2(String preorder) {
         String[] nodes = preorder.split(",");
         int ans = 0;    // 代替栈，来记录空节点个数
         for (int i = nodes.length-1; i >= 0; --i) {
@@ -52,6 +52,30 @@ public class LC_331 {
             }
         }
         return ans == 1;
+    }
+
+    /**
+     * 使用栈 不断把子树设置为空
+     * @param preorder
+     * @return
+     */
+    public boolean isValidSerialization(String preorder) {
+        String[] nodes = preorder.split(",");
+        String[] stack = new String[nodes.length];
+        int idx = 0;
+        int i = 0;
+        while (i < nodes.length) {
+            if (!nodes[i].equals("#")) {
+                stack[idx++] = nodes[i++];
+            } else {
+                stack[idx++] = nodes[i++];
+                while (idx >= 3 && stack[idx-1].equals("#") && stack[idx-2].equals("#")) {
+                    idx = idx - 3;
+                    stack[idx++] = "#";
+                }
+            }
+        }
+        return idx==1 && stack[0].equals("#");
     }
 
     public static void main(String ...args) {
