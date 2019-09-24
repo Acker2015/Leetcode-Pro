@@ -20,6 +20,7 @@ public class LC_092 {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if (head==null || head.next==null || m==n) return head;
         ListNode virtualNode = new ListNode(0);
+
         virtualNode.next = head;
         ListNode pre = virtualNode, cur = head;
         int now = 1;

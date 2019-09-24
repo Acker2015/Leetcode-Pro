@@ -1,5 +1,8 @@
 package lt_1_200;
 
+/**
+ * [91] Decode Ways
+ */
 public class LC_091 {
 	/**
      * dp
@@ -8,7 +11,7 @@ public class LC_091 {
      * 如果与前一位字符连一起结果大于26， 那么dp[i]=dp[i-1]
      * 否则 dp[i] = dp[i-1] + dp[i-2]
      */
-    public int numDecodings(String s) {
+    public int numDecodings1(String s) {
         int len = s.length();
         if (len <= 0 || s.startsWith("0")) return 0;
         if (len == 1) return 1;
@@ -31,10 +34,34 @@ public class LC_091 {
         }
         return dp[len-1];
     }
+
+    /**
+     *
+     * @param s
+     * @return
+     */
+    public int numDecodings(String s) {
+        int len = s.length();
+        if (len <= 0 || s.startsWith("0")) return 0;
+        if (len == 1) return len;
+        int[] dp = new int[len];
+        dp[0] = 1;
+        for (int i = 1; i < len; ++i) {
+            if (s.charAt(i) != '0') {
+                dp[i] += dp[i-1];
+            }
+            int tmp = Integer.parseInt(s.substring(i-1, i+1));
+            if (tmp <= 26 && tmp >= 10) {
+                dp[i] += i > 1 ? dp[i-2] : 1;
+            }
+        }
+        return dp[len-1];
+    }
 	public static void main(String[] args) {
 		String string = "1001";
+		String str = "226";
 		LC_091 lc_091 = new LC_091();
-		System.out.println(lc_091.numDecodings(string));
+		System.out.println(lc_091.numDecodings(str));
 
 	}
 

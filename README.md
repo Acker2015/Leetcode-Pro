@@ -405,7 +405,14 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 39.[516-Longest Palindromic Subsequence]() medium DP
 40.[72-Edit Distance]() hard DP
 41.[115-Distinct Subsequences]() hard DP
-42.
+42.[91-Decode Ways]() medium DP 
+
+### 单调队列
+1. [84-Largest Rectangle in Histogram]() hard    单调队列
+2. [85-Maximal Rectangle]() hard  单调队列(参考lc-84)
+
+
+
 
 
 
@@ -503,6 +510,7 @@ done
 1. [692-Top K Frequent Words]() medium HashMap+BucketSort+TreeSet or HashMap+PriorityQueue
 2. [451-Sort Characters By Frequency]() medium HashMap+BucketSort
 3. [347-Top K Frequent Elements]() medium PriorityQueue or TreeMap or BucketSort
+4. [164-Maximum Gap]() hard 桶排序
 
 ### 游戏环节-偶吼吼
 1. [464-Can I Win]() Top-Down DP（记忆化搜索） 

@@ -105,6 +105,4 @@ public class AOE {
         }
         return ve[n-1];
     }
-
-
 }

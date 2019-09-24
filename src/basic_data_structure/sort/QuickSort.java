@@ -37,7 +37,7 @@ public class QuickSort {
     }
 
     public void partition1(int[] A, int left, int right) {
-        int pivot = A[left + (right-left)/2];
+        int pivot = A[left + (right-left)/2];   // 这种解法对位置严格约束
         int i = left, j = right;
         while (i <= j) {
             while (A[i] < pivot) i++;
