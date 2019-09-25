@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * LRU(least recently used) 最近最少使用到的
  * 双向链表 + map
  * 1. 链表使用虚拟首尾节点固定，头部存放最新访问节点，尾部存放最久未被访问节点
  * 2. 使用map来帮助存取实现O(1)
@@ -40,10 +41,7 @@ public class LRU {
         node.next.prev = node.prev;
         node.prev.next = node.next;
         // insert after head
-        node.next = head.next;
-        head.next.prev = node;
-        node.prev = head;
-        head.next = node;
+        insertNewNode(node);
     }
 
     /**

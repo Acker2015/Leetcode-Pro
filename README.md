@@ -88,6 +88,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 19.[551-Student Attendance Record I]() easy string
 20.[557-Reverse Words in a String III]() easy string
 21.[537-Complex Number Multiplication]() medium String
+22.[481-Magical String]() medium String google 字符串前边部分影响字符串后续的生长
 
 
 ### Stack
@@ -405,7 +406,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 39.[516-Longest Palindromic Subsequence]() medium DP
 40.[72-Edit Distance]() hard DP
 41.[115-Distinct Subsequences]() hard DP
-42.[91-Decode Ways]() medium DP 
+42.[91-Decode Ways]() medium DP
+43.[486-Predict the Winner]() medium DP
+44.[120-Triangle]() medium DP (top-down or down-top)
 
 ### 单调队列
 1. [84-Largest Rectangle in Histogram]() hard    单调队列
