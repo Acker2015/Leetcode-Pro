@@ -3,56 +3,13 @@ package lt_200_299;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * [212] Word Search II
+ */
 public class LC_212 {
     private int[] d1 = {-1, 1, 0, 0};
     private int[] d2 = {0, 0, -1, 1};
-    private List<String> retList = new ArrayList<>();
     private int m, n;
-    private boolean find(boolean[][] vis, char[][] board, int x, int y, String word, int idx) {
-        if (idx >= word.length()) {
-            return true;
-        }
-        for (int i = 0; i < 4; ++i) {
-            int nx = x + d1[i];
-            int ny = y + d2[i];
-            if (nx < 0 || ny < 0 || nx >= m || ny >= n) continue;
-            if (vis[nx][ny] || board[nx][ny]!=word.charAt(idx)) continue;
-            vis[nx][ny] = true;
-            boolean ans = find(vis, board, nx, ny, word, idx+1);
-            vis[nx][ny] = false;
-            if (ans) {
-                return true;
-            }
-        }
-        return false;
-    }
-    private boolean judgeSingleWord(String word, char[][] board) {
-        boolean[][] vis = new boolean[m][n];
-        for (int i = 0; i < m; ++i) {
-            for (int j = 0; j < n; ++j) {
-                vis[i][j] = true;
-                if (board[i][j] == word.charAt(0) && find(vis, board, i, j, word, 1)) {
-                    vis[i][j] = false;
-                    return true;
-                }
-                vis[i][j] = false;
-            }
-        }
-        return false;
-    }
-    public List<String> findWords1(char[][] board, String[] words) {
-        retList.clear();
-        m = board.length;
-        if (m <= 0) return retList;
-        n = board[0].length;
-        if (n <= 0) return retList;
-        for (String word: words) {
-            if (judgeSingleWord(word, board)) {
-                retList.add(word);
-            }
-        }
-        return retList;
-    }
 
     private void dfs(char[][] board, int x, int y, TrieNode node, List<String> retList) {
         char c = board[x][y];

@@ -222,6 +222,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 ### DFS && BFS
 1. [140-Word Break II](https://leetcode.com/problems/word-break-ii/description/) hard DFS+记忆搜索
 2. [127-Word Ladder](https://leetcode.com/problems/word-ladder/description/) medium bidirectional 双向BFS
+3. [126-Word Ladder II]() BFS + backtracking
 3. [130-Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) medium dfs先解决边缘
 4. [133-Clone Graph](https://leetcode.com/problems/clone-graph/description/) medium BFS/DFS
 5. [394-Decode String](https://leetcode.com/problems/decode-string/description/) medium DFS+stack+map
@@ -250,6 +251,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 28.[698-Partition to K Equal Sum Subsets]() medium DFS
 29.[530-Minimum Absolute Difference in BST]() easy DFS
 30.[623-Add One Row to Tree]() medium BFS
+
 
 
 
@@ -360,6 +362,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 15.[435-Non-overlapping Intervals]() medium 排序+贪心
 16.[1147-Longest Chunked Palindrome Decomposition]() hard DP-贪心
 17.[561-Array Partition I]() greedy 贪心
+18.[135-Candy]() greedy hard
+
+
 
 ### DP
 0. [5-Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) 最大回文子串 medium O(N^2)
@@ -409,6 +414,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 42.[91-Decode Ways]() medium DP
 43.[486-Predict the Winner]() medium DP
 44.[120-Triangle]() medium DP (top-down or down-top)
+45.[132-Palindrome Partitioning II]() DP 回文串的最小割+记忆化
 
 ### 单调队列
 1. [84-Largest Rectangle in Histogram]() hard    单调队列

@@ -35,7 +35,7 @@ public class LC_139 {
      * @param wordDict
      * @return
      */
-    public boolean wordBreak(String s, List<String> wordDict) {
+    public boolean wordBreak2(String s, List<String> wordDict) {
         int len = s.length();
         if (s.length() <= 0) return true;
         HashSet<String> hashSet = new HashSet<>(wordDict);
@@ -57,6 +57,36 @@ public class LC_139 {
             }
         }
         return dp[len-1];
+    }
+
+
+
+
+
+
+    // dp[i] = dp[j] && s[j+1, i] in wordDict
+    public boolean wordBreak(String s, List<String> wordDict) {
+        Set<String> set = new HashSet<>();
+        for (String word: wordDict) {
+            set.add(word);
+        }
+        int maxLen = Integer.MIN_VALUE, minLen = Integer.MAX_VALUE;
+        for (String word: wordDict) {
+            int ansLen = word.length();
+            if (ansLen > maxLen) maxLen = ansLen;
+            if (ansLen < minLen) minLen = ansLen;
+        }
+        int len = s.length();
+        boolean[] dp = new boolean[len+1];
+        dp[0] = true;
+        for (int i = 1; i <= len; ++i) {
+            for (int j = Math.max(i-maxLen, 0); j+minLen <= i; ++j) {
+                if (dp[j] && set.contains(s.substring(j, i))) {
+                    dp[i] = true;
+                }
+            }
+        }
+        return dp[len];
     }
 
 

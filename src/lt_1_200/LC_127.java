@@ -126,6 +126,55 @@ public class LC_127 {
     }
 
 
+    public int ladderLength2(String beginWord, String endWord, List<String> wordList) {
+        Map<String, List<String>> wordMap = new HashMap<>();
+        for (String word: wordList) {
+            for (int i = 0; i < word.length(); ++i) {
+                String symbol = word.substring(0, i) + "_" + word.substring(i+1);
+                wordMap.computeIfAbsent(symbol, k->new ArrayList<>()).add(word);
+            }
+        }
+        if (beginWord.equals(endWord)) return 1;
+        int len = 2;
+        Set<String> hash = new HashSet<>();
+        Set<String> beginSet = new HashSet<>(), endSet = new HashSet<>();
+        beginSet.add(beginWord);
+        endSet.add(endWord);
+        hash.add(beginWord);
+        hash.add(endWord);
+
+        while (beginSet.size() > 0 && endSet.size() > 0) {
+            if (beginSet.size() > endSet.size()) {
+                Set<String> ans = endSet;
+                endSet = beginSet;
+                beginSet = ans;
+            }
+            Set<String> nextSet = new HashSet<>();
+            for (String word: beginSet) {
+                for (int i = 0; i < word.length(); ++i) {
+                    String ans = word.substring(0, i) + "_" + word.substring(i+1);
+                    if (!wordMap.containsKey(ans)) continue;
+                    for (String next: wordMap.get(ans)) {
+                        if (endSet.contains(next)) {
+                            return len+1;
+                        }
+                        if (hash.contains(next)) continue;
+                        hash.add(next);
+                        nextSet.add(next);
+                    }
+                }
+            }
+            beginSet = nextSet;
+            len++;
+        }
+        return 0;
+    }
+
+
+
+
+
+
     public static void main(String ...agrs) {
         LC_127 lc_127 = new LC_127();
         System.out.println(lc_127.ladderLength("hit", "cog", Arrays.asList("hot","dot","dog","lot","log","cog")));
