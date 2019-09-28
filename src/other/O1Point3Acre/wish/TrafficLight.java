@@ -21,6 +21,7 @@ public class TrafficLight {
         int len = lights.length;
         int i = 0, j = 0, maxSum = lights[i], sum = 0;
         int[] ret = new int[]{i,j};
+
         while (j < len) {
             sum += (lights[j] == 0 ? -1 : 1);
             if (sum <= 0) {

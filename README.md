@@ -206,6 +206,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 31.[437-Path Sum III]() easy-medium tree+dfs+map
 32.[1123-Lowest Common Ancestor of Deepest Leaves]() medium DFS 树
 33.[538-Convert BST to Greater Tree]() easy DFS树
+34.[285-Inorder Successor in BST]() medium  BST的中序后继
+35.[510-Inorder Successor in BST II]() medium   BST的中序后继
 
 
 ### Trie Tree
@@ -415,6 +417,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 43.[486-Predict the Winner]() medium DP
 44.[120-Triangle]() medium DP (top-down or down-top)
 45.[132-Palindrome Partitioning II]() DP 回文串的最小割+记忆化
+46.[174-Dungeon Game]() DP down-top + mem
+
+
 
 ### 单调队列
 1. [84-Largest Rectangle in Histogram]() hard    单调队列

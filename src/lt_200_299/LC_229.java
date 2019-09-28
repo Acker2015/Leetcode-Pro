@@ -4,6 +4,11 @@ package lt_200_299;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * For those who aren't familiar with Boyer-Moore Majority Vote algorithm,
+ * I found a great article (http://goo.gl/64Nams) that helps me to understand this fantastic algorithm!!
+ * Please check it out!
+ */
 public class LC_229 {
     public List<Integer> majorityElement(int[] nums) {
         List<Integer> retList = new ArrayList<>();

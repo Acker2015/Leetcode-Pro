@@ -21,11 +21,11 @@ public class LC_151 {
             } else {
                 int j = i+1;
                 while (j < chs.length && chs[j] != ' ') j++;
-                list.add(s.substring(i, j));
+                list.add(0, s.substring(i, j));
                 i = j;
             }
         }
-        Collections.reverse(list);
+        //Collections.reverse(list);
         return String.join(" ", list);
     }
 

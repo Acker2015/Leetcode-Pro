@@ -54,6 +54,14 @@ public class LC_143 {
         }
     }
 
+
+    /**
+     * **********************************
+     * ************ 测试 ****************
+     * **********************************
+     * @param arr
+     * @return
+     */
     public ListNode createNode(int[] arr) {
         ListNode virNode = new ListNode(0), pre = virNode;
         for (int a: arr) {

@@ -21,6 +21,8 @@ public class LC_146 {
     private Node tail;
     private int capacity;
     private Map<Integer, Node> lruMap;
+
+    // 虚拟头结点和尾节点
     public LC_146(int capacity) {
         head = new Node(-1,-1);
         tail = new Node(-1,-1);
@@ -38,10 +40,7 @@ public class LC_146 {
         node.next.prev = node.prev;
         node.prev.next = node.next;
         // insert after head
-        node.next = head.next;
-        head.next.prev = node;
-        node.prev = head;
-        head.next = node;
+        insertNewNode(node);
     }
 
     /**

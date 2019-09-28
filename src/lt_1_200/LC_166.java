@@ -1,32 +1,14 @@
 package lt_1_200;
 
 
+import javafx.util.Pair;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 public class LC_166 {
-    private class Record {
-        long remain;
-        long numerator;
-
-         Record(long remain, long numerator) {
-            this.remain = remain;
-            this.numerator = numerator;
-        }
-        @Override
-        public boolean equals(Object obj) {
-            if (obj == null || !(obj instanceof Record)) return false;
-            Record record = (Record)obj;
-            return this.remain==record.remain && this.numerator== record.numerator;
-        }
-        @Override
-        public int hashCode() {
-             return (int) ((numerator*10 + remain)%10000019);
-        }
-    }
-
     /**
      * Math
      * 注意点
@@ -48,27 +30,31 @@ public class LC_166 {
         dividend = dividend%divisor;
         if (dividend == 0) return builder.toString();
         builder.append(".");
-        List<Record> remainList = new ArrayList<>();
-        Set<Record> remainSet = new HashSet<>();
-        Record repeatPoint = null;
+
+        List<Pair<Long, Long>> remainList = new ArrayList<>();
+        Set<String> remainSet = new HashSet<>();
+        String circleKey = null;
+
         while (dividend != 0) {
             dividend *= 10;
-            Record record = new Record(dividend/divisor, dividend);
+            Pair<Long, Long> pair = new Pair<>(dividend/divisor, dividend);
+            String key = String.valueOf(pair.getKey())+"_"+String.valueOf(pair.getValue());
             dividend %= divisor;
-            if (remainSet.contains(record)) {
-                repeatPoint = record;
+            if (remainSet.contains(key)) {
+                circleKey = key;
                 break;
             }
-            remainList.add(record);
-            remainSet.add(record);
+            remainList.add(pair);
+            remainSet.add(key);
         }
-        for (Record record: remainList) {
-            if (record.equals(repeatPoint)) {
+        for (Pair<Long, Long> pair: remainList) {
+            String key = String.valueOf(pair.getKey())+"_"+String.valueOf(pair.getValue());
+            if (key.equals(circleKey)) {
                 builder.append("(");
             }
-            builder.append(record.remain);
+            builder.append(pair.getKey());
         }
-        if (repeatPoint!=null) {
+        if (circleKey != null) {
             builder.append(")");
         }
         return builder.toString();
@@ -84,6 +70,7 @@ public class LC_166 {
      *
      * numerator=5, denominator=6
      * numerator=1, denominator=333
+     *
      * 4, 9 -> "0.(4)"
      * 4, 333 -> "0.(012)"
      * 1, 17 -> "0.(0588235294117647)"
@@ -93,6 +80,6 @@ public class LC_166 {
      */
     public static void main(String ...args) {
         LC_166 lc_166 = new LC_166();
-        System.out.println(lc_166.fractionToDecimal(1, 17));
+        System.out.println(lc_166.fractionToDecimal(1, 333));
     }
 }
