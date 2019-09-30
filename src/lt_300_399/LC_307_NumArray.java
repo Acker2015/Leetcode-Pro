@@ -27,6 +27,8 @@ public class LC_307_NumArray {
     /**
      * 线段树构建
      * build segment tree
+     *
+     * k为数组中存放下标
      */
     private void build(int l, int r, int k) {
         tree[k] = new Node(l, r);
@@ -39,7 +41,7 @@ public class LC_307_NumArray {
         build(m+1, r, (k<<1)+1);
         tree[k].sum = tree[k<<1].sum + tree[(k<<1)+1].sum;
     }
-    // 单点更新
+    // 单点更新 - 更新nums[i]所在的path上节点的sum
     private void updateSingle(int k, int i, int val) {
         Node node = tree[k];
         if (node.l == node.r) {
@@ -57,6 +59,7 @@ public class LC_307_NumArray {
     // 区间求和
     private int getSum(int i, int j, int k) {
         Node node = tree[k];
+        // 求和左右区间坐标修正
         if (i < node.l) i = node.l;
         if (j > node.r) j = node.r;
         if (i == node.l && j == node.r) {

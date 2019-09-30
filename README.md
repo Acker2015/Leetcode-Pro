@@ -466,9 +466,11 @@ https://blog.csdn.net/u010150046/article/details/77017145#commentBox
 	
 	定理：该算法保证每个元素以 k / n 的概率被选入蓄水池数组。
 
-	证明：首先，对于任意的 i，第 i 个元素进入蓄水池的概率为 k / i；而在蓄水池内每个元素被替换的概率为 1 / k; 因此在第 i 轮第j个元素被替换的概率为 (k / i ) * (1 / k) = 1 / i。 接下来用数学归纳法来证明，当循环结束时每个元素进入蓄水池的概率为 k / n.
+	证明：首先，对于任意的 i，第 i 个元素进入蓄水池的概率为 k / i；而在蓄水池内每个元素被替换的概率为 1 / k; 因此在第 i 轮第j个元素被替换的概率为 (k / i ) * (1 / k) = 1 / i。 
+	接下来用数学归纳法来证明，当循环结束时每个元素进入蓄水池的概率为 k / n.
 	
-	假设在 (i-1) 次迭代后，任意一个元素进入 蓄水池的概率为 k / (i-1)。有上面的结论，在第 i 次迭代时，该元素被替换的概率为 1 / i， 那么其不被替换的概率则为 1 - 1/i = (i-1)/i；在第i 此迭代后，该元素在蓄水池内的概率为 k / (i-1) * (i-1)/i = k / i. 归纳部分结束。
+	假设在 (i-1) 次迭代后，任意一个元素进入 蓄水池的概率为 k / (i-1)。有上面的结论，在第 i 次迭代时，该元素被替换的概率为 1 / i， 那么其不被替换的概率则为 1 - 1/i = (i-1)/i；
+	在第i 此迭代后，该元素在蓄水池内的概率为 k / (i-1) * (i-1)/i = k / i. 归纳部分结束。
 	
 	因此当循环结束时，每个元素进入蓄水池的概率为 k / n. 命题得证。
 */
@@ -512,6 +514,8 @@ done
 4. [159-Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
 5. [438-Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 6. [424-Longest Repeating Character Replacement]() medium slide-window
+
+7. [1208-Get Equal Substrings Within Budget]() medium sliding-window
 
 ### 回文-Palindromic
 1. [647-Palindromic Substrings]() medium  DP or expand from center

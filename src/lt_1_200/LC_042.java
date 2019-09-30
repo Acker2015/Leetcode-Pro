@@ -48,7 +48,7 @@ public class LC_042 {
      two pointers， left - right
      两个变量分别表示左边的最大值和右边的最大值，每次都先处理left和right中坐标比较小的。
 
-     可以得到 如果height[left] <= height[right], 此时如果leftMax比height[height]大，则leftMax肯定小于Math.max(rightMax, height[right])
+     可以得到 如果height[left] <= height[right], 此时如果leftMax比height[left]小，则leftMax肯定小于Math.max(rightMax, height[right])
      如果leftMax一直是最大的，那么在height[left]=leftMax的时候，一直在处理right指针
      所以
         1. 处理左指针的时候， 右边肯定有值比leftMax大
