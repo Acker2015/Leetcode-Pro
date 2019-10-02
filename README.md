@@ -274,6 +274,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 14.[37-Sudoku Solver]() hard backtracking
 15.[52-N-Queens II]() hard N皇后 backtracking经典问题
 16.[526-Beautiful Arrangement]() medium backtracking
+17.[216-Combination Sum III]() medium backtracking
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -529,7 +530,19 @@ done
 2. [451-Sort Characters By Frequency]() medium HashMap+BucketSort
 3. [347-Top K Frequent Elements]() medium PriorityQueue or TreeMap or BucketSort
 4. [164-Maximum Gap]() hard 桶排序
+5. [220-Contains Duplicate III]() 有桶排序的解法
 
 ### 游戏环节-偶吼吼
 1. [464-Can I Win]() Top-Down DP（记忆化搜索） 
 2. [1140-Stone Game II]() 
+
+### 快慢指针
+1. [202-Happy Number]() 快慢指针
+2. 
+
+
+### 数组求和问题
+1. [209-Minimum Size Subarray Sum]() 全整数数组中求子数组和大于s的最小长度 two-pointers
+
+### KMP
+1. [214-Shortest Palindrome]() KMP hard

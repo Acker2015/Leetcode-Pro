@@ -20,42 +20,38 @@ public class LC_210 {
      * @return
      */
     public int[] findOrder(int numCourses, int[][] prerequisites) {
-        int[] order = new int[numCourses];
         ArrayList[] graph = new ArrayList[numCourses];
+        int[] indegree = new int[numCourses];       // 入度数组
         for (int i = 0; i < numCourses; ++i) {
             graph[i] = new ArrayList();
         }
-        int[] outdegree = new int[numCourses];
         for (int i = 0; i < prerequisites.length; ++i) {
-            graph[prerequisites[i][0]].add(prerequisites[i][1]);
-            outdegree[prerequisites[i][1]]++;
+            indegree[prerequisites[i][0]]++;
+            graph[prerequisites[i][1]].add(prerequisites[i][0]);
         }
-        int idx = numCourses-1;
         Queue<Integer> queue = new LinkedList<>();
-        for (int i = 0; i < outdegree.length; ++i) {
-            if (outdegree[i] == 0) {
+        for (int i = 0; i < indegree.length; ++i) {
+            if (indegree[i] == 0) {
                 queue.offer(i);
             }
         }
+        int[] order = new int[numCourses];
+        int idx = 0;
         while (!queue.isEmpty()) {
             int size = queue.size();
             while (size-- > 0) {
-                int cur = queue.poll();
-                order[idx--] = cur;
-                for (int i = 0; i < graph[cur].size(); ++i) {
-                    int visCourse = (int)graph[cur].get(i);
-                    outdegree[visCourse]--;
-                    if (outdegree[visCourse] == 0) {
-                        queue.offer(visCourse);
+                int u = queue.poll();
+                order[idx++] = u;
+                for (Object obj: graph[u]) {
+                    int v = (int)obj;
+                    indegree[v]--;
+                    if (indegree[v] == 0) {
+                        queue.offer(v);
                     }
                 }
             }
         }
-        if (idx < 0) {
-            return new int[0];
-        } else {
-            return order;
-        }
+        return idx==numCourses ? order : new int[]{};
     }
 
     private void dfs(boolean[] vis, int[] indegree, ArrayList[] graph, int cur, List<Integer> orderList) {

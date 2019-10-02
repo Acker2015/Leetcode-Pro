@@ -45,45 +45,45 @@ public class LC_207 {
         return true;
     }
 
-    /**
-     * BFS + 拓扑排序
-     * @param numCourses
-     * @param prerequisites
-     * @return
-     */
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
-        ArrayList[] graph = new ArrayList[numCourses];
-        int[] degree = new int[numCourses];
-        for (int i = 0; i < numCourses; ++i) {
-            graph[i] = new ArrayList();
-        }
-        // 倒序存储
-        for (int i = 0; i < prerequisites.length; ++i) {
-            graph[prerequisites[i][0]].add(prerequisites[i][1]);
-            degree[prerequisites[i][1]]++;
-        }
-        Queue<Integer> queue = new LinkedList<>();
-        for (int i = 0; i < numCourses; ++i) {
-            if (degree[i] == 0) {
-                queue.offer(i);
+    public static class Solution2 {
+        /**
+         * BFS + 拓扑排序
+         * @param numCourses
+         * @param prerequisites
+         * @return
+         */
+        public boolean canFinish(int numCourses, int[][] prerequisites) {
+            ArrayList[] graph = new ArrayList[numCourses];
+            int[] degree = new int[numCourses];
+            for (int i = 0; i < numCourses; ++i) {
+                graph[i] = new ArrayList();
             }
-        }
-        int count = 0;
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-            count += size;
-            while (size-- > 0) {
-                int c = queue.poll();
-                for (int i = 0; i < graph[c].size(); ++i) {
-                    int nc = (int)graph[c].get(i);
-                    degree[nc]--;
-                    if (degree[nc] == 0) {
-
-                        queue.offer(nc);
+            for (int[] pre: prerequisites) {
+                graph[pre[1]].add(pre[0]);
+                degree[pre[0]]++;
+            }
+            Queue<Integer> queue = new LinkedList<>();
+            for (int i = 0; i < degree.length; ++i) {
+                if (degree[i] == 0) {
+                    queue.offer(i);
+                }
+            }
+            int num = 0;
+            while (!queue.isEmpty()) {
+                int size = queue.size();
+                num += size;
+                while (size-- > 0) {
+                    int c = queue.poll();
+                    for (Object obj: graph[c]) {
+                        int nextc = (int)obj;
+                        degree[nextc]--;
+                        if (degree[nextc] == 0) {
+                            queue.offer(nextc);
+                        }
                     }
                 }
             }
+            return num==numCourses;
         }
-        return count==numCourses;
     }
 }
