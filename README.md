@@ -276,6 +276,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 15.[52-N-Queens II]() hard N皇后 backtracking经典问题
 16.[526-Beautiful Arrangement]() medium backtracking
 17.[216-Combination Sum III]() medium backtracking
+18.[1219-Path with Maximum Gold]() medium backtracking
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -367,6 +368,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 16.[1147-Longest Chunked Palindrome Decomposition]() hard DP-贪心
 17.[561-Array Partition I]() greedy 贪心
 18.[135-Candy]() greedy hard
+19.[1217-Play with Chips]() easy greedy
 
 
 
@@ -421,7 +423,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 45.[132-Palindrome Partitioning II]() DP 回文串的最小割+记忆化
 46.[174-Dungeon Game]() DP down-top + mem
 47.[238-Product of Array Except Self]() DP medium
-48.[279-Perfect Squares]() DP/BFS/math
+48.[279-Perfect Squares]() medium DP/BFS/math
+49.[1220-Count Vowels Permutation]() hard DP 找到来源位置
+50.[1218-Longest Arithmetic Subsequence of Given Difference]() medium DP
 
 
 
