@@ -7,18 +7,25 @@ import domain.ListNode;
  *
  */
 public class LC_024 {
-	public ListNode swapPairs(ListNode head) {
-        ListNode preNode = new ListNode(0);
-        preNode.next = head;
-        ListNode p = preNode;
-        while (p!=null && p.next!=null && p.next.next != null) {
-            ListNode tmpNode = p.next.next;
-            p.next.next = tmpNode.next;
-            tmpNode.next = p.next;
-            p.next = tmpNode;
-            p = p.next.next;
+    public ListNode swapPairs(ListNode node) {
+        ListNode virtualNode = new ListNode(0);
+        ListNode pre = virtualNode;
+        while (node != null && node.next!=null) {
+            ListNode nextPre = node;
+            ListNode p = node.next;
+            // first node
+            node.next = pre.next;
+            pre.next = node;
+            // set new node
+            node = p.next;
+            // second node
+            p.next = pre.next;
+            pre.next = p;
+            // set new preNode
+            pre = nextPre;
         }
-        return preNode.next;
+        pre.next = node;
+        return virtualNode.next;
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
