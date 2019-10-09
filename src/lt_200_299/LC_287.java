@@ -1,17 +1,17 @@
 package lt_200_299;
 
 public class LC_287 {
-	public int findDuplicate(int[] nums) {
-        int fast = 0, slow = 0;
-        while(nums[fast] < nums.length) {
-        		slow = nums[slow];
-        		fast = nums[nums[fast]];
-        		if (slow == fast) break;
+    public int findDuplicate(int[] nums) {
+	    int fast = 0, slow = 0;
+        while (nums[fast] < nums.length && nums[slow] < nums.length) {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+            if (slow == fast) break;
         }
         slow = 0;
         while (slow != fast) {
-        		slow = nums[slow];
-        		fast = nums[fast];
+            slow = nums[slow];
+            fast = nums[fast];
         }
         return slow;
     }

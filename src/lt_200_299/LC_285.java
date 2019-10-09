@@ -57,7 +57,7 @@ public class LC_285 {
             TreeNode ans = inorderSuccessor2(root.left, p);
             return ans==null ? root: ans;
         } else {
-            return inorderSuccessor(root.right, p);
+            return inorderSuccessor2(root.right, p);
         }
     }
 }

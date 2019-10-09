@@ -545,7 +545,7 @@ done
 
 ### 快慢指针
 1. [202-Happy Number]() 快慢指针
-2. 
+2. [287-Find the Duplicate Number]() 快慢指针，找到循环点
 
 
 ### 数组求和问题

@@ -44,6 +44,8 @@ public class LC_299 {
      */
     public String getHint(String secret, String guess) {
         int bulls = 0, cows = 0;
+        // secret中对应位不同的char，使其自增
+        // guess中对应位置不同的char，使其自减
         int[] record = new int[10];
         for (int i = 0; i < secret.length(); ++i) {
             int s = secret.charAt(i)-'0';

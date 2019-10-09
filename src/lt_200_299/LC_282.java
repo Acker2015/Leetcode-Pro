@@ -25,31 +25,42 @@ public class LC_282 {
         if (num.length() <= 0) return retList;
         char[] numArr = num.toCharArray();
         long ans = 0L;
-        StringBuilder builder = new StringBuilder();
         for (int i = 0; i < numArr.length; ++i) {
             if (i > 0 && numArr[0] == '0') break;
             ans = ans * 10 + (numArr[i]-'0');
-            dfs(retList, String.valueOf(numArr, 0, i+1), numArr, i+1, 0, ans, target);
+            DFS(retList, String.valueOf(numArr, 0, i+1), numArr, i+1, 0, ans, target);
         }
         return retList;
     }
-    private void dfs(List<String> retList, String exp, char[] numArr, int idx, long preRet, long lastMulti, int target) {
-        if (idx == numArr.length) {
-            if (target == preRet+lastMulti) {
+
+    /**
+     * DFS
+     * @param retList
+     * @param exp       表达子式
+     * @param numArr    输入string的char数组形式
+     * @param idx       起始索引
+     * @param preRet    结果值
+     * @param leftMulti 可能参与乘法计算表达式的左手元
+     * @param target    目标结果
+     */
+
+    private void DFS(List<String> retList, String exp, char[] numArr, int idx, long preRet, long leftMulti, int target) {
+        if (idx >= numArr.length) {
+            if (target == preRet+leftMulti) {
                 retList.add(exp);
             }
             return;
         }
-        long ans = 0L;
+        long ans = 0;
         for (int i = idx; i < numArr.length; ++i) {
-            if (numArr[idx] == '0' && i > idx) break;
+            if (numArr[idx]=='0' && i > idx) break;
             ans = ans*10 + (numArr[i]-'0');
             // +
-            dfs(retList, exp+'+'+ans, numArr, i+1, preRet+lastMulti, ans, target);
-            // - 看成是加负数
-            dfs(retList, exp+'-'+ans, numArr, i+1, preRet+lastMulti, -ans, target);
-            // 乘法，lastMulti*ans意味着提高优先级
-            dfs(retList, exp+'*'+ans, numArr, i+1, preRet, lastMulti*ans, target);
+            DFS(retList, exp+"+"+ans, numArr, i+1, preRet+leftMulti, ans, target);
+            // -
+            DFS(retList, exp+"-"+ans, numArr, i+1, preRet+leftMulti, -ans, target);
+            // *
+            DFS(retList, exp+"*"+ans, numArr, i+1, preRet, leftMulti*ans, target);
         }
     }
 }
