@@ -57,28 +57,30 @@ public class LC_264 {
         Queue<Integer> queue2 = new LinkedList<>();
         Queue<Integer> queue3 = new LinkedList<>();
         Queue<Integer> queue5 = new LinkedList<>();
-        queue3.add(1);
+        queue2.add(1);
         for (int i = 1; i <= n; ++i) {
             int v2 = queue2.size()>0 ? queue2.peek():Integer.MAX_VALUE;
             int v3 = queue3.size()>0 ? queue3.peek():Integer.MAX_VALUE;
             int v5 = queue5.size()>0 ? queue5.peek():Integer.MAX_VALUE;
             val = Math.min(v2, Math.min(v3,v5));
             if (val == v2) {
-                queue2.remove();
-                queue2.add(val*2);
-                queue3.add(val*3);
-                //queue5.add(val*5);
+                queue2.poll();
+                queue2.offer(val*2);
+                queue3.offer(val*3);
+                queue5.offer(val*5);
             } else if (val == v3) {
                 // 3x*2已经在2x*3的时候输出过了，所以不用重复输出
-                queue3.remove();
-                queue3.add(val*3);
+                queue3.poll();
+                queue3.offer(val*3);
+                queue5.offer(val*5);
             } else if (val == v5) {
-                queue5.remove();
+                queue5.poll();
+                queue5.offer(val*5);
             }
-            queue5.add(val*5);
         }
         return val;
     }
+
 
     /**
      * Solution2
@@ -128,6 +130,6 @@ public class LC_264 {
 
     public static void main(String ...args) {
         LC_264 lc_264 = new LC_264();
-        System.out.println(lc_264.nthUglyNumber1(1690));
+        System.out.println(lc_264.nthUglyNumber2(10));
     }
 }

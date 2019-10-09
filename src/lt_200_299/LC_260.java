@@ -7,6 +7,7 @@ public class LC_260 {
         for (int i = 0; i < nums.length; ++i) {
             ans ^= nums[i];
         }
+        // 获取二进制ans的最后一个1
         int flag = ans&(-ans);
         int ans1 = 0, ans2 = 0;
         for (int i = 0; i < nums.length; ++i) {

@@ -132,7 +132,6 @@ public class LC_450 {
                 TreeNode minNode = findMin(root.right);
                 root.val = minNode.val;
                 root.right = deleteNode(root.right, minNode.val);
-
             }
             return root;
         }

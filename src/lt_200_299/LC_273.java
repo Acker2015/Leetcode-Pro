@@ -26,6 +26,7 @@ public class LC_273 {
         }
         return ret.trim();
     }
+
     public String numberToWords(int num) {
         if (num < 20) {
             return n2eArr1[num];
