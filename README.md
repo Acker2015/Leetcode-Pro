@@ -426,6 +426,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 48.[279-Perfect Squares]() medium DP/BFS/math
 49.[1220-Count Vowels Permutation]() hard DP 找到来源位置
 50.[1218-Longest Arithmetic Subsequence of Given Difference]() medium DP
+51.[312-Burst Balloons]() hard DP 烧气球-DP or divide-conquer
 
 
 
@@ -522,7 +523,6 @@ done
 4. [159-Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
 5. [438-Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 6. [424-Longest Repeating Character Replacement]() medium slide-window
-
 7. [1208-Get Equal Substrings Within Budget]() medium sliding-window
 
 ### 回文-Palindromic

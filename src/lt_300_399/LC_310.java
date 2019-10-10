@@ -17,7 +17,7 @@ import java.util.*;
  */
 public class LC_310 {
     private int[] pre;
-    private int getLongestPath(int root, ArrayList[] adj) {
+    private int getLongestPath(int root, ArrayList<Integer>[] adj) {
         Queue<Integer> queue = new LinkedList<>();
         Set<Integer> set = new HashSet<>();
         queue.offer(root);
@@ -27,8 +27,7 @@ public class LC_310 {
             int len = queue.size();
             while (len-- > 0) {
                 leaf = queue.poll();
-                for (Object obj: adj[leaf]) {
-                    int next = (int) obj;
+                for (Integer next: adj[leaf]) {
                     if (!set.contains(next)) {
                         pre[next] = leaf;
                         queue.offer(next);
@@ -58,9 +57,9 @@ public class LC_310 {
             return retList;
         }
         pre = new int[n];
-        ArrayList[] adj = new ArrayList[n];
+        ArrayList<Integer>[] adj = new ArrayList[n];
         for (int i = 0; i < n; ++i) {
-            adj[i] = new ArrayList();
+            adj[i] = new ArrayList<>();
         }
         for (int i = 0; i < edges.length; ++i) {
             adj[edges[i][0]].add(edges[i][1]);
@@ -91,9 +90,9 @@ public class LC_310 {
             return retList;
         }
         int[] degree = new int[n];
-        ArrayList[] edgesList = new ArrayList[n];
+        ArrayList<Integer>[] edgesList = new ArrayList[n];
         for (int i = 0; i < n; ++i) {
-            edgesList[i] = new ArrayList();
+            edgesList[i] = new ArrayList<>();
         }
         for (int i = 0; i < edges.length; ++i) {
             edgesList[edges[i][0]].add(edges[i][1]);
@@ -105,7 +104,6 @@ public class LC_310 {
         for (int i = 0; i < n; ++i) {
             if (degree[i] == 1) {
                 queue.offer(i);
-                degree[i]--;
             }
         }
         while (!queue.isEmpty()) {
@@ -115,8 +113,7 @@ public class LC_310 {
                 int root = queue.poll();
                 retList.add(root);
                 degree[root] = 0;
-                for (Object obj: edgesList[root]) {
-                    int next = (int)obj;
+                for (int next: edgesList[root]) {
                     degree[next]--;
                     if (degree[next] == 1) {
                         queue.offer(next);

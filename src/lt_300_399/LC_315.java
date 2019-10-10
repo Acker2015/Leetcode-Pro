@@ -20,13 +20,13 @@ import java.util.List;
  *      3. 如果nums[i]大于当前节点，preSum+ans+repeat 因为nums[i]>当前节点所以preSum需要更新，继续访问右子树
  *
  *
- * Solution2: 使用merge_sort的思想来计算
+ * Solution2: 使用merge_sort的思想来计算 (逆序对)
  * 在每一轮merge的过程中. [left,.., i, ..., mid, j, ..., right], [left, mid]以及[mid+1, right]都是各自有序的
  * 如果nums[i]>nums[j], 说明[i, mid]之间的每一个数都比nums[j]大，所以对应位置的smallerCount需要+1
  * 具体实现的时候为了防止重复数的出现，需要将val-index（数值索引关系）同时记录
  */
 public class LC_315 {
-    private class Node {
+    private static class Node {
         int val;
         int ans;    // record the sum of node in left sub-tree （左子树节点个数）
         int repeat; // record the repeat num of the node.val (当前节点值的重复次数 >= 1)
@@ -39,117 +39,114 @@ public class LC_315 {
             this.right = null;
         }
     }
-    private int insert(Node parent, Node root, int aim, int preSum) {
-        if (root == null) {
-            if (parent.val <= aim) {
-                parent.right = new Node(aim, 0);
-            } else {
-                parent.left = new Node(aim, 0);
+
+    static class Solution1 {
+        /**
+         * 插入新节点，返回BST中比此节点值小的元素个数
+         * @param parent
+         * @param root
+         * @param val
+         * @return
+         */
+        private int insert(Node parent, Node root, int val) {
+            if (root == null) {
+                if (parent.val < val) {
+                    parent.right = new Node(val, 0);
+                } else {
+                    parent.left = new Node(val, 0);
+                }
+                return 0;
             }
-            return preSum;
+            if (root.val == val) {
+                root.repeat += 1;
+                return root.ans;    // 返回左子树(全部比val小)的节点个数
+            } else if (root.val < val) {
+                return root.ans + root.repeat + insert(root, root.right, val); //左子树(全部比val小)的节点个数+根节点重复个数+右子树比val小的个数
+            } else {
+                root.ans += 1;  // 将左子树中比当前节点值小的变量ans增1
+                return insert(root, root.left, val);
+            }
         }
-        if (root.val == aim) {
-            root.repeat+=1;
-            return preSum + root.ans; // 加上左子树(全部比aim小)的节点个数
-        } else if (root.val < aim) {
-            return insert(root, root.right, aim, preSum+root.ans+root.repeat); //加上左子树(全部比aim小)的节点个数,和当前节点重复个数
-        } else {
-            root.ans += 1;
-            return insert(root, root.left, aim, preSum);
+        public List<Integer> countSmaller(int[] nums) {
+            Node root = new Node(Integer.MIN_VALUE, 0);
+            Integer[] small = new Integer[nums.length];
+            for (int i = nums.length-1; i >= 0; --i) {
+                small[i] = insert(root, root.right, nums[i]);
+            }
+            return Arrays.asList(small);
         }
     }
-    public List<Integer> countSmaller1(int[] nums) {
-        Node root = new Node(Integer.MIN_VALUE, 0);
-        Integer[] small = new Integer[nums.length];
-        for (int i = nums.length-1; i >= 0; --i) {
-            small[i] = insert(root, root.right, nums[i], 0);
-        }
-        return Arrays.asList(small);
-    }
+
+
 
 
 
 
     /*-----------------------------------------------------------------------------华丽的分割线----------------------------------------------------------------------------------------------*/
-    private class NumWrap {
-        int val;
-        int index;
-        public NumWrap(int val, int index) {
-            this.val = val;
-            this.index = index;
-        }
-    }
-    private void merge(NumWrap[] numWraps, int[] smallCount, int left, int mid, int right) {
-        int i =left, j = mid + 1, ans = 0, idx = 0;
-        NumWrap[] temp = new NumWrap[right-left+1];
-        while (i <= mid && j <= right) {
-            if (numWraps[i].val <= numWraps[j].val) {
-                smallCount[numWraps[i].index] += ans;
-                temp[idx++] = numWraps[i++];
-            } else {
-                ans += 1; // [i, mid]之间的数都比numWraps[j]要大，所以这里记录个数即可
-                temp[idx++] = numWraps[j++];
+
+    /**
+     * merge-sort思想的逆序对思路
+     *
+     * O(nlogn)
+     */
+    static class Solution2 {
+        // 包装类 - 记忆原来的值和对应的索引位置
+        private class NumWrap {
+            int val;
+            int index;
+            public NumWrap(int val, int index) {
+                this.val = val;
+                this.index = index;
             }
         }
-        while (i <= mid) {
-            smallCount[numWraps[i].index] += ans;
-            temp[idx++] = numWraps[i++];
+        private void merge(NumWrap[] numWraps, int[] smallCount, int left, int mid, int right) {
+            int i =left, j = mid + 1, ans = 0, idx = 0;
+            NumWrap[] temp = new NumWrap[right-left+1];
+            while (i <= mid && j <= right) {
+                if (numWraps[i].val <= numWraps[j].val) {
+                    smallCount[numWraps[i].index] += ans;
+                    temp[idx++] = numWraps[i++];
+                } else {
+                    ans += 1; // [i, mid]之间的数都比numWraps[j]要大，所以这里记录个数即可
+                    temp[idx++] = numWraps[j++];
+                }
+            }
+            while (i <= mid) {
+                smallCount[numWraps[i].index] += ans;
+                temp[idx++] = numWraps[i++];
+            }
+            while (j <= right) {
+                temp[idx++] = numWraps[j++];
+            }
+            for (int k = 0; k < temp.length; ++k) {
+                numWraps[left+k] = temp[k];
+            }
         }
-        while (j <= right) {
-            temp[idx++] = numWraps[j++];
+
+        private void mergeSort(NumWrap[] numWraps, int[] smallCount, int left, int right) {
+            if (left >= right) return;
+            int mid = left + ((right-left)>>1);
+            mergeSort(numWraps, smallCount, left, mid);
+            mergeSort(numWraps, smallCount, mid+1, right);
+            merge(numWraps, smallCount, left, mid, right);
         }
-        for (int k = 0; k < temp.length; ++k) {
-            numWraps[left+k] = temp[k];
+        public List<Integer> countSmaller(int[] nums) {
+            List<Integer> retList = new ArrayList<>();
+            if (nums.length <= 0) {
+                return new ArrayList<>();
+            }
+            NumWrap[] numWraps = new NumWrap[nums.length];
+            for (int i = 0; i < nums.length; ++i) {
+                numWraps[i] = new NumWrap(nums[i], i);
+            }
+            int[] smallCount = new int[nums.length];
+            mergeSort(numWraps, smallCount, 0, nums.length-1);
+            for (int cnt: smallCount) {
+                retList.add(cnt);
+            }
+            return retList;
         }
     }
-    private void mergeSort(NumWrap[] numWraps, int[] smallCount, int left, int right) {
-        if (left >= right) return;
-        int mid = left + ((right-left)>>1);
-        mergeSort(numWraps, smallCount, left, mid);
-        mergeSort(numWraps, smallCount, mid+1, right);
-        merge(numWraps, smallCount, left, mid, right);
-    }
-    public List<Integer> countSmaller(int[] nums) {
-        List<Integer> retList = new ArrayList<>();
-        if (nums.length <= 0) {
-            return new ArrayList<>();
-        }
-        NumWrap[] numWraps = new NumWrap[nums.length];
-        for (int i = 0; i < nums.length; ++i) {
-            numWraps[i] = new NumWrap(nums[i], i);
-        }
-        int[] smallCount = new int[nums.length];
-        mergeSort(numWraps, smallCount, 0, nums.length-1);
-        for (int cnt: smallCount) {
-            retList.add(cnt);
-        }
-        return retList;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -157,7 +154,7 @@ public class LC_315 {
     public static void main(String ...args) {
         int[] nums1 = {4,5,4,2,6,1};
         int[] nums = {26,78,27,100,33,67,90,23,66,5,38,7,35,23,52,22,83,51,98,69,81,32,78,28,94,13,2,97,3,76,99,51,9,21,84,66,65,36,100,41};
-        List<Integer> ret = new LC_315().countSmaller(nums);
+        List<Integer> ret = new Solution1().countSmaller(nums1);
         ret.forEach(System.out::println);
     }
 }

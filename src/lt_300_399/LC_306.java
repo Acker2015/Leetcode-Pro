@@ -5,6 +5,7 @@ package lt_300_399;
  * string
  */
 public class LC_306 {
+    // 加法运算
     private String plus(String s1, String s2) {
         StringBuilder builder = new StringBuilder();
         int i = s1.length()-1, j = s2.length()-1;
@@ -25,6 +26,7 @@ public class LC_306 {
         }
         return builder.toString();
     }
+    // 递归判断
     public boolean judge(String num, String a, String b, int j) {
         if (j == num.length()) {
             return true;
@@ -56,8 +58,6 @@ public class LC_306 {
             for (int j = i + 1; j < len; ++j) {
                 // 长度大于1，不能有前导0
                 if (j > i + 1 && numArr[i] == '0') break;
-                // 剪枝
-                if (len-j < Math.max(i, j - i)) break;
                 if (judge(num, num.substring(0, i), num.substring(i, j), j)) {
                     return true;
                 }
