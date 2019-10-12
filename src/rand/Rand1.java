@@ -79,6 +79,6 @@ public class Rand1 {
         do {
             r = RandN(5)*5 + (RandN(5)-1);
         } while (r >= 28);
-        return r % 4 + 1;
+        return r % 7 + 1;
     }
 }

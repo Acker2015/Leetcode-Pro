@@ -9,7 +9,7 @@ public class M_009_MOD {
         if ((ans << 1) < b) {
             return b;
         } else {
-            return ans;
+            return ans<<1;
         }
     }
 

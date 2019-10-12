@@ -3,7 +3,7 @@ package other.O1Point3Acre.ms;
 /**
  *
  * 如果num的bit位为1位置，如果在target对应位置bit位不为1，那么这个num不被考虑计算，因为这个数不会参与或运算
- * 1. 如果num的bit位为1位置，如果在target对应位置bit位不为1，那么这个num不被考虑计算。所以只考虑被target的bit为包含的num，因为不包含的只要参与或操作结果都不会等于target
+ * 1. 如果num的bit位为1位置，如果在target对应位置bit位不为1，那么这个num不被考虑计算。所以只考虑被target的bit位包含的num，因为不包含的只要参与或操作结果都不会等于target
  * 2. 对于符合条件的num，记录对应bit位出现的num个数
  * 3. 输出target比特位为1，并且对应num个数最小的。这就是需要删除的最小的num个数
  *

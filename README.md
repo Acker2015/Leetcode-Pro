@@ -553,3 +553,8 @@ done
 
 ### KMP
 1. [214-Shortest Palindrome]() KMP hard
+
+### merge-sort思想、divide-conquer
+1. 逆序对
+2. [327-Count of Range Sum]()
+3. 

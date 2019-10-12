@@ -44,21 +44,14 @@ public class M_002_MoveLetters {
     public static String moveLetters2(String s) {
         if (s.length() <= 1) return s;
         char[] chs = s.toCharArray();
+        int idx = 0;
         for (int i = 0; i < chs.length; i++) {
-            if (chs[i] >= 'A' && chs[i] <= 'Z') {
-                // 如果是大写，找下一个小写的位置
-                int idx = findNextLowCase(chs, i);
-                if (idx < 0) {
-                    break;
+            if (Character.isLowerCase(chs[i])) {
+                char tmp = chs[i];
+                for (int j = i-1; j >= idx; --j) {
+                    chs[j+1] = chs[j];
                 }
-                char ans = chs[idx];
-                // 将[i, idx)之间的大写字母顺序平移
-                while (idx > i) {
-                    chs[idx] = chs[idx-1];
-                    idx--;
-                }
-                // i处的字符置为找到的上述小写字母
-                chs[i] = ans;
+                chs[idx++] = tmp;
             }
         }
         return String.valueOf(chs);

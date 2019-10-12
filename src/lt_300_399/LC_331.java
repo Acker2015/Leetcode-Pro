@@ -70,6 +70,9 @@ public class LC_331 {
             } else {
                 stack[idx++] = nodes[i++];
                 while (idx >= 3 && stack[idx-1].equals("#") && stack[idx-2].equals("#")) {
+                    if (stack[idx-3].equals("#")) {
+                        return false;
+                    }
                     idx = idx - 3;
                     stack[idx++] = "#";
                 }
@@ -80,6 +83,7 @@ public class LC_331 {
 
     public static void main(String ...args) {
         String s = "9,3,4,#,#,1,#,#,2,#,6,#,#";
-        System.out.println(new LC_331().isValidSerialization(s));
+        String ns = "#,#,#";
+        System.out.println(new LC_331().isValidSerialization2(ns));
     }
 }

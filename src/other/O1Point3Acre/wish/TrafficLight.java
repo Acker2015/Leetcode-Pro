@@ -1,5 +1,7 @@
 package other.O1Point3Acre.wish;
 
+import domain.ListNode;
+
 /**
  * describe:
  * 给了一个0/1数组，0代表绿灯，1代表红灯。反转一个区间的意思是说把这个区间里面的0变成1，1变成0，问经过一次反转最多能有多少个绿灯，然后反转区间的下标。
@@ -38,6 +40,7 @@ public class TrafficLight {
         }
         return ret;
     }
+
     public static void main(String...args) {
         int[] lights = {0,1,0,0,0,1};
         int[] ret = new TrafficLight().maxGreenNum(lights);

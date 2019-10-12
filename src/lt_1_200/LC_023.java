@@ -10,6 +10,8 @@ import domain.ListNode;
 public class LC_023 {
 	/**
 	 * merge two sorted list
+     *
+     * 这种写法也太牛逼了
 	 * @param l1
 	 * @param l2
 	 * @return

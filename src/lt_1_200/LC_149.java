@@ -133,7 +133,7 @@ public class LC_149 {
                     dy /= gcd;
                     String key = dx+"_"+dy;
                     map.put(key, map.getOrDefault(key, 0) + 1);
-                    ans = map.get(key);
+                    ans = Math.max(ans, map.get(key));
                 }
                 maxP = Math.max(maxP, ans+overlap+1);
             }
@@ -148,6 +148,6 @@ public class LC_149 {
         Solution2 solution2 = new Solution2();
         System.out.println(solution2.maxPoints(points));
 
-        System.out.println(generateGCD(6, -3));
+        System.out.println(generateGCD(0, -6));
     }
 }
