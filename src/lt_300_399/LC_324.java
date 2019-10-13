@@ -48,50 +48,48 @@ public class LC_324 {
          * @param nums
          */
         public void wiggleSort(int[] nums) {
-
-            int n = nums.length, k = (n + 1) / 2, j = n;
+            int n = nums.length, k = (n - 1) / 2, j = n-1;
             int[] tmp = new int[nums.length];
             for (int i = 0; i < n; ++i) {
                 tmp[i] = nums[i];
             }
             Arrays.sort(tmp);
             for (int i = 0; i < n; ++i) {
-                nums[i] = (i&1)>0 ? tmp[--j] : tmp[--k];
+                nums[i] = (i&1)>0 ? tmp[j--] : tmp[k--];
             }
         }
     }
 
-    /**
-     * solution1
-     * @param nums
-     */
-    public void wiggleSort1(int[] nums) {
-        int len = nums.length;
-        Arrays.sort(nums);
-        int mid = nums[len/2];
-        int[] ans = new int[len];
-         for (int i = 0; i < len; ++i) {
-             ans[i] = mid;
-         }
-         // left表示奇数索引(左->右)，right表示偶数索引(右->左)
-         int left = 1, right = len%2==0 ? len-2:len-1;
-         for (int i = 0; i < len; ++i) {
-             if (nums[i] > mid) {
-                 ans[left] = nums[i];
-                 left += 2;
-             } else if (nums[i] < mid) {
-                 ans[right] = nums[i];
-                 right -= 2;
-             }
-         }
-         for (int i = 0; i < len; ++i) {
-             nums[i] = ans[i];
-         }
+    static class Solution2 {
+        public void wiggleSort(int[] nums) {
+            int len = nums.length;
+            Arrays.sort(nums);
+            int mid = nums[len/2];
+            int[] ans = new int[len];
+            for (int i = 0; i < len; ++i) {
+                ans[i] = mid;
+            }
+            // left表示奇数索引(左->右)，right表示偶数索引(右->左)
+            int left = 1, right = len%2==0 ? len-2:len-1;
+            for (int i = 0; i < len; ++i) {
+                if (nums[i] > mid) {
+                    ans[left] = nums[i];
+                    left += 2;
+                } else if (nums[i] < mid) {
+                    ans[right] = nums[i];
+                    right -= 2;
+                }
+            }
+            for (int i = 0; i < len; ++i) {
+                nums[i] = ans[i];
+            }
+        }
     }
 
 
+
 /*
-Solution1的解释
+Solution2的解释
 Roughly speaking I put the smaller half of the numbers on the even indexes and the larger half on the odd indexes.
 
 def wiggleSort(self, nums):

@@ -369,6 +369,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 17.[561-Array Partition I]() greedy 贪心
 18.[135-Candy]() greedy hard
 19.[1217-Play with Chips]() easy greedy
+20.[330-Patching Array]() hard greedy
+
 
 
 

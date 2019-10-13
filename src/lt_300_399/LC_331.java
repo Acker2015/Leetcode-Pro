@@ -63,19 +63,14 @@ public class LC_331 {
         String[] nodes = preorder.split(",");
         String[] stack = new String[nodes.length];
         int idx = 0;
-        int i = 0;
-        while (i < nodes.length) {
-            if (!nodes[i].equals("#")) {
-                stack[idx++] = nodes[i++];
-            } else {
-                stack[idx++] = nodes[i++];
-                while (idx >= 3 && stack[idx-1].equals("#") && stack[idx-2].equals("#")) {
-                    if (stack[idx-3].equals("#")) {
-                        return false;
-                    }
-                    idx = idx - 3;
-                    stack[idx++] = "#";
+        for (String node: nodes) {
+            stack[idx++] = node;
+            while (idx >= 3 && stack[idx-1].equals("#") && stack[idx-2].equals("#")) {
+                if (stack[idx-3].equals("#")) {
+                    return false;
                 }
+                stack[idx-3] = "#";
+                idx = idx-2;
             }
         }
         return idx==1 && stack[0].equals("#");
