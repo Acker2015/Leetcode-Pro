@@ -8,7 +8,8 @@ import java.util.*;
  * 三种解法
  * 1. 堆 O(nlogk)
  * 2. two pointers O(n)
- * 3. 二分查找 O(logn + k)
+ * 3. 二分查找 O(logn + k) - 更加巧妙的二分
+ * 4. 同样二分查找 O(logn+k)
  */
 public class LC_658 {
     /**
@@ -32,7 +33,7 @@ public class LC_658 {
                 }
             }
         }
-        public List<Integer> findClosestElements2(int[] arr, int k, int x) {
+        public List<Integer> findClosestElements(int[] arr, int k, int x) {
             PriorityQueue<Integer> pq = new PriorityQueue<>(new ClosestComparator(x));
             for (int item: arr) {
                 pq.offer(item);
@@ -99,5 +100,53 @@ public class LC_658 {
             }
             return list;
         }
+    }
+
+    /**
+     * 二分+two-pointers
+     * O(logn + k)
+     * 先通过二分找到第一个大于等于x的位置
+     * 然后通过two-pointers往两边扩散，找到closestElements的起始位置
+     */
+    public static class Solution4 {
+        public List<Integer> findClosestElements(int[] arr, int k, int x) {
+            int left = 0, right = arr.length, mid;
+            while (left < right) {
+                mid = left + (right-left)/2;
+                if (arr[mid] < x) {
+                    left = mid+1;
+                } else {
+                    right = mid;
+                }
+            }
+            // 两边扩散找到起始位置
+            int i = left-1, j = left, start = left;
+            for (int m = 1; m <= k; ++m) {
+                if (j >= arr.length) {
+                    start = i;
+                    i--;
+                } else if (i < 0) {
+                    break;
+                } else {
+                    if (Math.abs(arr[i]-x) <= Math.abs(arr[j]-x)) {
+                        start = i;
+                        i--;
+                    } else {
+                        j++;
+                    }
+                }
+            }
+            List<Integer> list = new ArrayList<>();
+            for (int m = start; m < start+k; ++m) {
+                list.add(arr[m]);
+            }
+            return list;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {0,1,1,1,2,3,6,7,8,9};
+        Solution4 solution = new Solution4();
+        solution.findClosestElements(nums, 9, 4).forEach(System.out::println);
     }
 }

@@ -22,54 +22,94 @@ import java.util.Arrays;
  */
 public class LC_1223_c158 {
     private static final int MOD = 1000000007;
+
+
     /**
-     * dp[x][i][k]
-     * x表示第几个数
-     * i表示以i为结尾
-     * k表示以1位结尾的尾连续i的个数
-     * @param n
-     * @param rollMax
-     * @return
+     * DP解法
      */
-    public int dieSimulator(int n, int[] rollMax) {
-        if (n == 0) return 0;
-        int[][][] dp = new int[n+1][7][16];
-        for (int i = 1; i <= 6; ++i) {
-            if (rollMax[i-1] > 0) {
-                // 第一位数以i结尾的最大长度为1，并且能够产生的sequence个数
-                dp[1][i][1] = 1;
-            }
-        }
-        for (int x = 2; x <= n; ++x) {
+    static class Solution1 {
+        /**
+         * dp[x][i][k]
+         * x表示第几个数
+         * i表示以i为结尾
+         * k表示以1位结尾的尾连续i的个数
+         */
+        public int dieSimulator1(int n, int[] rollMax) {
+            if (n == 0) return 0;
+            int[][][] dp = new int[n+1][7][16];
             for (int i = 1; i <= 6; ++i) {
-                for (int k = 1; k <= 15; ++k) {
-                    for (int j = 1; j <= 6; ++j) {
-                        // 如果j处的rollMax为0 或者连续已经达到rollMax[j]上限，那么就不能继续添加此元素
-                        if (rollMax[j-1] <= 0 || (i==j && k >= rollMax[j-1])) {
-                            continue;
-                        }
-                        if (i == j) {
-                            dp[x][i][k+1] = (dp[x][i][k+1] + dp[x-1][i][k]) % MOD;
-                        } else {
-                            // 新加入j
-                            dp[x][j][1] = (dp[x][j][1] + dp[x-1][i][k]) % MOD;
+                if (rollMax[i-1] > 0) {
+                    // 第一位数以i结尾的最大长度为1，并且能够产生的sequence个数
+                    dp[1][i][1] = 1;
+                }
+            }
+            for (int x = 2; x <= n; ++x) {
+                for (int i = 1; i <= 6; ++i) {
+                    for (int k = 1; k <= 15; ++k) {
+                        for (int j = 1; j <= 6; ++j) {
+                            // 如果j处的rollMax为0 或者连续已经达到rollMax[j]上限，那么就不能继续添加此元素
+                            if (rollMax[j-1] <= 0 || (i==j && k >= rollMax[j-1])) {
+                                continue;
+                            }
+                            if (i == j) {
+                                dp[x][i][k+1] = (dp[x][i][k+1] + dp[x-1][i][k]) % MOD;
+                            } else {
+                                // 新加入j
+                                dp[x][j][1] = (dp[x][j][1] + dp[x-1][i][k]) % MOD;
+                            }
                         }
                     }
                 }
             }
-        }
-        int num = 0;
-        for (int i = 1; i <= 6; ++i) {
-            for (int k = 1; k <= 15; ++k) {
-                num = (num + dp[n][i][k]) % MOD;
+            int num = 0;
+            for (int i = 1; i <= 6; ++i) {
+                for (int k = 1; k <= 15; ++k) {
+                    num = (num + dp[n][i][k]) % MOD;
+                }
             }
+            return num;
         }
-        return num;
     }
+
+    /**
+     * top-down
+     * dfs+mem
+     *
+     * 写起来更容易
+     */
+    static class Solution2 {
+        public int dieSimulator(int n, int[] rollMax) {
+            int[][][] mem = new int[n+1][7][16];
+
+            return cal(n, 0, 0, rollMax, mem);
+        }
+
+        private int cal(int leftRolls, int tail, int consectiveNum, int[] rollMax, int[][][] mem) {
+            if (leftRolls <= 0) return 1;
+            int ans = 0;
+            if (mem[leftRolls][tail][consectiveNum] > 0) {
+                return mem[leftRolls][tail][consectiveNum];
+            }
+            for (int k = 1; k <= 6; ++k) {
+                if (k != tail && rollMax[k-1] >= 1) {
+                    ans = (ans + cal(leftRolls-1, k, 1, rollMax, mem))%MOD;
+                }
+                if (k == tail && rollMax[k-1] >= consectiveNum+1) {
+                    ans = (ans + cal(leftRolls-1, k, consectiveNum+1, rollMax, mem))%MOD;
+                }
+            }
+            mem[leftRolls][tail][consectiveNum] = ans;
+            return ans;
+        }
+    }
+
+
+
+
 
     public static void main(String[] args) {
         int[] nums = {1,1,2,2,2,3};
-        LC_1223_c158 solution = new LC_1223_c158();
+        Solution2 solution = new Solution2();
         System.out.println(solution.dieSimulator(3, new int[]{1,1,1,2,2,3}));
 
 
