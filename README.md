@@ -216,6 +216,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 1. [208-Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) medium Trie 字典树
 2. [212-Word Search II](https://leetcode.com/problems/word-search-ii/description/) hard 字典树+回溯
 3. [421-Maximum XOR of Two Numbers in an Array]() medium bit+Trie
+4. [336-Palindrome Pairs]() hard trie+search
+
 
 ### Segment tree
 1. 307-Range Sum Query - Mutable medium 线段树
