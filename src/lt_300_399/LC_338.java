@@ -16,11 +16,7 @@ public class LC_338 {
             return result;
         }
         for (int i = 1; i <= num; ++i) {
-            if ((i&(i-1)) == 0) {
-                result[i] = 1;
-            } else {
-                result[i] = result[i&(i-1)] + 1;
-            }
+            result[i] = result[i&(i-1)] + 1;
         }
         return result;
     }

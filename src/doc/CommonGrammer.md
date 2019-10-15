@@ -24,3 +24,15 @@ Collections.reverse(retList);
 3. higher​(E e): This method returns the least element in this set strictly greater than the given element, or null if there is no such element.
 4. lower​(E e): This method returns the greatest element in this set strictly less than the given element, or null if there is no such element.
 ```
+
+5. TreeMap
+```$java
+public K TreeMap.lowerKey(K key)    // This method returns the greatest key strictly less than to key, or null if there is no such key.
+public K higherKey(K key)           // This method returns the least key greater than key, or null if there is no such key.
+public Map.Entry lowerEntry(K key)  // This method returns an entry with the greatest key less than key, or null if there is no such key.
+public Map.Entry higherEntry(K key) // This method returns an entry with the least key greater than key, or null if there is no such key.
+
+public K floorKey(K key)            // The method call returns the greatest key less than or equal to key, or null if there is no such key.
+public K ceilingKey(K key)          // This method returns the least key which is greater than or equal to the given key value. If such a key is absent, null is returned.
+
+```

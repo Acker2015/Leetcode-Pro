@@ -210,6 +210,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 33.[538-Convert BST to Greater Tree]() easy DFS树
 34.[285-Inorder Successor in BST]() medium  BST的中序后继
 35.[510-Inorder Successor in BST II]() medium   BST的中序后继
+36.[352-Data Stream as Disjoint Intervals]() hard TreeMap
 
 
 ### Trie Tree
@@ -257,6 +258,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 28.[698-Partition to K Equal Sum Subsets]() medium DFS
 29.[530-Minimum Absolute Difference in BST]() easy DFS
 30.[623-Add One Row to Tree]() medium BFS
+31.[337-House Robber III]() hard DFS
 
 
 
