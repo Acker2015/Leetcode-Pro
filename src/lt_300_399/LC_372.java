@@ -5,15 +5,16 @@ package lt_300_399;
  */
 public class LC_372 {
     private static final int MOD = 1337;
+    // 快速幂
     private int power(int a, int k) {
         if (k == 0) return 1;
-        int ret = 1;
-        while(k-- > 0) {
-            ret = (ret%MOD)*(a%MOD)%MOD;
-        }
-        return ret;
+        if (a == 1 || k == 1) return a;
+        int ans = power(a, k/2);
+        ans = (ans%MOD)*(ans%MOD)%MOD;
+        return k%2==0 ? ans: ans*(a%MOD)%MOD;
     }
-    public int f(int a, int[] b, int end) {
+
+    private int f(int a, int[] b, int end) {
         if (end < 0) return 1;
         int lastDigit = b[end];
         return (power(f(a, b, end-1), 10)%MOD) * (power(a, lastDigit) % MOD) % MOD;

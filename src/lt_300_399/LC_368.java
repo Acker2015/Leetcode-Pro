@@ -11,9 +11,11 @@ public class LC_368 {
     /**
      * 类似最大上升子序列的DP方法
      * dp[i]表示包括i的largest divisible subset
+     *
      * 一开始我直接记录每个位置的subset的链表，导致每次更新都需要addAll
-     * improve：
-     *      可以设置一个前驱数组和一个计数数组来替代
+     *
+     * follow-up->
+     * improve：可以设置一个前驱数组和一个计数数组来替代
      *
      * time: O(n^2)
      * @param nums
