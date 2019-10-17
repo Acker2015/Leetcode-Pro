@@ -483,14 +483,34 @@ https://blog.csdn.net/u010150046/article/details/77017145#commentBox
 	
 	定理：该算法保证每个元素以 k / n 的概率被选入蓄水池数组。
 
-	证明：首先，对于任意的 i，第 i 个元素进入蓄水池的概率为 k / i；而在蓄水池内每个元素被替换的概率为 1 / k; 因此在第 i 轮第j个元素被替换的概率为 (k / i ) * (1 / k) = 1 / i。 
-	接下来用数学归纳法来证明，当循环结束时每个元素进入蓄水池的概率为 k / n.
+	证明：首先，对于任意的 i，第 i 个元素进入蓄水池的概率为 k / i；而在蓄水池内每个元素被替换的概率为 1 / k; 
+	因此在第 i 轮第j个元素被替换的概率为 (k / i ) * (1 / k) = 1 / i。 
 	
+	接下来用数学归纳法来证明，当循环结束时每个元素进入蓄水池的概率为 k / n.
 	假设在 (i-1) 次迭代后，任意一个元素进入 蓄水池的概率为 k / (i-1)。有上面的结论，在第 i 次迭代时，该元素被替换的概率为 1 / i， 那么其不被替换的概率则为 1 - 1/i = (i-1)/i；
 	在第i 此迭代后，该元素在蓄水池内的概率为 k / (i-1) * (i-1)/i = k / i. 归纳部分结束。
 	
 	因此当循环结束时，每个元素进入蓄水池的概率为 k / n. 命题得证。
 */
+
+
+Problem:
+Choose k entries from n numbers. Make sure each number is selected with the probability of k/n
+Basic idea:
+Choose 1, 2, 3, ..., k first and put them into the reservoir.
+For k+1, pick it with a probability of k/(k+1), and randomly replace a number in the reservoir.
+For k+i, pick it with a probability of k/(k+i), and randomly replace a number in the reservoir.
+Repeat until k+i reaches n
+Proof:
+For k+i, the probability that it is selected and will replace a number in the reservoir is k/(k+i)
+For a number in the reservoir before (let's say X), the probability that it keeps staying in the reservoir is
+P(X was in the reservoir last time) × P(X is not replaced by k+i)
+= P(X was in the reservoir last time) × (1 - P(k+i is selected and replaces X))
+= k/(k+i-1) × （1 - k/(k+i) × 1/k）
+= k/(k+i)
+When k+i reaches n, the probability of each number staying in the reservoir is k/n
+
+
 for each i in k+1 to length(S) do
     j := random(1, i);   // important: inclusive range
     if j <= k then

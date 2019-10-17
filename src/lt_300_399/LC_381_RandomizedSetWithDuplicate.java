@@ -8,13 +8,13 @@ import java.util.*;
  * 允许重复数出现
  * Map<Integer, Set<Integer>>
  */
-public class LC_380_RandomizedSetWithDuplicate {
+public class LC_381_RandomizedSetWithDuplicate {
     private Map<Integer, Set<Integer>> locMap;
     private ArrayList<Integer> list;
     private Random random;
 
     /** Initialize your data structure here. */
-    public LC_380_RandomizedSetWithDuplicate() {
+    public LC_381_RandomizedSetWithDuplicate() {
         this.locMap = new HashMap<>();
         this.list = new ArrayList<>();
         this.random = new Random();
