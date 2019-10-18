@@ -128,6 +128,7 @@ public class LC_149 {
                         overlap++;
                         continue;
                     }
+                    // gcd符号与dx相同
                     int gcd = generateGCD(dx, dy);
                     dx /= gcd;
                     dy /= gcd;
@@ -148,6 +149,6 @@ public class LC_149 {
         Solution2 solution2 = new Solution2();
         System.out.println(solution2.maxPoints(points));
 
-        System.out.println(generateGCD(0, -6));
+        System.out.println(generateGCD(-3, 6));
     }
 }

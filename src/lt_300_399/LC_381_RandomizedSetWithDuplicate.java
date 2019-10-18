@@ -25,9 +25,9 @@ public class LC_381_RandomizedSetWithDuplicate {
         if (!locMap.containsKey(val)) {
             locMap.put(val, new HashSet<>());
         }
-        locMap.get(val).add(list.size()-1);
+        locMap.get(val).add(list.size());
         list.add(val);
-        return true;
+        return locMap.get(val).size()==1;
     }
 
     /** Removes a value from the set. Returns true if the set contained the specified element. */

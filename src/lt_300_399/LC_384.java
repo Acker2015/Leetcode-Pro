@@ -23,14 +23,11 @@ public class LC_384 {
         int[] shuNums = nums.clone();
         for (int i = 1; i < shuNums.length; ++i) {
             int idx = random.nextInt(i+1);
-            swap(shuNums, i, idx);
+            // swap
+            int ans = shuNums[i];
+            shuNums[i] = shuNums[idx];
+            shuNums[idx] = ans;
         }
         return shuNums;
-    }
-
-    private void swap(int[] a, int i, int j) {
-        int ans = a[i];
-        a[i] = a[j];
-        a[j] = ans;
     }
 }

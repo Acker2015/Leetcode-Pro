@@ -36,3 +36,9 @@ public K floorKey(K key)            // The method call returns the greatest key 
 public K ceilingKey(K key)          // This method returns the least key which is greater than or equal to the given key value. If such a key is absent, null is returned.
 
 ```
+
+6. 数组的拷贝
+```$java
+int[] nums = {1,2,3,4, 5}
+int[] numsClone = nums.clone();
+```

@@ -8,18 +8,6 @@ import java.util.List;
  * [386] Lexicographical Numbers
  */
 public class LC_386 {
-    private void dfs(int n, List<Integer> list, int cur) {
-        if (cur > n) {
-            return;
-        }
-        list.add(cur);
-        for (int i = 0; i <= 9; ++i) {
-            if (cur*10 + i > n) {
-                break;
-            }
-            dfs(n, list, cur*10+i);
-        }
-    }
 
     /**
      * solution1: dfs
@@ -28,17 +16,28 @@ public class LC_386 {
      1            2           3    ...
      /\           /\         /\
      10 ...19    20...29    30...39   ....
-     使用dfs分别将1，2，3...9开头的从小到大深搜
-     *
-     * @param n
-     * @return
+     使用dfs分别将1，2，3...9开头的从小到大深度优先搜索
      */
-    public List<Integer> lexicalOrder(int n) {
-        List<Integer> list = new ArrayList<>(n+1);
-        for (int i = 1; i < 10; ++i) {
-            dfs(n, list, i);
+    public static class Solution1 {
+        private void dfs(int n, List<Integer> list, int cur) {
+            if (cur > n) {
+                return;
+            }
+            list.add(cur);
+            for (int i = 0; i <= 9; ++i) {
+                if (cur*10 + i > n) {
+                    break;
+                }
+                dfs(n, list, cur*10+i);
+            }
         }
-        return list;
+        public List<Integer> lexicalOrder(int n) {
+            List<Integer> list = new ArrayList<>(n+1);
+            for (int i = 1; i < 10; ++i) {
+                dfs(n, list, i);
+            }
+            return list;
+        }
     }
 
     /**
@@ -55,25 +54,27 @@ public class LC_386 {
      * 想想为什么？
      *  499 -> (499/10)+1 = 50
      *  499 -> 4 + 1 = 5
+     *  4499 -> 45
      * 明显5要小于50，9会产生进位干扰
-     * @param n
-     * @return
      */
-    public List<Integer> lexicalOrder1(int n) {
-        List<Integer> list = new ArrayList<>();
-        int i = 1, prev = 1;
-        list.add(prev);
-        while (i++ < n) {
-            if (prev * 10 <= n) {
-                prev = prev * 10;
-            } else {
-                while (prev%10 == 9 || prev == n) {
-                    prev /= 10;
-                }
-                prev += 1;
-            }
+    public static class Solution2 {
+        public List<Integer> lexicalOrder(int n) {
+            List<Integer> list = new ArrayList<>();
+            int i = 1, prev = 1;
             list.add(prev);
+            while (i++ < n) {
+                if (prev * 10 <= n) {
+                    prev = prev * 10;
+                } else {
+                    // 如果尾部部分为0 或者 prev达到上限n
+                    while (prev%10 == 9 || prev == n) {
+                        prev /= 10;
+                    }
+                    prev += 1;
+                }
+                list.add(prev);
+            }
+            return list;
         }
-        return list;
     }
 }
