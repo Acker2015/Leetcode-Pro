@@ -120,11 +120,10 @@ public class LC_395 {
             int[] temp = new int[26];
             while (j < s.length()) {
                 if (unique <= h) {
-                    int cv = s.charAt(j)-'a';
+                    int cv = s.charAt(j++)-'a';
                     if (temp[cv] == 0) unique++;
                     temp[cv]++;
                     if (temp[cv] == k) numMoreThanK++;
-                    j++;
                 } else {
                     int cv = s.charAt(i)-'a';
                     if (temp[cv] == k) numMoreThanK--;

@@ -2,6 +2,7 @@ package lt_300_399;
 
 
 public class LC_393 {
+    // 找到d前部bit位连续1的个数（8bit）
     public int findPrefixNum(int d) {
         int num = 0;
         while ((d&0x80)!=0) {

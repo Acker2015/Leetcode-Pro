@@ -15,6 +15,7 @@ public class LC_394 {
         }
         return sbd.toString();
     }
+    // 默认输入为 abc3[...]这种形式进行递归即可
     private String decode(int left, int right) {
         if (left > right) return "";
         StringBuilder sbd = new StringBuilder();

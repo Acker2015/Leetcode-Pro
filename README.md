@@ -585,4 +585,4 @@ done
 ### merge-sort思想、divide-conquer
 1. 逆序对
 2. [327-Count of Range Sum]()
-3. 
+3. [395-Longest Substring with At Least K Repeating Characters)[] 根据频次分割 divide-conquer

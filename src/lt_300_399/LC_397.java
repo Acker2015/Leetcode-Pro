@@ -21,6 +21,7 @@ package lt_300_399;
  Otherwise, increment n.
  */
 public class LC_397 {
+    // 想办法尽量消除掉更多个二进制1
     public int integerReplacement(int n) {
         int num = 0;
         while (n!=1) {
