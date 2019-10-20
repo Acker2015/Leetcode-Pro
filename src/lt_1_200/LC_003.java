@@ -47,12 +47,12 @@ public class LC_003 {
 		while(index < s.length()) {
 			// make sure the area at right of start
 			if (locMap.containsKey(s.charAt(index)) && locMap.get(s.charAt(index)) >= start) {
-				maxLen = Math.max(maxLen, index - start);
 				start = locMap.get(s.charAt(index)) + 1;
 			}
 			locMap.put(s.charAt(index), index++);
+            maxLen = Math.max(maxLen, index - start);
 		}
-		return Math.max(maxLen, s.length() - start);
+		return maxLen;
     }
 
 
@@ -64,7 +64,7 @@ public class LC_003 {
 		int end = 0, start = 0, count = 0, maxLen = 0;
 		Map<Character, Integer> map = new HashMap<>();
 		while (end < s.length()) {
-			char cur = s.charAt(end);
+			char cur = s.charAt(end++);
 			map.put(cur, map.getOrDefault(cur, 0) + 1);
 			if (map.get(cur) > 1) {
 				count++;
@@ -77,7 +77,6 @@ public class LC_003 {
 				map.put(prev, map.get(prev)-1);
 				start++;
 			}
-			end++;
 			maxLen = Math.max(maxLen, end-start);
 		}
 		return maxLen;

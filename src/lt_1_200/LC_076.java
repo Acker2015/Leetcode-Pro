@@ -5,6 +5,8 @@ import java.util.Map;
 
 /**
  * [76] Minimum Window Substring
+ *
+ * Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
  */
 public class LC_076 {
     /**

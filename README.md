@@ -435,6 +435,8 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 50.[1218-Longest Arithmetic Subsequence of Given Difference]() medium DP
 51.[312-Burst Balloons]() hard DP 烧气球-DP or divide-conquer
 52.[1223-Dice Roll Simulation]() medium DP（需理解题意 dp or dfs+mem）
+53.[1235-Maximum Profit in Job Scheduling]() hard DP
+
 
 
 
@@ -552,6 +554,7 @@ done
 5. [438-Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 6. [424-Longest Repeating Character Replacement]() medium slide-window
 7. [1208-Get Equal Substrings Within Budget]() medium sliding-window
+8. [1234-Replace the Substring for Balanced String]() medium sliding-window min-substring
 
 ### 回文-Palindromic
 1. [647-Palindromic Substrings]() medium  DP or expand from center

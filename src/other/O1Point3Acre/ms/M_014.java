@@ -15,6 +15,7 @@ import java.util.Map;
  *      1.2 输入数字顺序 亿 -> 万 -> 千 -> 百 -> 十
  *
  * 2. overflow - long
+ * 3. 一兆是一万亿
  *
  * 你不能依靠client输入valid的string，如果是三百二十千八百二十八这个就不行，有可能是负数。
  数量是1兆到-1兆。我最开始以为不算很难，但是用stack思想做了后漏洞百出，怎么判定是invalid？
@@ -41,7 +42,7 @@ import java.util.Map;
  */
 public class M_014 {
     private static final char[] digitArr = {'零', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十'};
-    private static final char[] symbolArr = {'万', '千', '百', '十'};
+    private static final char[] symbolArr = {'千', '百', '十'};
     private static final char ZERO = '零';
     private static final char TEN = '十';
 
@@ -73,8 +74,7 @@ public class M_014 {
     }
 
     /**
-     * 对于万或者千的数字进行判定
-     * 0. limit越界判断，最高位不能超过limit
+     * 对于千的数字进行判定
      * 1. 保证同一个symbol不会出现多次 (比如万只能出现一次，千也只能出现一次)
      * 2. 对于中间零位的判断-这里是symbol出现断层会用一个零位填充
      * 3. symbol之前的字符个数大于1
@@ -82,24 +82,17 @@ public class M_014 {
      *
      * @param s
      * @param lastFlag  上一层的symbol
-     * @param limit 设置最高限制
      * @return
      */
-    private long convertPart(String s, Character lastFlag, Character limit) {
+    private long convertPart(String s, Character lastFlag) {
         if (s == null || s.length() <= 0) {
             return lastFlag==null ? -1 : 0;  // 如果上一层为空，那么说明输入非法
         }
         for (char symbol: symbolArr) {
             int idx = s.indexOf(symbol);
             if (idx >= 0) {
-                // 0. part 越界
-                if (limit != null && symbolMap.get(limit) < symbolMap.get(symbol)) {
-                    return -1;
-                }
                 // 1. symbol最多只能出现一次
-                if (s.indexOf(symbol, idx+1) >= 0) {
-                    return -1;
-                }
+                if (s.indexOf(symbol, idx+1) >= 0) return -1;
                 // 2. 判断断层0位
                 int startIdx = 0;
                 if (lastFlag != null && symbolMap.get(lastFlag)/symbolMap.get(symbol) > 10) {
@@ -120,7 +113,7 @@ public class M_014 {
                 if (!(symbol=='十' && lastFlag == null && idx-startIdx==0)) {
                     left = convertToSingleDigit(s.charAt(startIdx));
                 }
-                long right = convertPart(s.substring(idx+1), symbol, limit);
+                long right = convertPart(s.substring(idx+1), symbol);
                 if (left < 0 || right < 0) return -1;
                 return left*symbolMap.get(symbol) + right;
             }
@@ -160,7 +153,7 @@ public class M_014 {
         if (idx >= 0) {
             // 只存在一个亿
             if (s.indexOf('亿', idx+1) >= 0) return -1;
-            long left = convertPart(s.substring(0, idx), null, '万');
+            long left = convertPart(s.substring(0, idx), null);
             long right = convert(s.substring(idx+1), '亿');
             if (left < 0 || right < 0) return -1;
             return left*symbolMap.get('亿') + right; // a*1亿+b
@@ -177,7 +170,7 @@ public class M_014 {
                     return -1;
                 }
             }
-            long left = convertPart(s.substring(startIdx, idx), null, '千');
+            long left = convertPart(s.substring(startIdx, idx), null);
             long right = convert(s.substring(idx+1), '万');
             if (left < 0 || right < 0) return -1;
             return left*symbolMap.get('万') + right; // a*1万+b
@@ -191,7 +184,7 @@ public class M_014 {
                 return -1;
             }
         }
-        return convertPart(s.substring(startIdx), null, '千');
+        return convertPart(s.substring(startIdx), null);
     }
 
     public long solve(String s) {
@@ -222,14 +215,14 @@ public class M_014 {
          * 五万零千二百一十一
          *
          */
-        System.out.println(m_014.convertPart("五万零一一", null, '千'));
-        System.out.println(m_014.convertPart("三千七百", null, '千'));
-        System.out.println(m_014.convertPart("三千七百二十", null, '千'));
-        System.out.println(m_014.convertPart("三千七百一十", null, '万'));
-        System.out.println(m_014.convertPart("五万八千二百一十一", null, '千'));
-        System.out.println(m_014.convertPart("五万八千二百一十一", null, '万'));
-        System.out.println(m_014.convertPart("三千七百", null, '万'));
-        System.out.println(m_014.convertPart("三千七百零", null, '万'));
+        System.out.println(m_014.convertPart("五万零一一", null));
+        System.out.println(m_014.convertPart("三千七百", null));
+        System.out.println(m_014.convertPart("三千七百二十", null));
+        System.out.println(m_014.convertPart("三千七百一十", null));
+        System.out.println(m_014.convertPart("五万八千二百一十一", null));
+        System.out.println(m_014.convertPart("五万八千二百一十一", null));
+        System.out.println(m_014.convertPart("三千七百", null));
+        System.out.println(m_014.convertPart("三千七百零", null));
 
         /**
          * valid:
