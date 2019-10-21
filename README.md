@@ -170,6 +170,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 15.[554-Brick Wall]() medium hashMap
 16.[1124-Longest Well-Performing Interval]() medium hashMap(有点贪心的意思)
 17.[1224-Maximum Equal Frequency]() hard mem+数学推理
+18.[560-Subarray Sum Equals K]() medium map(解法类似two-sum)
 
 ### Tree & Graph
 1. [100-Same Tree](https://leetcode.com/problems/same-tree/description/) easy
@@ -436,7 +437,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 51.[312-Burst Balloons]() hard DP 烧气球-DP or divide-conquer
 52.[1223-Dice Roll Simulation]() medium DP（需理解题意 dp or dfs+mem）
 53.[1235-Maximum Profit in Job Scheduling]() hard DP
-
+54.[403-Frog Jump]() hard DP 青蛙跳
 
 
 

@@ -42,3 +42,9 @@ public K ceilingKey(K key)          // This method returns the least key which i
 int[] nums = {1,2,3,4, 5}
 int[] numsClone = nums.clone();
 ```
+
+7. 带符号右移和无符号右移
+```java
+// >>   带符号右移。正数右移高位补0，负数右移高位补1
+// >>>  无符号右移。无论正数还是负数，高位通通补0
+```
