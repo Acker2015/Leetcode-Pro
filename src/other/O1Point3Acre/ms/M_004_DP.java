@@ -21,6 +21,7 @@ package other.O1Point3Acre.ms;
 public class M_004_DP {
     /**
      * solution1
+     * 翻转之后求最大公共子序列
      * @param s
      * @return
      */

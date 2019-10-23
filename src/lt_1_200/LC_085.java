@@ -90,6 +90,7 @@ public class LC_085 {
                 int leftEdge = 0;
                 for (int j = 0; j < n; ++j) {
                     if (matrix[i][j]=='1') {
+                        // 这里取max是关键
                         left[j]=Math.max(left[j],leftEdge); // left记录当前索引j处高度能够对应的左边最大的连续1
                     } else {
                         left[j]=0;
@@ -99,6 +100,7 @@ public class LC_085 {
                 int rightEdge = n;
                 for (int j = n-1; j >= 0; j--) {
                     if (matrix[i][j] == '1') {
+                        // 这里取min是关键
                         right[j] = Math.min(right[j],rightEdge);    // right记录当前索引j处高度能够对应的右边的最小的连续1
                     } else {
                         right[j] = n;

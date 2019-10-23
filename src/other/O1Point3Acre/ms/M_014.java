@@ -215,6 +215,7 @@ public class M_014 {
          * 五万零千二百一十一
          *
          */
+        System.out.println(m_014.convertPart("十一", null));
         System.out.println(m_014.convertPart("五万零一一", null));
         System.out.println(m_014.convertPart("三千七百", null));
         System.out.println(m_014.convertPart("三千七百二十", null));

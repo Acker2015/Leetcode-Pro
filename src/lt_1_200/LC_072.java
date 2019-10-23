@@ -6,7 +6,7 @@ public class LC_072 {
      dp[i][j] 表示word1(0,i)变化到word2(0,j)所需要的最小的步数，
      能够执行的操作有
         1. 不执行操作
-        2.add操作
+        2. add操作
         3. delete操作
         4. change操作
 

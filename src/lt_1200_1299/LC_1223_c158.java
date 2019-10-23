@@ -34,7 +34,7 @@ public class LC_1223_c158 {
          * i表示以i为结尾
          * k表示以1位结尾的尾连续i的个数
          */
-        public int dieSimulator1(int n, int[] rollMax) {
+        public int dieSimulator(int n, int[] rollMax) {
             if (n == 0) return 0;
             int[][][] dp = new int[n+1][7][16];
             for (int i = 1; i <= 6; ++i) {

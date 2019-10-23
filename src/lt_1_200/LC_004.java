@@ -2,6 +2,15 @@ package lt_1_200;
 
 
 public class LC_004 {
+    /**
+     * time O(log(min(m,n)))
+     * @param A
+     * @param i
+     * @param B
+     * @param j
+     * @param k
+     * @return
+     */
     private int findKth(int[] A, int i, int[] B, int j, int k) {
         if (i >= A.length) {
             return B[j+k-1];

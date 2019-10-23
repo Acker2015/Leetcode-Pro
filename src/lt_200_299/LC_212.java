@@ -5,6 +5,9 @@ import java.util.List;
 
 /**
  * [212] Word Search II
+ *
+ *
+ * 字典树 + DFS
  */
 public class LC_212 {
     private int[] d1 = {-1, 1, 0, 0};

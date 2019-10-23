@@ -5,14 +5,8 @@ package other.O1Point3Acre.ms;
  */
 public class M_009_MOD {
     private static int multipleTwo(int b) {
-        int ans = b;
-        if ((ans << 1) < b) {
-            return b;
-        } else {
-            return ans<<1;
-        }
+        return (b<<1)<b ? b:(b<<1);
     }
-
     /**
      * 通过位操作扩大b来加快取余操作
      * @param a
