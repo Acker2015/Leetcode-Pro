@@ -30,7 +30,7 @@ public class DP_003_Longest_Continous_Sub_Sequence {
      * two-pointers
      *
      * let sum variable is the sum of [i, j)
-     * so when sum<=0 or arr[i] <= 0, i would go to next position.
+     * so when sum<=0, i would go to next position.
      * @param arr
      * @return
      */
@@ -39,7 +39,7 @@ public class DP_003_Longest_Continous_Sub_Sequence {
         int sum = 0, maxSum = arr[0];
         while (j < arr.length) {
             sum += arr[j++];
-            while (i < j && (arr[i] <= 0 || sum <= 0)) {
+            while (i < j && sum <= 0) {
                 sum -= arr[i++];
             }
             if (i < j) {

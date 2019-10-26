@@ -130,6 +130,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 14.[442-Find All Duplicates in an Array]() medium 值映射索引解法
 15.[454-4Sum II]() medium 
 16.[1144-Decrease Elements To Make Array Zigzag]() medium array
+17.[581-Shortest Unsorted Continuous Subarray]()easy array (O(n)的解法应该是medium)
 
 
 ### List
