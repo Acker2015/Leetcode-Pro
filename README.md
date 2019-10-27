@@ -65,6 +65,7 @@ Start from right to left, perform multiplication on every pair of digits, and ad
 47. [507-Perfect Number]() easy math
 48. [478-Generate Random Point in a Circle]() math, circle, random
 49. [233-Number of Digit One]() hard math 1的个数
+50. [1238-Circular Permutation in Binary Representation]() medium gray-code
 
 
 ### String
@@ -261,6 +262,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 29.[530-Minimum Absolute Difference in BST]() easy DFS
 30.[623-Add One Row to Tree]() medium BFS
 31.[337-House Robber III]() hard DFS
+32.[407-Trapping Rain Water II]() hard BFS（剥洋葱式BFS、从外围到里边）
 
 
 
@@ -284,6 +286,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 16.[526-Beautiful Arrangement]() medium backtracking
 17.[216-Combination Sum III]() medium backtracking
 18.[1219-Path with Maximum Gold]() medium backtracking
+19.[1239-Maximum Length of a Concatenated String with Unique Characters]() medium backtracking
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -460,6 +463,9 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 ### 积水系列
 1. [011-container-with-most-water](https://leetcode.com/problems/container-with-most-water/submissions/)
 2. [042-Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+3. [407-Trapping Rain Water II]() BFS 剥洋葱
+
+
 ```
 https://www.cnblogs.com/felixfang/p/3713197.html
 观察下就可以发现被水填满后的形状是先升后降的塔形，因此，先遍历一遍找到塔顶，然后分别从两边开始，往塔顶所在位置遍历，水位只会增高不会减小，且一直和最近遇到的最大高度持平，这样知道了实时水位，就可以边遍历边计算面积。
