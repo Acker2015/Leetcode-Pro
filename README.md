@@ -287,6 +287,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 17.[216-Combination Sum III]() medium backtracking
 18.[1219-Path with Maximum Gold]() medium backtracking
 19.[1239-Maximum Length of a Concatenated String with Unique Characters]() medium backtracking
+20.[1240-Tiling a Rectangle with the Fewest Squares]() hard DFS+Backtracking
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
