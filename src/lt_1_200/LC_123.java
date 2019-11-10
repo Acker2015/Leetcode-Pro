@@ -8,7 +8,7 @@ package lt_1_200;
  * Design an algorithm to find the maximum profit. You may complete at most two transactions.
  * Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
  *
- * dp[k][j] means the max profit up until prices[j] with at most k transaction.
+ * dp[k][j] means the max profit up until transaction day j with at most k transaction.
  * dp[k][j] 表示在j个交易日进行至多k次交易能够获得的最大收益
  *
  * 1. jump out the days j, no transaction at days j, dp[k][j] = dp[k][j-1]

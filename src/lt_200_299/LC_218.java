@@ -73,10 +73,7 @@ public class LC_218 {
             }
             // max height has changed.
             if (originMaxY != heightPriorityQueue.peek()) {
-                List<Integer> ans = new ArrayList<>();
-                ans.add(nowX);
-                ans.add(heightPriorityQueue.peek());
-                retList.add(ans);
+                retList.add(Arrays.asList(nowX, heightPriorityQueue.peek()));
             }
             i = j;
         }

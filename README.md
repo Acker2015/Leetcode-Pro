@@ -263,6 +263,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 30.[623-Add One Row to Tree]() medium BFS
 31.[337-House Robber III]() hard DFS
 32.[407-Trapping Rain Water II]() hard BFS（剥洋葱式BFS、从外围到里边）
+33.[1254-Number of Closed Islands]() medium DFS
 
 
 
@@ -288,6 +289,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 18.[1219-Path with Maximum Gold]() medium backtracking
 19.[1239-Maximum Length of a Concatenated String with Unique Characters]() medium backtracking
 20.[1240-Tiling a Rectangle with the Fewest Squares]() hard DFS+Backtracking
+21.[1255-Maximum Score Words Formed by Letters]() hard backtracking 思路类似于subset
 
 ### two pointers
 1. [015-3Sum](https://leetcode.com/problems/3sum/)
@@ -381,6 +383,7 @@ BST的two pointers，使用stack来辅助前后两个指针的移动
 18.[135-Candy]() greedy hard
 19.[1217-Play with Chips]() easy greedy
 20.[330-Patching Array]() hard greedy
+21.[1253-Reconstruct a 2-Row Binary Matrix]() medium greedy
 
 
 

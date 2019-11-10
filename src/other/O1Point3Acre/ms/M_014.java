@@ -16,8 +16,8 @@ import java.util.Map;
  *
  * 2. overflow - long
  * 3. 一兆是一万亿
- * 4. int整数最大值为 -2147483648 和2147483647 大概是2.14*10^9
- * 5. 一亿 = 100000000 = 1e8
+ * 4. int整数最大值为 -2147483648(-2^31) 和2147483647(2^31 - 1) 大概是2.147*10^9
+ * 5. 一亿 = 100000000 = 1e8 , 二十亿 = 2*10^9
  * 6 一千亿 = 1000*一亿 = 1e11
  *
  * 需确认：
@@ -102,7 +102,7 @@ public class M_014 {
             if (s.indexOf(symbol, idx+1) >= 0) return -1;
             // 2. 判断断层0
             if (lastFlag!=null && symbolMap.get(lastFlag)/symbolMap.get(symbol) > 10) {
-                if (s.charAt(0) == '零') {
+                if (s.charAt(0) == ZERO) {
                     s = s.substring(1); // 去掉前置零
                     idx--;
                 } else {
@@ -110,7 +110,7 @@ public class M_014 {
                 }
             }
             // symbol前方位数大于1非法
-            if (idx > 2) return -1;
+            if (idx >= 2) return -1;
             int left = 1;
             // 4. 只有处于十位并且lastFlag为null，才有可能出现 "十"、"十五"、"十九"这样
             // 特殊判断: 一十五、一十九、一十这种就是非法输入
@@ -127,7 +127,11 @@ public class M_014 {
         // 个位处理
         int startIdx = 0;
         if (lastFlag != null && symbolMap.get(lastFlag) > 10) {
-            startIdx++;
+            if (s.charAt(0) == ZERO) {
+                startIdx++;
+            } else {
+                return -1;
+            }
         }
         return s.length()-startIdx!=1 ? -1 : singleDigit(s.charAt(startIdx));
     }
@@ -152,16 +156,19 @@ public class M_014 {
         }
         for (char symbol: symbols) {
             int idx = s.indexOf(symbol);
-            if (idx < 0) continue;
+            if (idx <= 0) continue;
             if (s.indexOf(symbol, idx+1) >= 0) return -1;
             // 万之前出现没有出现千才有可能会有空0
-            int thIdx = s.indexOf('千');
-            if (lastFlag != null && symbol=='万' && (thIdx < 0 || thIdx > idx)) {
-                if (s.charAt(0) == '零') {
-                    s = s.substring(1);
-                    idx--;
-                } else {
-                    return -1;
+            if (symbol == '万') {
+                int thIdx = s.indexOf('千');
+                if (lastFlag != null && (thIdx < 0 || thIdx>idx)) {
+                    // 出现断层
+                    if (s.charAt(0) == ZERO) {
+                        s = s.substring(1);
+                        idx--;
+                    } else {
+                        return -1;
+                    }
                 }
             }
             long left = convertPart(s.substring(0, idx), null);
@@ -172,7 +179,7 @@ public class M_014 {
         // 万余下的数
         int startIdx = 0;
         if (lastFlag != null && (lastFlag == '亿' || (lastFlag=='万' && s.indexOf('千') < 0))) {
-            if (s.charAt(startIdx) == '零') {
+            if (s.charAt(startIdx) == ZERO) {
                 startIdx++;
             } else {
                 return -1;
@@ -237,6 +244,8 @@ public class M_014 {
          * 五万零千二百一十一
          *
          */
+        System.out.println(m_014.convertPart("零", null));           // -1
+        System.out.println(m_014.convertPart("一百一一", null));      // -1
         System.out.println(m_014.convertPart("十", null));        // 10
         System.out.println(m_014.convertPart("十一", null));      // 11
         System.out.println(m_014.convertPart("二十五", null));      // 25

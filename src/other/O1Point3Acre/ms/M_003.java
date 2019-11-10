@@ -13,8 +13,8 @@ public class M_003 {
         int len = chs.length;
         int[][] dp = new int[len][len];
         for (int gap = 2; gap <= len; ++gap) {
-            for (int i = 0; i + gap <= len; ++i) {
-                int l = i, r = i+gap-1;
+            for (int l = 0; l + gap <= len; ++l) {
+                int r = l+gap-1;
                 if (chs[l] == chs[r]) {
                     dp[l][r] = dp[l+1][r-1];
                 } else {

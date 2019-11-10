@@ -47,6 +47,7 @@ public class M_006AlmostSortedArray {
         while (j-1 >= 0 && array[j-1] <= array[j]) j--;
         if (isSubDecrease(array, i, j)) {
             System.out.println("REVERSE");
+            // 直接判断两边
             return (i==0 || array[j] >= array[i-1]) && (j == len-1 || array[i] <= array[j+1]);
         } else {
             System.out.println("SWAP");

@@ -26,18 +26,10 @@ public class M_002_MoveLetters {
         return sbd1.toString()+sbd2.toString();
     }
 
-    private static int findNextLowCase(char[] chs, int idx) {
-        for (int i = idx + 1; i < chs.length; ++i) {
-            if (chs[i] >= 'a' && chs[i] <= 'z') {
-                return i;
-            }
-        }
-        return -1;
-    }
-
     /**
      * time O(n^2)
      * space constant space
+     * 冒泡排序
      * @param s
      * @return
      */
